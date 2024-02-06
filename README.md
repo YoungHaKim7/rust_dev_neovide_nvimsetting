@@ -30,6 +30,13 @@
 :hi Comment guifg=#8aaecf guibg=#4e1a1a
 ```
 
+# Tabby AI 설치
+
+- https://tabby.tabbyml.com/
+  - https://github.com/TabbyML/tabby
+
+- https://tabby.tabbyml.com/docs/extensions/installation/vim#-packernvim
+
 # packer
 
 https://github.com/wbthomason/packer.nvim

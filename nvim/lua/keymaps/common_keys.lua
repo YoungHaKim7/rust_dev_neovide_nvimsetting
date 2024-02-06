@@ -8,6 +8,7 @@ vim.g.mapleader = " "
 nnoremap("<C-z>", [[<nop>]])
 -- Quick Replace of Word
 -- nnoremap("S", [[:%s//g<Left><Left>]])
+nnoremap("<leader>rnn", [[:%s//gc<Left><Left>]])
 
 nnoremap(",<leader>", [[:set hlsearch!<CR>]])
 -- SymbolOutline

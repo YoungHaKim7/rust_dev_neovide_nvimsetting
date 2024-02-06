@@ -28,6 +28,7 @@ require("plugins/cargo_crates")
 require("plugins/symbols-outline")
 require("plugins/trouble")
 require("plugins/tabbyai")
+require("plugins/indent-blankline")
 
 
 -- vim.opt.guifont = "Hack Nerd Font Mono:30"

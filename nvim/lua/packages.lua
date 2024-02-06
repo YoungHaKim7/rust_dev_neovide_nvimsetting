@@ -88,5 +88,7 @@ require("packer").startup(function(use)
     }
     --- Tabby plugin
     use { 'TabbyML/vim-tabby' }
+    -- indent
+    use {"lukas-reineke/indent-blankline.nvim"}
 
 end)

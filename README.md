@@ -4,6 +4,8 @@
 
 # RustSnippet기본 위치
 
+- https://github.com/hrsh7th/vim-vsnip
+
 - ```:VsnipOpen```
 
 - global.json위치(~/.vsnip/global.json) 

@@ -101,6 +101,11 @@ nnoremap("<TAB>", ":bnext<CR>")
 -- SHIFT-TAB will go back
 nnoremap("<S-TAB>", ":bprevious<CR>")
 
+# windows split
+nnoremap("vsp", ":vsplit<CR>")
+nnoremap("sp", ":split<CR>")
+
+
 
 -- Resize Panes with + - or with shift + -
 nnoremap("__", ":resize -5<CR>")

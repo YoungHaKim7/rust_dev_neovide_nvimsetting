@@ -67,10 +67,10 @@ require("packer").startup(function(use)
             require('crates').setup()
         end
     }
-    use({
-        'mrjones2014/dash.nvim',
-        run = 'make install',
-      })
+    -- use({
+    --     'mrjones2014/dash.nvim',
+    --     run = 'make install',
+    --   })
     use {"simrat39/symbols-outline.nvim"}
     use {"folke/trouble.nvim",
       require = {{'nvim-tree/nvim-web-devicons' }},

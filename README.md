@@ -6,8 +6,11 @@
 
 https://github.com/wbthomason/packer.nvim
 
-# font 해결 못함
-- https://neovide.dev/configuration.html
+# 해결 못함
+- truble.nvim오류 메세지 해결 못함
+  - https://github.com/folke/trouble.nvim
+- font 크기 해결 못함
+  - https://neovide.dev/configuration.html
 
 # Source 외국분 git에서 대부분 가져옴
 

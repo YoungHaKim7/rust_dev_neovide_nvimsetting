@@ -2,6 +2,19 @@
 - https://github.com/codeitlikemiley/neovide-rust-neovim
   - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)
 
+# RustSnippet기본 위치
+
+- ```:VsnipOpen```
+
+- global.json위치(~/.vsnip/global.json) 
+
+```
+~/.vsnip                                                                                        at 23:46:13
+❯ tree
+.
+└── global.json
+```
+
 # packer
 
 https://github.com/wbthomason/packer.nvim

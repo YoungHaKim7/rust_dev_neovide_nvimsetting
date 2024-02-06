@@ -77,5 +77,7 @@ require("packer").startup(function(use)
       opts = {},
       -- config = function()
     }
+    --- Tabby plugin
+    use { 'TabbyML/vim-tabby' }
 
 end)

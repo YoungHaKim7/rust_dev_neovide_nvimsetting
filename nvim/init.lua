@@ -27,6 +27,7 @@ require("plugins/cargo_crates")
 -- my Plugin
 require("plugins/symbols-outline")
 require("plugins/trouble")
+require("plugins/tabbyai")
 
 
 -- vim.opt.guifont = "Hack Nerd Font Mono:30"

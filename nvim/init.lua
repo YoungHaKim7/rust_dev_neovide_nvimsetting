@@ -29,4 +29,4 @@ require("plugins/symbols-outline")
 require("plugins/trouble")
 
 
--- vim.opt.guifont = "Hack Nerd Font Mono:22"
+-- vim.opt.guifont = "Hack Nerd Font Mono:30"

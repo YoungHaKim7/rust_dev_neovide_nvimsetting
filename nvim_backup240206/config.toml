@@ -4,5 +4,5 @@ vsync = true
 maximized = false
 srgb = false
 idle = true
-neovim_bin = "/home/gy/utilities/nvim-linux64/bin"
+neovim_bin = "/opt/homebrew/bin/nvim"
 frame = "Full"

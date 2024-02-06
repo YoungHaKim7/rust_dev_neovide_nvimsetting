@@ -10,10 +10,6 @@ nnoremap("<C-z>", [[<nop>]])
 -- nnoremap("S", [[:%s//g<Left><Left>]])
 
 nnoremap(",<leader>", [[:set hlsearch!<CR>]])
--- SymbolOutline
-nnoremap("<leader>o", ":SymbolsOutline<CR>")
--- TroubleToggle
-nnoremap("<leader>t", ":TroubleToggle<CR>")
 
 -- buffer bn bn
 nnoremap("H", ":bp<CR>")

@@ -24,9 +24,7 @@ require("plugins/telescope")
 require("plugins/rusty-tools")
 require("plugins/dap-ui")
 require("plugins/cargo_crates")
--- my Plugin
-require("plugins/symbols-outline")
-require("plugins/trouble")
 
 
--- vim.opt.guifont = "Hack Nerd Font Mono:22"
+-- Font
+vim.opt.guifont = "Hack Nerd Font:h20"

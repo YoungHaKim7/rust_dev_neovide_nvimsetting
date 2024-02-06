@@ -27,7 +27,7 @@ local opts = {
             max_len_align_padding = 1,
             right_align = false,
             right_align_padding = 7,
-            highlight = "LspInlayHint",
+            highlight = "Comment",
         },
         hover_actions = {
             -- the border that is used for the hover window

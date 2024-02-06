@@ -19,6 +19,8 @@ vim.g.neovide_transparency = 0.98
 vim.g.neovide_remember_window_size = true
 vim.g.neovide_cursor_vfx_mode = "railgun"
 vim.opt.guifont = "Hack Nerd Font Mono:22"
+-- vim.g.neovide_cursor_animation_length = 0.9
+-- vim.g.neovide_cursor_tail_size = 0.1
 -- allow us to use the cmd key in neovide
 vim.g.neovide_input_use_logo= true
 vim.g.popui_border_style = "double"

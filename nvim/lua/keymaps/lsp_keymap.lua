@@ -3,11 +3,11 @@ local vnoremap = require("utils/vnoremap")
 
 -- Be more Productive when Using Neovide with the ff Keybindings
 if vim.fn.has('macunix') == 1 and vim.fn.exists('neovide') == 1 or vim.fn.has('gui_running') == 1 then
-    nnoremap("<D-r>", "<cmd>lua vim.lsp.buf.rename()<CR>", true)
-    nnoremap("<D-d>", "<cmd>lua vim.lsp.buf.hover()<CR>", true)
-    nnoremap("<D-,>", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", true)
-    nnoremap("<D-.>", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", true)
-    nnoremap("<D-;>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", true)
+    nnoremap("<C-r>", "<cmd>lua vim.lsp.buf.rename()<CR>", true)
+    nnoremap("<C-d>", "<cmd>lua vim.lsp.buf.hover()<CR>", true)
+    nnoremap("<C-,>", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", true)
+    nnoremap("<C-.>", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", true)
+    nnoremap("<C-;>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", true)
 end
 
 -- Default LSP Keybindings

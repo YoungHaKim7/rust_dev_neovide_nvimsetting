@@ -19,7 +19,7 @@ else
     nnoremap("<leader>m", ":Telescope marks<CR>", true)
     nnoremap("<leader>i", ":Telescope lsp_implementations<CR>", true)
     nnoremap([[<leader>e]], [[<cmd>lua require('telescope.builtin').oldfiles()<cr>]])
-    nnoremap([[<leader>o]], [[:Telescope lsp_dynamic_workspace_symbols<CR>]], true)
+    nnoremap([[<leader>oo]], [[:Telescope lsp_dynamic_workspace_symbols<CR>]], true)
     nnoremap([[<leader>u]], [[:Telescope lsp_references<CR>]], true)
     nnoremap([[<leader>s]], [[:Telescope treesitter<CR>]], true)
 end

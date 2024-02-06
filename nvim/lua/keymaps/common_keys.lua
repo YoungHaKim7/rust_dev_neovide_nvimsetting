@@ -14,6 +14,7 @@ nnoremap(",<leader>", [[:set hlsearch!<CR>]])
 nnoremap("<leader>o", ":SymbolsOutline<CR>")
 -- TroubleToggle
 nnoremap("<leader>t", ":TroubleToggle<CR>")
+nnoremap("<leader>e", ":NvimTreeToggle<CR>")
 
 -- buffer bn bn
 nnoremap("H", ":bp<CR>")

@@ -40,7 +40,7 @@
 
 # Plugins
 - 무지개색 탭 좋네 ㅋ
-  - https://gitcode.net/nvim-packer/indent-blankline.nvim
+  - https://github.com/lukas-reineke/indent-blankline.nvim
 
 # packer
 

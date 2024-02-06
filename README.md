@@ -84,6 +84,11 @@ nnoremap("<esc>", ":noh<return><esc>")
 nnoremap("Y", "y$<CR>")
 
 # Buffer
+nnoremap([[<leader>bt]],[[:tabnew<cr>]])
+nnoremap([[<leader>btt]],[[:terminal<cr>]])
+nnoremap([[,qt]],[[:tabonly<cr>]])
+nnoremap([[<leader>q]],[[:tabclose<cr>]])
+
 -- Previous
 nnoremap([[bp]], [[:bprevious<CR>]])
 -- Next

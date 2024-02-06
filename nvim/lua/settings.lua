@@ -39,7 +39,7 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
-vim.opt.spell = false
+vim.opt.spell = true
 
 vim.opt.ruler = true
 vim.opt.list = true

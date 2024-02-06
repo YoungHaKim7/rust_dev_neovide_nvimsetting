@@ -29,6 +29,7 @@ require("plugins/symbols-outline")
 require("plugins/trouble")
 require("plugins/tabbyai")
 require("plugins/indent-blankline")
+require("plugins/fidget")
 
 
 -- vim.opt.guifont = "Hack Nerd Font Mono:30"

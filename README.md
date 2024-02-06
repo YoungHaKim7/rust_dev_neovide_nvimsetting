@@ -37,6 +37,11 @@
 
 - https://tabby.tabbyml.com/docs/extensions/installation/vim#-packernvim
 
+
+# Plugins
+- 무지개색 탭 좋네 ㅋ
+  - https://gitcode.net/nvim-packer/indent-blankline.nvim
+
 # packer
 
 https://github.com/wbthomason/packer.nvim

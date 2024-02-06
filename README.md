@@ -102,6 +102,12 @@ nnoremap("<TAB>", ":bnext<CR>")
 nnoremap("<S-TAB>", ":bprevious<CR>")
 
 
+-- Resize Panes with + - or with shift + -
+nnoremap("__", ":resize -5<CR>")
+nnoremap("++", ":resize +5<CR>")
+nnoremap("--", ":vertical resize -5<CR>")
+nnoremap("==", ":vertical resize +5<CR>")
+
 
 # LSP
 -- Default LSP Keybindings

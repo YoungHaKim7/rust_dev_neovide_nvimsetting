@@ -199,6 +199,17 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 
 ```
 
+
+# Spell
+
+- spell check에 추가하기
+  - 경로명 (.config/nvim/spell/en.utf-8.add)
+```
+:spell {word}
+```
+
+- https://neovim.io/doc/user/spell.html
+
 # packer
 
 https://github.com/wbthomason/packer.nvim

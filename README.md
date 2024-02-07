@@ -1,7 +1,9 @@
 # Link
 
+- [요즘-쓰는-lspinlayhint-color-setting](#요즘-쓰는-lspinlayhint-color-setting)
 - [rustsnippet기본-위치](#rustsnippet기본-위치)
 - [rust-snippets-정리중](#rust-snippets-정리중)
+
 
 <hr>
 
@@ -11,10 +13,10 @@
 
 <hr>
 
-# Dash는 맥용은 유료앱(1년 정기 구독으로 유료임 ㅠㅠ)
+# Dash는 맥용은 유료앱(1년 정기 구독으로 유료임 ㅠㅠ)[[🔝]](#link)
 - https://kapeli.com/dash
 
-# 무료는 DevDocs 웹용이 있음
+# 무료는 DevDocs 웹용이 있음[[🔝]](#link)
 - https://devdocs.io/
   - https://news.hada.io/topic?id=2228
 
@@ -24,7 +26,7 @@
 
 <hr>
 
-# RustSnippet기본 위치
+# RustSnippet기본 위치[[🔝]](#link)
 
 - https://github.com/hrsh7th/vim-vsnip
 
@@ -47,7 +49,7 @@
 
 ```
 
-# Rust Snippets 정리중
+# Rust Snippets 정리중[[🔝]](#link)
 
 - https://github.com/YoungHaKim7/UltiSnips
 - https://github.com/YoungHaKim7/snippets_Lunar_NeoVim
@@ -55,7 +57,7 @@
 - https://github.com/YoungHaKim7/rust-snippets_gyoung
 
 
-# 요즘 쓰는 LspInlayHint Color Setting
+# 요즘 쓰는 LspInlayHint Color Setting[[🔝]](#link)
 
 - inlayhint 색깔 hex color (LunarVim Inlayhint Color Settings)
 
@@ -68,11 +70,11 @@
 :hi Comment guifg=#8aaecf guibg=#4e1a1a
 ```
 
-# Hack Nerd Mono Font 설치
+# Hack Nerd Mono Font 설치[[🔝]](#link)
 
 - https://github.com/ryanoasis/nerd-fonts
 
-# Tabby AI 설치
+# Tabby AI 설치[[🔝]](#link)
 
 - https://tabby.tabbyml.com/
   - https://github.com/TabbyML/tabby
@@ -80,11 +82,11 @@
 - https://tabby.tabbyml.com/docs/extensions/installation/vim#-packernvim
 
 
-# Plugins
+# Plugins[[🔝]](#link)
 - 무지개색 탭 좋네 ㅋ
   - https://github.com/lukas-reineke/indent-blankline.nvim
 
-# Keymap
+# Keymap[[🔝]](#link)
 
 ```
 vim.g.mapleader = " "
@@ -235,7 +237,7 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 ```
 
 
-# Spell
+# Spell Check[[🔝]](#link)
 
 - spell check에 추가하기
   - 경로명 (.config/nvim/spell/en.utf-8.add)
@@ -249,16 +251,16 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
   - https://github.com/dwyl/english-words
 
 
-# packer
+# packer[[🔝]](#link)
 
 https://github.com/wbthomason/packer.nvim
 
-# 해결 못함
+# 해결 못함[[🔝]](#link)
 - (해결)truble.nvim오류 메세지 해결 못함
   - https://github.com/folke/trouble.nvim
 - font 크기 해결 못함(neovide에서 안됨 버그인가??)neovim에서는 완벽히 잘 돌아감
   - https://neovide.dev/configuration.html
 
-# Source 외국분 git에서 대부분 가져옴
+# Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
 
 https://github.com/codeitlikemiley/neovide-rust-neovim

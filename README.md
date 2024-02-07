@@ -30,6 +30,10 @@
 :hi Comment guifg=#8aaecf guibg=#4e1a1a
 ```
 
+# Hack Nerd Mono Font 설치
+
+- https://github.com/ryanoasis/nerd-fonts
+
 # Tabby AI 설치
 
 - https://tabby.tabbyml.com/

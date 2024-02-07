@@ -2,6 +2,22 @@
 - https://github.com/codeitlikemiley/neovide-rust-neovim
   - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)
 
+<hr>
+
+# Dash는 맥용은 유료앱(1년 정기 구독으로 유료임 ㅠㅠ)
+- https://kapeli.com/dash
+
+# 무료는 DevDocs 웹용이 있음
+- https://devdocs.io/
+  - https://news.hada.io/topic?id=2228
+
+- Zeal is an offline documentation browser for software developers.
+  - https://zealdocs.org/
+
+<hr>
+
+#
+
 # RustSnippet기본 위치
 
 - https://github.com/hrsh7th/vim-vsnip

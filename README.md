@@ -11,13 +11,18 @@
 - ```:VsnipOpen```
 
 
-- global.json위치(~/.vsnip/global.json) 
+- global.json위치(~/.vsnip/global.json)
+- rust.json위치(~/.vsnip/rust.json) 
 
 ```
-~/.vsnip                                                                                        at 23:46:13
+~/.vsnip                                                                                          at 19:17:08
 ❯ tree
 .
-└── global.json
+├── global.json
+└── rust.json
+
+0 directories, 2 files
+
 ```
 
 # 요즘 쓰는 LspInlayHint Color Setting

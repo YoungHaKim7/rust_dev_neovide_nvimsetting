@@ -1,3 +1,9 @@
+# Link
+
+- [rustsnippet기본-위치](#rustsnippet기본-위치)
+
+<hr>
+
 # rust_dev_neovide_nvimsetting
 - https://github.com/codeitlikemiley/neovide-rust-neovim
   - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)

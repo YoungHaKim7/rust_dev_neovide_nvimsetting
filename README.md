@@ -6,7 +6,10 @@
 
 - https://github.com/hrsh7th/vim-vsnip
 
+- 내꺼 정리 https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/snippets_Lunar_NeoVim
+
 - ```:VsnipOpen```
+
 
 - global.json위치(~/.vsnip/global.json) 
 

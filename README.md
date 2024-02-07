@@ -5,6 +5,7 @@
 - [rust-snippets-정리중](#rust-snippets-정리중)
 - [hack-nerd-mono-font-설치](#hack-nerd-mono-font-설치)
 - [내가 세팅한 키세팅keymap](#keymap)
+- [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
 
 
 <hr>

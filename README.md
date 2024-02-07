@@ -232,6 +232,10 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 
 - https://neovim.io/doc/user/spell.html
 
+- 영단어 txt파일로 제공함(txt & yml)
+  - https://github.com/dwyl/english-words
+
+
 # packer
 
 https://github.com/wbthomason/packer.nvim

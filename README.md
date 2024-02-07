@@ -13,6 +13,7 @@
 
 - Zeal is an offline documentation browser for software developers.
   - https://zealdocs.org/
+    - https://news.hada.io/topic?id=9350
 
 <hr>
 

@@ -17,8 +17,6 @@
 
 <hr>
 
-#
-
 # RustSnippet기본 위치
 
 - https://github.com/hrsh7th/vim-vsnip
@@ -41,6 +39,14 @@
 0 directories, 2 files
 
 ```
+
+# Rust Snippets 정리중
+
+- https://github.com/YoungHaKim7/UltiSnips
+- https://github.com/YoungHaKim7/snippets_Lunar_NeoVim
+  - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/snippets_Lunar_NeoVim
+- https://github.com/YoungHaKim7/rust-snippets_gyoung
+
 
 # 요즘 쓰는 LspInlayHint Color Setting
 

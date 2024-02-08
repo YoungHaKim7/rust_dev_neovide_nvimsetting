@@ -91,6 +91,10 @@
 # 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
 - 무지개색 탭 좋네 ㅋ
   - https://github.com/lukas-reineke/indent-blankline.nvim
+- (오류난거 리스트로 출력 굿)🚦 A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
+  - https://github.com/folke/trouble.nvim
+- (ctag 같은거)A tree like view for symbols in Neovim using the Language Server Protocol. Supports all your favourite languages.
+  - https://github.com/simrat39/symbols-outline.nvim
 
 # Keymap[[🔝]](#link)
 

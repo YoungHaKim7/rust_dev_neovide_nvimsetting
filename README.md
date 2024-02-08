@@ -300,6 +300,12 @@ https://github.com/wbthomason/packer.nvim
   - https://github.com/folke/trouble.nvim
 - font 크기 해결 못함(neovide에서 안됨 버그인가??)neovim에서는 완벽히 잘 돌아감
   - https://neovide.dev/configuration.html
+- LSP goto 해결함 (초간단ㅋ)
+  - https://github.com/neovim/neovim/issues/16062
+```
+:lua vim.diagnostic.goto_next() or :lua vim.diagnostic.goto_prev()
+```
+
 
 # Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
 

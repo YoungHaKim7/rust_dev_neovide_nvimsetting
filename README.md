@@ -261,6 +261,36 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
   - https://github.com/dwyl/english-words
 
 
+- tree
+```bash
+❯ tree -L 2
+.
+├── config.toml
+├── init.lua
+├── lua
+│   ├── autocmd
+│   ├── autocmd.lua
+│   ├── globals.lua
+│   ├── keymaps
+│   ├── mappings.lua
+│   ├── packages.lua
+│   ├── plugins
+│   ├── settings.lua
+│   ├── theme.lua
+│   ├── utils
+│   └── vim_g.lua
+├── luarc.lua
+├── plugin
+│   └── packer_compiled.lua
+├── readme.md
+├── spell
+│   ├── en.utf-8.add
+│   └── en.utf-8.add.spl
+└── stylua.toml
+
+ 7 directories, 15 files
+```
+
 # packer[[🔝]](#link)
 
 https://github.com/wbthomason/packer.nvim

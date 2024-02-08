@@ -87,7 +87,7 @@
 - https://tabby.tabbyml.com/docs/extensions/installation/vim#-packernvim
 
 
-# Plugins[[🔝]](#link)
+# 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
 - 무지개색 탭 좋네 ㅋ
   - https://github.com/lukas-reineke/indent-blankline.nvim
 

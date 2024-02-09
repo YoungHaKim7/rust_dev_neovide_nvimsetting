@@ -298,7 +298,7 @@ https://github.com/wbthomason/packer.nvim
 
 # LSP Setting[[🔝]](#link)
 - https://github.com/neovim/nvim-lspconfig
-- Rust
+- [Rust](https://www.rust-lang.org/)
   - rust-analyzer https://rust-analyzer.github.io/
     ```bash
     # rustup
@@ -306,9 +306,9 @@ https://github.com/wbthomason/packer.nvim
     
     $ rustup component add rust-analyzer
     ```
-- C/C++
+- [C/C++](https://llvm.org/)
   - clangd https://llvm.org/
-- zig
+- [zig](https://ziglang.org/)
   - zls https://github.com/zigtools/zls
 
 # 해결 못함[[🔝]](#link)

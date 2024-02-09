@@ -9,6 +9,7 @@
 - [네오빔-플러그인-정리neovim-plugins](#네오빔-플러그인-정리neovim-plugins)
 - [내가 세팅한 키세팅keymap](#keymap)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
+- [C/C++언어, Rust언어 LSP세팅 하기](#lsp-setting)
 
 
 <hr>
@@ -295,7 +296,7 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 
 https://github.com/wbthomason/packer.nvim
 
-# LSP Setting
+# LSP Setting[[🔝]](#link)
 - https://github.com/neovim/nvim-lspconfig
 
 # 해결 못함[[🔝]](#link)

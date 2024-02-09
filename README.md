@@ -300,6 +300,12 @@ https://github.com/wbthomason/packer.nvim
 - https://github.com/neovim/nvim-lspconfig
 - Rust
   - rust-analyzer https://rust-analyzer.github.io/
+    ```bash
+    # rustup
+    # rust-analyzer is available in rustup:
+    
+    $ rustup component add rust-analyzer
+    ```
 - C/C++
   - clangd https://llvm.org/
 - zig

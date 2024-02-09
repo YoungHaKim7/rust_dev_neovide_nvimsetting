@@ -3,6 +3,11 @@ require("vim_g")
 require("settings")
 require("mappings")
 require("autocmd")
+-- LSP config
+require("lspconfig")
+require'lspconfig'.pyright.setup{}
+require'lspconfig'.clangd.setup{}
+require'lspconfig'.zls.setup{}
 -- Install Plugins
 require("packages")
 -- Init Plugins

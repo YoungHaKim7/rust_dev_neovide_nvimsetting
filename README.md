@@ -295,6 +295,9 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 
 https://github.com/wbthomason/packer.nvim
 
+# LSP Setting
+- https://github.com/neovim/nvim-lspconfig
+
 # 해결 못함[[🔝]](#link)
 - (해결)truble.nvim오류 메세지 해결 못함
   - https://github.com/folke/trouble.nvim

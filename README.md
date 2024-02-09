@@ -298,6 +298,12 @@ https://github.com/wbthomason/packer.nvim
 
 # LSP Setting[[🔝]](#link)
 - https://github.com/neovim/nvim-lspconfig
+- Rust
+  - rust-analyzer https://rust-analyzer.github.io/
+- C/C++
+  - clangd https://llvm.org/
+- zig
+  - zls https://github.com/zigtools/zls
 
 # 해결 못함[[🔝]](#link)
 - (해결)truble.nvim오류 메세지 해결 못함

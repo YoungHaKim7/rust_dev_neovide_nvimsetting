@@ -10,13 +10,13 @@
 - [내가 세팅한 키세팅keymap](#keymap)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
 - [C/C++언어, Rust언어, Zig언어_ LSP세팅 하기](#lsp-setting)
+- [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)
 
 
 <hr>
 
-# rust_dev_neovide_nvimsetting[[🔝]](#link)
-- https://github.com/codeitlikemiley/neovide-rust-neovim
-  - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)
+# rust_dev_neovide_LunarVimSetting(My Setting)_GY_Version[[🔝]](#link)
+- https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
 
 <hr>
 
@@ -348,4 +348,6 @@ https://github.com/wbthomason/packer.nvim
 
 # Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
 
-https://github.com/codeitlikemiley/neovide-rust-neovim
+- https://github.com/codeitlikemiley/neovide-rust-neovim
+  - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)
+

@@ -14,10 +14,25 @@
 
 <hr>
 
-# add key
+# Telescope KeyMap
 
-```
+```lua
+-- lvim
 lvim.keys.normal_mode["<leader><leader>"] = ":Telescope buffers<CR>"
+
+
+-- nvim setting
+
+nnoremap([[<leader>f]], [[<cmd>Telescope current_buffer_fuzzy_find<CR>]])
+nnoremap([[<leader><leader>]], [[<cmd>lua require('telescope.builtin').buffers()<cr>]])
+nnoremap("<leader>p", [[:lua require("utils/telescope-config").project_files()<CR>]], true)
+nnoremap("<leader>a", ":Telescope lsp_code_actions<CR>", true)
+nnoremap("<leader>m", ":Telescope marks<CR>", true)
+nnoremap("<leader>i", ":Telescope lsp_implementations<CR>", true)
+nnoremap([[<leader>eo]], [[<cmd>lua require('telescope.builtin').oldfiles()<cr>]])
+nnoremap([[<leader>S]], [[:Telescope lsp_dynamic_workspace_symbols<CR>]], true)
+nnoremap([[<leader>u]], [[:Telescope lsp_references<CR>]], true)
+nnoremap([[<leader>s]], [[:Telescope treesitter<CR>]], true)
 
 ```
 
@@ -252,6 +267,28 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
     { name = 'path' },
     { name = 'cmdline' }
   },
+
+```
+
+# Telescope KeyMap[[🔝]](#link)
+
+```lua
+-- lvim
+lvim.keys.normal_mode["<leader><leader>"] = ":Telescope buffers<CR>"
+
+
+-- nvim setting
+
+nnoremap([[<leader>f]], [[<cmd>Telescope current_buffer_fuzzy_find<CR>]])
+nnoremap([[<leader><leader>]], [[<cmd>lua require('telescope.builtin').buffers()<cr>]])
+nnoremap("<leader>p", [[:lua require("utils/telescope-config").project_files()<CR>]], true)
+nnoremap("<leader>a", ":Telescope lsp_code_actions<CR>", true)
+nnoremap("<leader>m", ":Telescope marks<CR>", true)
+nnoremap("<leader>i", ":Telescope lsp_implementations<CR>", true)
+nnoremap([[<leader>eo]], [[<cmd>lua require('telescope.builtin').oldfiles()<cr>]])
+nnoremap([[<leader>oo]], [[:Telescope lsp_dynamic_workspace_symbols<CR>]], true)
+nnoremap([[<leader>u]], [[:Telescope lsp_references<CR>]], true)
+nnoremap([[<leader>s]], [[:Telescope treesitter<CR>]], true)
 
 ```
 

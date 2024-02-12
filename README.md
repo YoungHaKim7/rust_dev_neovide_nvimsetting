@@ -14,6 +14,13 @@
 
 <hr>
 
+# add key
+
+```
+lvim.keys.normal_mode["<leader><leader>"] = ":Telescope buffers<CR>"
+
+```
+
 # rust_dev_neovide_nvimsetting[[🔝]](#link)
 - https://github.com/codeitlikemiley/neovide-rust-neovim
   - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)

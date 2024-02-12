@@ -40,6 +40,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
 vim.opt.spell = true
+vim.opt.scrolloff = 7
 
 vim.opt.ruler = true
 vim.opt.list = true

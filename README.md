@@ -77,6 +77,10 @@
   - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/snippets_Lunar_NeoVim
 - https://github.com/YoungHaKim7/rust-snippets_gyoung
 
+- Rust Code Snippets관련 자료(외국사람이 Rust Snippets 10년전 자료라 수정해서 써야함)
+  - [러스트Rust 고수의 Snippets](#rust%EA%B3%A0%EC%88%98%EC%9D%98-snippets%EC%A0%95%EB%A6%AC)
+  - [Helix Text Editor Snippets서버 구축하기](#helix-snippets-server%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0)
+
 
 # 요즘 쓰는 LspInlayHint Color Setting[[🔝]](#link)
 

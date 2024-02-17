@@ -20,6 +20,8 @@ nnoremap("<leader>e", ":NvimTreeToggle<CR>")
 -- buffer bn bn
 nnoremap("H", ":bp<CR>")
 nnoremap("L", ":bn<CR>")
+nnoremap("<leader>bo", ":on<CR>")
+
 -- Disable Q
 -- nnoremap([[<silent> Q]], [[nop]])
 
@@ -39,5 +41,3 @@ nnoremap("<esc>", ":noh<return><esc>")
 
 -- Yank Whole Line
 nnoremap("Y", "y$<CR>")
-
-

@@ -185,31 +185,6 @@ nnoremap("--", ":vertical resize -5<CR>")
 nnoremap("==", ":vertical resize +5<CR>")
 
 
-# LSP
--- Default LSP Keybindings
-nnoremap("ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", true)
-nnoremap("gd", "<cmd>lua vim.lsp.buf.definition()<CR>", true)
-nnoremap("gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", true)
-nnoremap("gr", "<cmd>lua vim.lsp.buf.references()<CR>", true)
-nnoremap("gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", true)
-nnoremap("gh", "<cmd>lua vim.lsp.buf.signature_help()<CR>", true)
-nnoremap("gs", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>", true)
-nnoremap("go", "<cmd>lua vim.lsp.buf.document_symbol()<CR>", true)
-nnoremap("g[", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", true)
-nnoremap("g]", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", true)
-nnoremap("<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", true)
-nnoremap("<leader>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", true)
-nnoremap("<leader>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", true)
-nnoremap("<leader>wl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", true)
-
--- Quick Way to Trigger Code Action
-nnoremap(",,", "<cmd>lua vim.lsp.buf.code_action()<CR>", true)
--- Press Twice to Enter Vim Buffer of the Hover Definition
-nnoremap("K", "<cmd>lua vim.lsp.buf.hover()<CR>", true)
--- Trigger Format
-
-
-
 # Crates
 nnoremap([[<leader>ct]], [[:lua require('crates').toggle()<cr>]])
 nnoremap([[<leader>cr]], [[:lua require('crates').reload()<cr>]])
@@ -221,18 +196,6 @@ nnoremap([[<leader>ca]], [[:lua require('crates').update_all_crates()<cr>]])
 nnoremap([[<leader>cU]], [[:lua require('crates').upgrade_crate()<cr>]])
 vnoremap([[<leader>cU]], [[:lua require('crates').upgrade_crates()<cr>]])
 nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
-
-# telescope   "<space>s", "<leader>S" , "<space><space>" good
-nnoremap([[<leader>f]], [[<cmd>Telescope current_buffer_fuzzy_find<CR>]])
-nnoremap([[<leader><leader>]], [[<cmd>lua require('telescope.builtin').buffers()<cr>]])
-nnoremap("<leader>p", [[:lua require("utils/telescope-config").project_files()<CR>]], true)
-nnoremap("<leader>a", ":Telescope lsp_code_actions<CR>", true)
-nnoremap("<leader>m", ":Telescope marks<CR>", true)
-nnoremap("<leader>i", ":Telescope lsp_implementations<CR>", true)
-nnoremap([[<leader>eo]], [[<cmd>lua require('telescope.builtin').oldfiles()<cr>]])
-nnoremap([[<leader>S]], [[:Telescope lsp_dynamic_workspace_symbols<CR>]], true)
-nnoremap([[<leader>u]], [[:Telescope lsp_references<CR>]], true)
-nnoremap([[<leader>s]], [[:Telescope treesitter<CR>]], true)
 
 
 # cmp관련
@@ -277,6 +240,36 @@ nnoremap([[<leader>eo]], [[<cmd>lua require('telescope.builtin').oldfiles()<cr>]
 nnoremap([[<leader>S]], [[:Telescope lsp_dynamic_workspace_symbols<CR>]], true)
 nnoremap([[<leader>u]], [[:Telescope lsp_references<CR>]], true)
 nnoremap([[<leader>s]], [[:Telescope treesitter<CR>]], true)
+
+```
+
+# LSP keymap
+
+```lua
+
+
+# LSP
+-- Default LSP Keybindings
+nnoremap("ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", true)
+nnoremap("gd", "<cmd>lua vim.lsp.buf.definition()<CR>", true)
+nnoremap("gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", true)
+nnoremap("gr", "<cmd>lua vim.lsp.buf.references()<CR>", true)
+nnoremap("gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", true)
+nnoremap("gh", "<cmd>lua vim.lsp.buf.signature_help()<CR>", true)
+nnoremap("gs", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>", true)
+nnoremap("go", "<cmd>lua vim.lsp.buf.document_symbol()<CR>", true)
+nnoremap("g[", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", true)
+nnoremap("g]", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", true)
+nnoremap("<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", true)
+nnoremap("<leader>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", true)
+nnoremap("<leader>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", true)
+nnoremap("<leader>wl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", true)
+
+-- Quick Way to Trigger Code Action
+nnoremap(",,", "<cmd>lua vim.lsp.buf.code_action()<CR>", true)
+-- Press Twice to Enter Vim Buffer of the Hover Definition
+nnoremap("K", "<cmd>lua vim.lsp.buf.hover()<CR>", true)
+-- Trigger Format
 
 ```
 

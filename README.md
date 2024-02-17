@@ -13,7 +13,9 @@
   - [symbol-outline-keymap키세팅](#symbol-outline-keymap)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
 - [C/C++언어, Rust언어, Zig언어_ LSP세팅 하기](#lsp-setting)
+- [내 LunarVimSetting](#rust_dev_neovide_lunarvimsettingmy-setting_gy_version)
 - [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)
+
 
 <p align="center">
   <img alt="rust1" width=60px src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" />

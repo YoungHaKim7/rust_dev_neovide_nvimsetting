@@ -155,7 +155,7 @@ inoremap("jk", "<esc>")
 -- Esc and Clear Highligh
 nnoremap("<esc>", ":noh<return><esc>")
 
--- Yank Whole Line
+-- Yank Whole Line(:%y 전체복사  , 전체 지우기 :%d)
 nnoremap("Y", "y$<CR>")
 
 # Buffer

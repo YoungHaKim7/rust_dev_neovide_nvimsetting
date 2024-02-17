@@ -108,7 +108,7 @@
 
 # Keymap[[🔝]](#link)
 
-```
+```lua
 vim.g.mapleader = " "
 
 -- Disable Ctrl +Z
@@ -276,6 +276,25 @@ nnoremap([[<leader>S]], [[:Telescope lsp_dynamic_workspace_symbols<CR>]], true)
 nnoremap([[<leader>u]], [[:Telescope lsp_references<CR>]], true)
 nnoremap([[<leader>s]], [[:Telescope treesitter<CR>]], true)
 
+```
+
+# Symbol-outline Keymap[[🔝]](#link)
+
+```lua
+keymaps = { -- These keymaps can be a string or a table for multiple keys
+    close = {"<Esc>", "q"},
+    goto_location = "<Cr>",
+    focus_location = "o",
+    hover_symbol = "<C-space>",
+    toggle_preview = "K",
+    rename_symbol = "r",
+    code_actions = "a",
+    fold = "h",
+    unfold = "l",
+    fold_all = "W",
+    unfold_all = "E",
+    fold_reset = "R",
+  },
 ```
 
 

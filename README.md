@@ -8,6 +8,8 @@
 - [Tabby AI설치하기_Self-hosted AI coding assistant](#tabby-ai-설치)
 - [네오빔-플러그인-정리neovim-plugins](#네오빔-플러그인-정리neovim-plugins)
 - [내가 세팅한 키세팅keymap](#keymap)
+  - [telescope-keymap](#telescope-keymap)
+  - [te](te)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
 - [C/C++언어, Rust언어, Zig언어_ LSP세팅 하기](#lsp-setting)
 - [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)

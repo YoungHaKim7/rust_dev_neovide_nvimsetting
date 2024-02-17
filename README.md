@@ -138,6 +138,8 @@ nnoremap("H", ":bp<CR>")
 nnoremap("L", ":bn<CR>")
 -- Disable Q
 -- nnoremap([[<silent> Q]], [[nop]])
+-- (vs, sp 이거 했을때)지금 창을 큰창으로 만들기 only
+nnoremap("<leader>bo", ":on<CR>")
 
 -- Better tabbing
 vnoremap("<", "<gv")

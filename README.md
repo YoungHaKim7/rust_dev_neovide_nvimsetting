@@ -115,6 +115,22 @@
 - (ctag 같은거)A tree like view for symbols in Neovim using the Language Server Protocol. Supports all your favourite languages.
   - https://github.com/simrat39/symbols-outline.nvim
 
+# Thema테마 변경하기
+
+- ./lua/theme.lua
+
+```lua
+-- vim.cmd("colorscheme OceanicNext")
+-- vim.cmd("colorscheme gruvbox")
+-- vim.cmd("colorscheme dracura")
+-- vim.cmd("colorscheme habamax")
+vim.cmd("colorscheme tokyonight-night")
+```
+
+- dracula https://github.com/Mofiqul/dracula.nvim
+- tokyonight https://github.com/folke/tokyonight.nvim
+- oceanic-next https://github.com/roflolilolmao/oceanic-next.nvim
+
 # Keymap[[🔝]](#link)
 
 ```lua

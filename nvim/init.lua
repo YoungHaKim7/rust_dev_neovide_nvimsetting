@@ -36,5 +36,9 @@ require("plugins/tabbyai")
 require("plugins/indent-blankline")
 require("plugins/fidget")
 
+-- my theme
+require("theme/tokyonight")
+require("theme/dracula")
+
 
 -- vim.opt.guifont = "Hack Nerd Font Mono:30"

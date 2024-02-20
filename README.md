@@ -116,6 +116,12 @@
 - (ctag 같은거)A tree like view for symbols in Neovim using the Language Server Protocol. Supports all your favourite languages.
   - https://github.com/simrat39/symbols-outline.nvim
 
+- (터미널창 공중에 띄우기 굿)A neovim lua plugin to help easily manage multiple terminal windows
+  - https://github.com/akinsho/toggleterm.nvim
+  ```
+  :ToggleTerm direction=float
+  ```
+
 # Thema테마 변경하기[[🔝]](#link)
 
 - ./lua/theme.lua
@@ -161,6 +167,9 @@ nnoremap("<leader>bo", ":on<CR>")
 -- Better tabbing
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
+-- Terminal(Toggleterm)
+nnoremap("<C-t>t", ":ToggleTerm direction=float<CR>")
+nnoremap("<C-t>tv", ":ToggleTerm direction=vertical<CR>")
 -- MoveLine Up & Down
 vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
@@ -175,7 +184,7 @@ nnoremap("<esc>", ":noh<return><esc>")
 -- Yank Whole Line(:%y 전체복사  , 전체 지우기 :%d)
 nnoremap("Y", "y$<CR>")
 
-# Buffer
+-- Buffer
 nnoremap([[<leader>bt]],[[:tabnew<cr>]])
 nnoremap([[<leader>btt]],[[:terminal<cr>]])
 nnoremap([[,qt]],[[:tabonly<cr>]])
@@ -198,7 +207,7 @@ nnoremap("<TAB>", ":bnext<CR>")
 -- SHIFT-TAB will go back
 nnoremap("<S-TAB>", ":bprevious<CR>")
 
-# windows split
+-- windows split
 nnoremap("vsp", ":vsplit<CR>")
 nnoremap("sp", ":split<CR>")
 
@@ -211,7 +220,7 @@ nnoremap("--", ":vertical resize -5<CR>")
 nnoremap("==", ":vertical resize +5<CR>")
 
 
-# Crates
+-- Crates
 nnoremap([[<leader>ct]], [[:lua require('crates').toggle()<cr>]])
 nnoremap([[<leader>cr]], [[:lua require('crates').reload()<cr>]])
 nnoremap([[<leader>cv]], [[:lua require('crates').show_versions_popup()<cr>]])
@@ -224,7 +233,7 @@ vnoremap([[<leader>cU]], [[:lua require('crates').upgrade_crates()<cr>]])
 nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 
 
-# cmp관련
+-- cmp관련
   mapping = {
     ["<C-d>"] = cmp.mapping.scroll_docs(-4),
     ["<C-u>"] = cmp.mapping.scroll_docs(4),

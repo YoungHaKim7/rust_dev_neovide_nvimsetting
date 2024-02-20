@@ -21,6 +21,9 @@ nnoremap("<leader>e", ":NvimTreeToggle<CR>")
 nnoremap("H", ":bp<CR>")
 nnoremap("L", ":bn<CR>")
 nnoremap("<leader>bo", ":on<CR>")
+-- Terminal(Toggleterm)
+nnoremap("<C-t>t", ":ToggleTerm direction=float<CR>")
+nnoremap("<C-t>tv", ":ToggleTerm direction=vertical<CR>")
 
 -- Disable Q
 -- nnoremap([[<silent> Q]], [[nop]])

@@ -93,5 +93,11 @@ require("packer").startup(function(use)
     use { 'TabbyML/vim-tabby' }
     -- indent
     use {"lukas-reineke/indent-blankline.nvim"}
+    -- Terminal(Float)
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end
+    }
+
 
 end)

@@ -11,7 +11,7 @@
   - [lsp-keymapLSP 키세팅](#lsp-keymap)
   - [telescope-keymap키세팅](#telescope-keymap)
   - [symbol-outline-keymap키세팅](#symbol-outline-keymap)
-  - [# HopChar KeyMap키세팅](#hopChar-keyMap)
+  - [HopChar KeyMap키세팅](#hopChar-keyMap)
   - [Tabby Keybinding Accept키세팅](#tabby-keybinding-accept)
 - [나만의 테마로 변경하기_/lua/theme.lua](#thema테마-변경하기)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)

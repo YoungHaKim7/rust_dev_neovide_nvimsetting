@@ -11,6 +11,7 @@
   - [lsp-keymapLSP 키세팅](#lsp-keymap)
   - [telescope-keymap키세팅](#telescope-keymap)
   - [symbol-outline-keymap키세팅](#symbol-outline-keymap)
+  - [Tabby Keybinding Accept](#tabby-keybinding-accept)
 - [나만의 테마로 변경하기_/lua/theme.lua](#thema테마-변경하기)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
 - [C/C++언어, Rust언어, Zig언어_ LSP세팅 하기](#lsp-setting)
@@ -325,6 +326,12 @@ keymaps = { -- These keymaps can be a string or a table for multiple keys
     unfold_all = "E",
     fold_reset = "R",
   },
+```
+
+# Tabby Keybinding Accept[[🔝]](#link)
+
+```lua
+vim.g.tabby_keybinding_accept = '<C-a>'
 ```
 
 

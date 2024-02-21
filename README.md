@@ -11,7 +11,8 @@
   - [lsp-keymapLSP 키세팅](#lsp-keymap)
   - [telescope-keymap키세팅](#telescope-keymap)
   - [symbol-outline-keymap키세팅](#symbol-outline-keymap)
-  - [Tabby Keybinding Accept](#tabby-keybinding-accept)
+  - [# HopChar KeyMap키세팅](#hopChar-keyMap)
+  - [Tabby Keybinding Accept키세팅](#tabby-keybinding-accept)
 - [나만의 테마로 변경하기_/lua/theme.lua](#thema테마-변경하기)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
 - [C/C++언어, Rust언어, Zig언어_ LSP세팅 하기](#lsp-setting)
@@ -256,6 +257,15 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
   },
 
 ```
+
+# HopChar KeyMap[[🔝]](#link)
+
+```
+nnoremap("<backspace>f", [[:HopChar1<CR>]])
+nnoremap("<leader>F", [[:HopChar2<CR>]])
+nnoremap("<leader>W", [[:HopWord<CR>]])
+```
+
 
 # Telescope KeyMap[[🔝]](#link)
 

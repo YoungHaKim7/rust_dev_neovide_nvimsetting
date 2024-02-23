@@ -341,7 +341,7 @@ keymaps = { -- These keymaps can be a string or a table for multiple keys
 # Tabby Keybinding Accept[[🔝]](#link)
 
 ```lua
-vim.g.tabby_keybinding_accept = '<C-a>'
+vim.g.tabby_keybinding_accept = '<C-b>'
 ```
 
 

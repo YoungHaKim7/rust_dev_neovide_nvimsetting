@@ -15,7 +15,7 @@
   - [Tabby Keybinding Accept키세팅](#tabby-keybinding-accept)
 - [나만의 테마로 변경하기_/lua/theme.lua](#thema테마-변경하기)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
-- [C/C++언어, Rust언어, Zig언어_ LSP세팅 하기](#lsp-setting)
+- [C/C++언어, Rust언어, Zig언어, Assembly언어_ LSP세팅 하기](#lsp-setting)
 - [내 LunarVimSetting](#rust_dev_neovide_lunarvimsettingmy-setting_gy_version)
 - [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)
 

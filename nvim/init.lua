@@ -8,6 +8,7 @@ require("lspconfig")
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.clangd.setup{}
 require'lspconfig'.zls.setup{}
+require'lspconfig'.asm_lsp.setup{}
 -- Install Plugins
 require("packages")
 -- Init Plugins

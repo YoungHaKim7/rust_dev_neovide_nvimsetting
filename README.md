@@ -408,6 +408,24 @@ https://github.com/wbthomason/packer.nvim
 - [zig](https://ziglang.org/)
   - zls https://github.com/zigtools/zls
 
+- assembly(asm-lsp)
+  - Vim \_ Assembly Highlight Syntax
+```
+:set ft=nasm  " assembly highlight syntax
+```
+  - NeoVim(asm-lsp)
+    - https://www.reddit.com/r/neovim/s/XAuQM98VY6
+      - https://github.com/bergercookie/asm-lsp
+        - Using cargo
+          - Install using the cargo package manager, either from crates.io or from github:
+```
+cargo install asm-lsp
+# or to get the latest version from github
+cargo install --git https://github.com/bergercookie/asm-lsp
+```
+
+<hr>
+
 # 해결 못함[[🔝]](#link)
 - (해결)truble.nvim오류 메세지 해결 못함
   - https://github.com/folke/trouble.nvim

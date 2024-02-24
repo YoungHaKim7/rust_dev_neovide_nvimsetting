@@ -17,6 +17,7 @@
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
 - [C/C++언어, Rust언어, Zig언어, Assembly언어_ LSP세팅 하기](#lsp-setting)
 - [내 LunarVimSetting](#rust_dev_neovide_lunarvimsettingmy-setting_gy_version)
+- [해결해야할것_정리_해결한거랑-해결-못한거](#해결해야할것정리_해결한거랑-해결-못한거)
 - [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)
 
 

@@ -414,6 +414,11 @@ https://github.com/wbthomason/packer.nvim
 :set ft=nasm  " assembly highlight syntax
 ```
   - NeoVim(asm-lsp)
+    - TSInstall로 Syntax Highlight적용(NeoVim)
+```
+:TSInstall asm
+```
+  - NeoVim에서 assembly LSP 설치하기
     - https://www.reddit.com/r/neovim/s/XAuQM98VY6
       - https://github.com/bergercookie/asm-lsp
         - Using cargo
@@ -423,6 +428,8 @@ cargo install asm-lsp
 # or to get the latest version from github
 cargo install --git https://github.com/bergercookie/asm-lsp
 ```
+
+
 
 <hr>
 

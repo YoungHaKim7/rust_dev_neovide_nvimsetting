@@ -433,12 +433,12 @@ cargo install --git https://github.com/bergercookie/asm-lsp
 
 <hr>
 
-# 해결 못함[[🔝]](#link)
-- (해결)truble.nvim오류 메세지 해결 못함
+# 해결해야할것정리_해결한거랑 해결 못한거[[🔝]](#link)
+- [x](해결)truble.nvim오류 메세지 해결 못함
   - https://github.com/folke/trouble.nvim
-- font 크기 해결 못함(neovide에서 안됨 버그인가??)neovim에서는 완벽히 잘 돌아감
+- [ ]font 크기 해결 못함(neovide에서 안됨 버그인가??)neovim에서는 완벽히 잘 돌아감
   - https://neovide.dev/configuration.html
-- LSP goto 해결함 (초간단ㅋ)
+- [x]LSP goto 해결함 (초간단ㅋ)
   - https://github.com/neovim/neovim/issues/16062
 ```
 :lua vim.diagnostic.goto_next() or :lua vim.diagnostic.goto_prev()

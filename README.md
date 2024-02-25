@@ -2,7 +2,7 @@
 
 - [요즘-쓰는-lspinlayhint-color-setting & clangd inlayhint 활성화하기on](#요즘-쓰는-lspinlayhint-color-setting)
   - [clangd_extension-추가-기능cland_inlayhint-활성화link](#clangd_extension-추가-기능clangd_inlayhint-활성화link)
-- [#라인-fold-unfold-접기--닫기--전체-열기-전체-닫기link](#라인-fold-unfold-접기--닫기--전체-열기-전체-닫기link)
+- [라인-fold-unfold-접기--닫기--전체-열기-전체-닫기link](#라인-fold-unfold-접기--닫기--전체-열기-전체-닫기link)
 - [rustsnippet기본-위치](#rustsnippet기본-위치)
 - [rust-snippets-정리중](#rust-snippets-정리중)
 - [플러그인매니저 packer설치하기PackerInstall설치 _ 삭제는 PackerClean_업데이트는PackerSync](#packer)

@@ -101,9 +101,9 @@
 
 - clangd inlayhintsetting로드 하면 글씨 전에 해줘야함. 자동으로 안되네 ㅠㅠ
 ```
-require("clangd_extensions.inlay_hints").set_inlay_hints()
+:lua require("clangd_extensions.inlay_hints").set_inlay_hints()
 ```
-
+- neovim 0.10버젼 이상이여야 하나?
 - https://git.sr.ht/~p00f/clangd_extensions.nvim
 - https://github.com/p00f/clangd_extensions.nvim
 

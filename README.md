@@ -102,7 +102,7 @@
 ```
 
 
-# Clangd_extension 추가 기능&Clangd_InlayHint 활성화(#link)
+# Clangd_extension 추가 기능&Clangd_InlayHint 활성화[[🔝]](#link)
 
 
 - clangd inlayhintsetting로드 하면 글씨 전에 해줘야함. 자동으로 안되네 ㅠㅠ
@@ -136,7 +136,7 @@ https://github.com/p00f/clangd_extensions.nvim
 :ClangdMemoryUsage expand_preamble
 ```
 
-# 라인 fold unfold 접기 / 닫기 / 전체 열기/ 전체 닫기(#link)
+# 라인 fold unfold 접기 / 닫기 / 전체 열기/ 전체 닫기[[🔝]](#link)
 
 - ```zR``` 접힌거 다 열기
 - ```zM``` 접힌거 다 닫기

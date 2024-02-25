@@ -142,6 +142,16 @@ https://github.com/p00f/clangd_extensions.nvim
 - ```zo``` 지금 줄만 열기
 - ```zc``` (닫기)
 
+
+- zf 명령어는 무엇일까? 기본적으로 z 명령어는 세가지가 있다. 만들기, 열기, 닫기
+
+- 일단 fold를 한 번 만들어 놓으면 zo, zc로 여닫을 수 있다.
+```
+zf    "F-old 만들기 (만들면서 자동으로 닫는다)
+zo    "O-pen fold (열기)
+zc    "C-lose fold (닫기)
+```
+
 https://seulcode.tistory.com/488
 
 # Hack Nerd Mono Font 설치[[🔝]](#link)

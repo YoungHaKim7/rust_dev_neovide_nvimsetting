@@ -99,6 +99,10 @@
 :hi Comment guifg=#8aaecf guibg=#4e1a1a
 ```
 
+
+# clandextension 추가 기능&cland_InlayHint 활성화(#link)
+
+
 - clangd inlayhintsetting로드 하면 글씨 전에 해줘야함. 자동으로 안되네 ㅠㅠ
 ```
 :lua require("clangd_extensions.inlay_hints").set_inlay_hints()
@@ -106,6 +110,38 @@
 - neovim 0.10버젼 이상이여야 하나?
 - https://git.sr.ht/~p00f/clangd_extensions.nvim
 - https://github.com/p00f/clangd_extensions.nvim
+
+- ```:ClangdAST``` to view the ast with the current line as the range
+```
+:ClangdAST 
+```
+https://github.com/p00f/clangd_extensions.nvim
+
+- ```:ClangdSymbolInfo``` with the cursor at the desired symbol.
+```
+:ClangdSymbolInfo
+```
+
+- ```:ClangdTypeHierarchy``` with the cursor over the desired type or a symbol of that type. ```gd``` with the cursor over a type in a window to go to its definition.
+```
+:ClangdTypeHierarchy
+```
+
+- ```:ClangdMemoryUsage```. Preamble can be large so it is collapsed by default, to expand it use ```:ClangdMemoryUsage expand_preamble```
+```
+:ClangdMemoryUsage
+
+:ClangdMemoryUsage expand_preamble
+```
+
+# 라인 fold unfold 접기 / 닫기 / 전체 열기/ 전체 닫기(#link)
+
+- ```zR``` 접힌거 다 열기
+- ```zM``` 접힌거 다 닫기
+- ```zo``` 지금 줄만 열기
+- ```zc``` (닫기)
+
+https://seulcode.tistory.com/488
 
 # Hack Nerd Mono Font 설치[[🔝]](#link)
 

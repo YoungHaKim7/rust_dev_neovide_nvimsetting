@@ -1,6 +1,6 @@
 # Link
 
-- [요즘-쓰는-lspinlayhint-color-setting](#요즘-쓰는-lspinlayhint-color-setting)
+- [요즘-쓰는-lspinlayhint-color-setting & clangd inlayhint 활성화하기on](#요즘-쓰는-lspinlayhint-color-setting)
 - [rustsnippet기본-위치](#rustsnippet기본-위치)
 - [rust-snippets-정리중](#rust-snippets-정리중)
 - [플러그인매니저 packer설치하기PackerInstall설치 _ 삭제는 PackerClean_업데이트는PackerSync](#packer)
@@ -98,6 +98,14 @@
 // 배경은 어두운 빨간색 /  글씨는 약간 밝은 색
 :hi Comment guifg=#8aaecf guibg=#4e1a1a
 ```
+
+- clangd inlayhintsetting로드 하면 글씨 전에 해줘야함. 자동으로 안되네 ㅠㅠ
+```
+require("clangd_extensions.inlay_hints").set_inlay_hints()
+```
+
+- https://git.sr.ht/~p00f/clangd_extensions.nvim
+- https://github.com/p00f/clangd_extensions.nvim
 
 # Hack Nerd Mono Font 설치[[🔝]](#link)
 

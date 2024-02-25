@@ -99,5 +99,8 @@ require("packer").startup(function(use)
     end
     }
 
+    -- clangd inlayhint
+    use {"p00f/clangd_extensions.nvim"}
+
 
 end)

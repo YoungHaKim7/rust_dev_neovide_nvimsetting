@@ -102,5 +102,8 @@ require("packer").startup(function(use)
     -- clangd inlayhint
     use {"p00f/clangd_extensions.nvim"}
 
+    -- zig lang
+    use {"ziglang/zig.vim"}
+
 
 end)

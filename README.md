@@ -191,7 +191,7 @@ git clone https://github.com/HiPhish/rainbow-delimiters.nvim
   :ToggleTerm direction=float
   ```
 
-# Thema테마 변경하기[[🔝]](#link)
+# Theme테마 변경하기[[🔝]](#link)
 
 - ./lua/theme.lua
 

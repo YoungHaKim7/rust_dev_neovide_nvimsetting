@@ -99,7 +99,7 @@ require("packer").startup(function(use)
     use {"lukas-reineke/indent-blankline.nvim"}
     -- Terminal(Float)
     use {"akinsho/toggleterm.nvim",
-        version= '*',
+        version = '*',
         config = function()
         require("toggleterm").setup()
     end

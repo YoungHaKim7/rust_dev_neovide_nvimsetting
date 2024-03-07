@@ -169,6 +169,15 @@ https://seulcode.tistory.com/488
 
 
 # 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
+- 무지게 색 괄호
+  - https://github.com/HiPhish/rainbow-delimiters.nvim
+```bash
+~/.local/share/nvim/site/pack/packer/start
+
+# 강제로 설치
+git clone https://github.com/HiPhish/rainbow-delimiters.nvim
+```
+
 - 무지개색 탭 좋네 ㅋ
   - https://github.com/lukas-reineke/indent-blankline.nvim
 - (오류난거 리스트로 출력 굿)🚦 A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.

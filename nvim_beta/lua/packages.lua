@@ -20,7 +20,7 @@ require("packer").startup(function(use)
     -- })
     -- Rainbow_Parentheses.
     use("HiPhish/rainbow-delimiters.nvim")
-    --
+    -- Vim-Surround
     use("tpope/vim-surround")
     -- Theme
     use("norcalli/nvim-colorizer.lua")
@@ -93,12 +93,14 @@ require("packer").startup(function(use)
       opts = {},
       -- config = function()
     }
-    --- Tabby plugin
+    --- Tabby AI plugin
     use { 'TabbyML/vim-tabby' }
     -- indent
     use {"lukas-reineke/indent-blankline.nvim"}
     -- Terminal(Float)
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    use {"akinsho/toggleterm.nvim",
+        version= '*',
+        config = function()
         require("toggleterm").setup()
     end
     }

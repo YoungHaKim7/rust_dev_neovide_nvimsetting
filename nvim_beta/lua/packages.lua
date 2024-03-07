@@ -101,8 +101,8 @@ require("packer").startup(function(use)
     use {"akinsho/toggleterm.nvim",
         version = '*',
         config = function()
-        require("toggleterm").setup()
-    end
+            require("toggleterm").setup()
+        end
     }
 
     -- clangd inlayhint

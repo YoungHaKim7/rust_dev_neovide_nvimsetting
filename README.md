@@ -172,12 +172,16 @@ https://seulcode.tistory.com/488
 - 무지게 색 괄호(Rainbow_Parentheses)
   - https://github.com/HiPhish/rainbow-delimiters.nvim
 
-   ```bash
-   ~/.local/share/nvim/site/pack/packer/start
+  ```bash
+  ~/.local/share/nvim/site/pack/packer/start
 
-   # 강제로 설치
-   git clone https://github.com/HiPhish/rainbow-delimiters.nvim
-   ```
+  # 강제로 설치
+  git clone https://github.com/HiPhish/rainbow-delimiters.nvim
+  ```
+  - 뻗으면 테스트 예정
+  ```
+  require('rainbow-delimiters.setup').setup{}
+  ```
 
 - 무지개색 탭 좋네 ㅋ
   - https://github.com/lukas-reineke/indent-blankline.nvim

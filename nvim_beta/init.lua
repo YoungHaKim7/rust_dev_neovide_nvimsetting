@@ -36,6 +36,8 @@ require("plugins/trouble")
 require("plugins/tabbyai")
 require("plugins/indent-blankline")
 require("plugins/fidget")
+require("plugins/rainbow-delimiters")
+require('rainbow-delimiters.setup').setup()
 
 
 -- my theme

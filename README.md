@@ -516,6 +516,47 @@ cargo install --git https://github.com/bergercookie/asm-lsp
 :lua vim.diagnostic.goto_next() or :lua vim.diagnostic.goto_prev()
 ```
 
+- [ ] rainbow 나왔다가 안 나왔다가 ㅠㅠ 
+
+```
+:lua require('rainbow-delimiters.setup').setup()
+```
+```lua
+require("plugins/rainbow-delimiters")
+require('rainbow-delimiters.setup').setup()
+```
+
+```lua
+require('rainbow-delimiters.setup').setup ()
+-- This module contains a number of default definitions
+local rainbow_delimiters = require 'rainbow-delimiters'
+
+---@type rainbow_delimiters.config
+vim.g.rainbow_delimiters = {
+    strategy = {
+        [''] = rainbow_delimiters.strategy['global'],
+        vim = rainbow_delimiters.strategy['local'],
+    },
+    query = {
+        [''] = 'rainbow-delimiters',
+        lua = 'rainbow-blocks',
+    },
+    priority = {
+        [''] = 110,
+        lua = 210,
+    },
+    highlight = {
+        'RainbowDelimiterRed',
+        'RainbowDelimiterYellow',
+        'RainbowDelimiterBlue',
+        'RainbowDelimiterOrange',
+        'RainbowDelimiterGreen',
+        'RainbowDelimiterViolet',
+        'RainbowDelimiterCyan',
+    },
+}
+```
+
 
 # Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
 

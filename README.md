@@ -516,7 +516,7 @@ cargo install --git https://github.com/bergercookie/asm-lsp
 :lua vim.diagnostic.goto_next() or :lua vim.diagnostic.goto_prev()
 ```
 
-- [ ] rainbow 나왔다가 안 나왔다가 ㅠㅠ 
+- [x] rainbow 나왔다가 안 나왔다가 ㅠㅠ  해결 된듯.
 
 ```
 :lua require('rainbow-delimiters.setup').setup()

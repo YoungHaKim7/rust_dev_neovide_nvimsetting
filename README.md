@@ -511,6 +511,14 @@ cargo install --git https://github.com/bergercookie/asm-lsp
   ```bash
   brew install python-lsp-server
   ```
+
+  - Python Lint
+    - https://github.com/astral-sh/ruff
+
+    - macOS
+  ```
+  brew install ruff
+  ```
   
 <hr>
 

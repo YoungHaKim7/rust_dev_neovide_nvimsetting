@@ -514,6 +514,7 @@ cargo install --git https://github.com/bergercookie/asm-lsp
 
   - Python Lint
     - https://github.com/astral-sh/ruff
+    - https://docs.astral.sh/ruff/installation/
 
     - macOS
   ```

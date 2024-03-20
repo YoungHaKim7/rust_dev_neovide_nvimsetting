@@ -520,7 +520,9 @@ cargo install --git https://github.com/bergercookie/asm-lsp
   ```
   brew install ruff
   ```
-  
+  - Rust로 만든 LSP Server(pylyzer)
+    - https://github.com/mtshiba/pylyzer
+
 <hr>
 
 # 해결해야할것정리_해결한거랑 해결 못한거[[🔝]](#link)

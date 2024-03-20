@@ -501,8 +501,17 @@ cargo install asm-lsp
 cargo install --git https://github.com/bergercookie/asm-lsp
 ```
 
+- python LSP 설치
+  - https://pypi.org/project/python-lsp-server/
+  ```bash
+  sudo apt-get install python3-pylsp
+  ```
 
-
+  - macOS
+  ```bash
+  brew install python-lsp-server
+  ```
+  
 <hr>
 
 # 해결해야할것정리_해결한거랑 해결 못한거[[🔝]](#link)

@@ -196,6 +196,13 @@ https://seulcode.tistory.com/488
   :ToggleTerm direction=float
   ```
 
+- UnicodeTable 추가만 하면 그냥 끝(:UnicodeTable)
+  - https://github.com/chrisbra/unicode.vim
+  ```
+    -- :UnicodeTable    - Print Unicode Table in new window
+    "chrisbra/unicode.vim",
+  ```
+
 # Theme테마 변경하기[[🔝]](#link)
 
 - ./lua/theme.lua

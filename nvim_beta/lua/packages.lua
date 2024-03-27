@@ -111,5 +111,8 @@ require("packer").startup(function(use)
     -- zig lang
     use {"ziglang/zig.vim"}
 
+    -- :UnicodeTable    - Print Unicode Table in new window
+    use {"chrisbra/unicode.vim"}
+
 
 end)

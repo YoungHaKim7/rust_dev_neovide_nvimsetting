@@ -17,7 +17,7 @@
   - [Tabby Keybinding Accept키세팅](#tabby-keybinding-accept)
 - [나만의 테마로 변경하기_/lua/theme.lua](#theme테마-변경하기)
 - [틀린 글짜 자동으로 찾기 영문 오타 체크Eng.(spell-check)](#spell-check)
-- [C/C++언어, Rust언어, Zig언어, Assembly언어_ LSP세팅 하기](#lsp-setting)
+- [Rust언어&WASM, C/C++언어, Zig언어, Assembly언어_ LSP세팅 하기](#lsp-setting)
 - [내 LunarVim_Setting루나빔 Setting](#rust_dev_neovide_lunarvimsettingmy-setting_gy_version)
 - [해결해야할것_정리_해결한거랑-해결-못한거](#해결해야할것정리_해결한거랑-해결-못한거)
 - [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)
@@ -481,7 +481,49 @@ https://github.com/wbthomason/packer.nvim
     # rust-analyzer is available in rustup:
     
     $ rustup component add rust-analyzer
-    ```
+     ```
+- WASM support(Rust)
+  - install
+
+  ```bash
+
+  rustup target add wasm32-wasi
+  ```
+
+  ```
+  cargo build --target wasm32-wasi
+  wasmer run target/wasm32-wasi/debug/cve-rs.wasm
+  ```
+  https://wasmer.io/
+
+  https://github.com/Speykious/cve-rs
+
+
+  ```bash
+  curl https://get.wasmer.io -sSfL | sh
+  ```
+
+  - Run in CLI
+
+  ```bash
+  wasmer run cowsay "Hello world"
+  ```
+
+  ```
+  pdating bash profile /Users/g/.config/fish/config.fish
+  we've added the following to your /Users/g/.config/fish/config.fish
+  If you have a different profile please add the following:
+
+  - Wasmer
+  export WASMER_DIR="/Users/g/.wasmer"
+  [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+  check: wasmer 4.2.7 installed successfully ✓
+  wasmer will be available the next time you open the terminal.
+  If you want to have the commands available now please execute:
+
+  source /Users/g/.wasmer/wasmer.sh  
+  ```
+
 - [C/C++](https://llvm.org/)
   - clangd https://llvm.org/
 - [zig](https://ziglang.org/)

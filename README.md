@@ -523,6 +523,8 @@ https://github.com/wbthomason/packer.nvim
 
   source /Users/g/.wasmer/wasmer.sh  
   ```
+    - FishShell세팅하기
+      - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/10_FishShell
 
 - [C/C++](https://llvm.org/)
   - clangd https://llvm.org/

@@ -11,7 +11,7 @@ if vim.fn.has('macunix') == 1 and vim.fn.exists('neovide') == 1 or vim.fn.has('g
 end
 
 -- Default LSP Keybindings
-nnoremap("ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", true)
+nnoremap("<leader>ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", true)
 nnoremap("gd", "<cmd>lua vim.lsp.buf.definition()<CR>", true)
 nnoremap("gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", true)
 nnoremap("gr", "<cmd>lua vim.lsp.buf.references()<CR>", true)

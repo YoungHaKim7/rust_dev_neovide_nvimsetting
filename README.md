@@ -202,6 +202,14 @@ https://seulcode.tistory.com/488
     -- :UnicodeTable    - Print Unicode Table in new window
     "chrisbra/unicode.vim",
   ```
+- [Symbol-outline](https://github.com/simrat39/symbols-outline.nvim)
+  - 혹시 오류 나면 강제로 설치
+  ```bash
+  /.local/share/nvim/site/pack/packer/start
+
+  # 강제로 설치
+  git clone https://github.com/nvim-neotest/nvim-nio
+  ```
 
 # Theme테마 변경하기[[🔝]](#link)
 

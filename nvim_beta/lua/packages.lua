@@ -86,6 +86,8 @@ require("packer").startup(function(use)
     --     'mrjones2014/dash.nvim',
     --     run = 'make install',
     --   })
+    -- symbols-outline need
+    use {"nvim-neotest/nvim-nio"}
     -- use {"preservim/tagbar"}
     use {"simrat39/symbols-outline.nvim"}
     use {"folke/trouble.nvim",

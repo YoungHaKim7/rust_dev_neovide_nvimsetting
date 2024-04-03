@@ -167,6 +167,10 @@ https://seulcode.tistory.com/488
 
 - https://tabby.tabbyml.com/docs/extensions/installation/vim#-packernvim
 
+- macOS
+  ```bash
+  tabby serve --device metal --model TabbyML/StarCoder-3B
+  ```
 
 # 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
 - 무지게 색 괄호(Rainbow_Parentheses)

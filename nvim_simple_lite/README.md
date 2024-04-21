@@ -12,28 +12,6 @@
 
 ```vim
 
-" esc setting
-inoremap jk <Esc>
-
-" color setting
-" colorscheme jellybeans
-
-" turn hybred line number on
-set number rnu
-
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
-" font&size setting
-set guifont=MesloLGS_NF:h16
-
-set encoding=utf-8
-
-" Editor Language setting
-let $LANG = 'en'
-
 " Move visually selected lines up or down in various modes.
 " nnoremap K :m .-2<CR>==
 " nnoremap J :m .+1<CR>==
@@ -65,6 +43,40 @@ nnoremap <Esc> :noh<return><Esc>
 nnoremap <leader>rnn :%s//gc<Left><Left><Left>
 ""~ Set End
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+" esc setting
+inoremap jk <Esc>
+
+" color setting
+" colorscheme jellybeans
+
+" relative number line
+set number relativenumber
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set showmode
+set so=5
+set ignorecase  " Make searches case-insensitive
+set incsearch
+set mousehide
+
+" font&size setting
+set guifont=MesloLGS_NF:h16
+
+set encoding=utf-8
+
+" Editor Language setting
+let $LANG = 'en'
+
+" backup folder setting
+set undodir=c:\\Users\\user\\vimdata\\undo\\
+set backupdir=c:\\Users\\user\\vimdata\\backup\\
+set directory=c:\\Users\\user\\vimdata\\swap\\
+
 ```
 
 - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#windows-neovim-%EC%B4%88%EA%B0%84%EB%8B%A8-%EC%84%B8%ED%8C%85

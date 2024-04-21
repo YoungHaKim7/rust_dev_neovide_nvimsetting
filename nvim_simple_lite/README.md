@@ -5,6 +5,9 @@
 
 # neovim(Plugins설치 없이 완전 간단 버젼 )
 
+- Hack Nerd Mono Font 설치
+  - https://github.com/ryanoasis/nerd-fonts
+
 - init.vim(C:\Users\User\AppData\Local\nvim)
 
 ```vim

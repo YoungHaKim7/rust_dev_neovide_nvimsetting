@@ -3,7 +3,7 @@
 - init.vim
   - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/NeoVim/NeoVim_init_vim/1NeoVim_Simple_Setting
 
-# neovim(Plugins설치 없이 완전 간단 버젼 )
+# neovim(Plugins설치 (X)없이 완전 간단 버젼 )
 
 - Hack Nerd Mono Font 설치
   - https://github.com/ryanoasis/nerd-fonts

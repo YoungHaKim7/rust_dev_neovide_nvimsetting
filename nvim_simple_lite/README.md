@@ -42,3 +42,4 @@ nnoremap <leader>rnn :%s//gc<Left><Left><Left>
 ```
 
 - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#windows-neovim-%EC%B4%88%EA%B0%84%EB%8B%A8-%EC%84%B8%ED%8C%85
+- https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings

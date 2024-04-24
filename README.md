@@ -175,6 +175,12 @@ https://seulcode.tistory.com/488
   tabby serve --device metal --model TabbyML/StarCoder-3B
   ```
 
+- windows
+  ```bash
+  .\tabby_x86_64-windows-msvc-cuda117.exe serve --model StarCoder-3B --device cuda
+  ```
+- https://tabby.tabbyml.com/docs/installation/windows/
+  
 # 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
 - 무지게 색 괄호(Rainbow_Parentheses)
   - https://github.com/HiPhish/rainbow-delimiters.nvim

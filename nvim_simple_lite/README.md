@@ -3,7 +3,7 @@
 
 <hr>
 
-# neovim(Plugins설치 (X)없이 완전 간단 버젼 )
+# neovim(Plugins설치 (X)없이 완전 간단 버젼 )[🔝]](#link)
 
 - Hack Nerd Mono Font 설치
   - https://github.com/ryanoasis/nerd-fonts
@@ -82,17 +82,23 @@ set directory=c:\\Users\\user\\vimdata\\swap\\
 - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#windows-neovim-%EC%B4%88%EA%B0%84%EB%8B%A8-%EC%84%B8%ED%8C%85
 - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings
 
-# neovim(plug-ins 약간 설치 하는 버전)
+# neovim(plug-ins 약간 설치 하는 버전)[🔝]](#link)
 
 - init.vim
   - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/NeoVim/NeoVim_init_vim/1NeoVim_Simple_Setting
 
 
 
-# Windows 플러그인 설치 버젼
+# Windows 플러그인 설치 버젼[🔝]](#link)
 - https://raw.githubusercontent.com/YoungHaKim7/rust_vim_setting/main/01_Vim_NeoVim_etc_Rust_settings/NeoVim/Neovim_WindowsOS_init_vim/init.vim
 
+- 최종(2 version)
+  - https://raw.githubusercontent.com/YoungHaKim7/rust_vim_setting/main/01_Vim_NeoVim_etc_Rust_settings/NeoVim/NeoVim_init_vim/NeoVim_Windows11_OS_Rust_setting/nvim/init.vim
+
 ```vim
+" =========================================================================
+" =  플러그인 설정                                                        =
+" =========================================================================
 " =========================================================================
 " =  플러그인 설정                                                        =
 " =========================================================================
@@ -104,6 +110,9 @@ call plug#begin('~/.vim/plugged') " 플러그인 시작
 
 " Conquer Of Completion 자동완성 플러그인
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Manson Install Lsp 관리
+" Plug 'williamboman/mason.nvim'
 
 " nvim-treesitter 구문 파싱 하이라이팅
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -144,6 +153,7 @@ Plug 'luochen1990/rainbow' "colorful brackets.
 
 Plug 'ycm-core/YouCompleteMe' "automatic_completion
 
+""""" Rust
 Plug 'rust-lang/rust.vim' "rust
 Plug 'fannheyward/coc-rust-analyzer' "rust_analyzer
 Plug 'mattn/vim-lsp-settings' "rust_analyzer__lsp
@@ -154,75 +164,39 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} "debug
 Plug 'idanarye/vim-vebugger' "debug_
+"""""""""""""""""
 
 Plug 'kamykn/spelunker.vim' "smarter way to correct spelling mistakes
 
-" Plug 'tpope/vim-surround'
-Plug 'kylechui/nvim-surround'
-
+Plug 'tpope/vim-surround'
 
 " C
 Plug 'justmao945/vim-clang'
 
+" :UnicodeTable    - Print Unicode Table in new window
+Plug 'chrisbra/unicode.vim'
 
-" HTML - emmet :CocInstall coc-emmet
-Plug 'neoclide/coc-emmet'
+"""""""~~~~zig
+Plug 'ziglang/zig.vim'
+Plug 'UltiRequiem/coc-zig', {'do' : 'yarn install --frozen-lockfile && yarn build'}
+""""""~~~~~~
 
 call plug#end()
 
-" Plug in ~~~~ end ~~~~~~~~~~~~~~~~
-
-let g:python3_host_prog = 'C:\Python311\python.EXE'
-
+let g:loaded_python3_provider = 0
 "  ~~~~~~~~~~~~~~~~~~~~~~
 "  YouCompleteMe Setting
 "  ~~~~~~~~~~~~~~~~~~~~~~
 " let g:ycm_key_list_select_completion = ['<C-n>']
 " let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = ''
-let g:ycm_python_sys_path = []
-let g:ycm_extra_conf_vim_data = [
-  \  'g:ycm_python_interpreter_path',
-  \  'g:ycm_python_sys_path'
-  \]
-let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
-
-let g:ycm_language_server = 
-  \ [ 
-  \   {
-  \     'name': 'yaml',
-  \     'cmdline': [ '/path/to/yaml/server/yaml-language-server', '--stdio' ],
-  \     'filetypes': [ 'yaml' ]
-  \   },
-  \   {
-  \     'name': 'rust',
-  \     'cmdline': [ 'ra_lsp_server' ],
-  \     'filetypes': [ 'rust' ],
-  \     'project_root_files': [ 'Cargo.toml' ]
-  \   },
-  \   {
-  \     'name': 'godot',
-  \     'filetypes': [ 'gdscript' ],
-  \     'port': 6008,
-  \     'project_root_files': [ 'project.godot' ]
-  \    }
-  \ ]
-
+let g:ycm_server_python_interpreter = 'C:\ProgramData\chocolatey\bin\python.exe'
 " let g:ycm_collect_identifiers_from_comments_and_strings = 1
 " let g:ycm_complete_in_strings = 1
 " let g:ycm_complete_in_comments = 1
 " let g:ycm_min_num_of_chars_for_completion = 1
 " let g:ycm_filetype_blacklist = {}
-
-"~~~~Symbol Search
-nmap <leader>yfw <Plug>(YCMFindSymbolInWorkspace)
-nmap <leader>yfd <Plug>(YCMFindSymbolInDocument)
-
-
 set signcolumn=yes
-
-"""""~~~~~end~~~~~~
 
 
 "  ~~~~~~~~~~~~~~~~~~~~~~
@@ -387,7 +361,6 @@ augroup lsp_install
 augroup END
 "  ~~~~~~~~~~~~~~~~~~~~~~
 "  ~~~~~~~~~~~~~~~~~~~~~~
-
 
 
 """"""""""""""""""""
@@ -581,7 +554,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " nmap <silent> gs :sp<CR><Plug>(coc-definition)
 " nmap <silent> gS :vsp<CR><Plug>(coc-definition)
-" nmap <silent> <Leader>b :Buffers<CR>
 
 ""~~~~ Buffer   :bn next :bp previous
 nmap <silent> <Leader>b :buffers<CR>
@@ -593,14 +565,18 @@ nnoremap <silent><nowait> <space>t  :<C-u>tabe<CR>
 nnoremap <silent><nowait> <space>n  :<C-u>bn<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>bp<CR>
 
+
 " ~~~highlight Rust-analyzer
-nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=54<CR>
+nnoremap <silent><nowait> <space>h  :<C-u>hi CocInlayHint ctermbg=53<CR>
+" nnoremap <silent><nowait> <space>h  :<C-u>:hi CocInlayHint ctermbg=5 <CR>
 
 " Move visually selected lines up or down in various modes.
 " nnoremap K :m .-2<CR>==
 " nnoremap J :m .+1<CR>==
 vnoremap K :m '<-2<CR>gv==gv
-vnoremap J :m '>+1<CR>gv==gv"~~~~~~~~~
+vnoremap J :m '>+1<CR>gv==gv
+
+"~~~~~~~~~
 " Set End
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -611,8 +587,8 @@ inoremap jk <Esc>
 " color setting
 colorscheme jellybeans
 
-" relative number line
-set number relativenumber
+" turn hybrid line number on 
+set number rnu
 
 set tabstop=4
 set shiftwidth=4

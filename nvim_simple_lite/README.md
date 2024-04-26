@@ -3,7 +3,7 @@
 
 <hr>
 
-# neovim(Plugins설치 (X)없이 완전 간단 버젼 )[🔝]](#link)
+# neovim(Plugins설치 (X)없이 완전 간단 버젼 )[[🔝]](#link)
 
 - Hack Nerd Mono Font 설치
   - https://github.com/ryanoasis/nerd-fonts
@@ -82,14 +82,14 @@ set directory=c:\\Users\\user\\vimdata\\swap\\
 - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings#windows-neovim-%EC%B4%88%EA%B0%84%EB%8B%A8-%EC%84%B8%ED%8C%85
 - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings
 
-# neovim(plug-ins 약간 설치 하는 버전)[🔝]](#link)
+# neovim(plug-ins 약간 설치 하는 버전)[[🔝]](#link)
 
 - init.vim
   - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/01_Vim_NeoVim_etc_Rust_settings/NeoVim/NeoVim_init_vim/1NeoVim_Simple_Setting
 
 
 
-# Windows 플러그인 설치 버젼[🔝]](#link)
+# Windows 플러그인 설치 버젼[[🔝]](#link)
 - https://raw.githubusercontent.com/YoungHaKim7/rust_vim_setting/main/01_Vim_NeoVim_etc_Rust_settings/NeoVim/Neovim_WindowsOS_init_vim/init.vim
 
 - 최종(2 version)

@@ -631,7 +631,7 @@ set directory=~/vimdata/swap//
 let mapleader = " "
  
 nnoremap <leader>bt :tabe<CR>
-nnoremap <leader>btt :terminal pwsh.exe<CR>
+nnoremap <leader>btt :terminal alacritty<CR>
 
 nnoremap L <C-w>gt
 nnoremap H <C-w>gT
@@ -642,10 +642,10 @@ vnoremap J :m '>+1<CR>gv==gv
 " ~~~~~~~~~
 
 " Make adjusing split sizes a bit more friendly
-noremap <silent> <C-Right> :vertical resize +3<CR>
-noremap <silent> <C-Left> :vertical resize -3<CR>
-noremap <silent> <C-Down> :resize +3<CR>
-noremap <silent> <C-Up> :resize -3<CR>
+noremap <silent> <C-L> :vertical resize +3<CR>
+noremap <silent> <C-H> :vertical resize -3<CR>
+noremap <silent> <C-J> :resize +3<CR>
+noremap <silent> <C-K> :resize -3<CR>
 
 " Esc and Clear Hightligh
 nnoremap <Esc> :noh<return><Esc>
@@ -685,8 +685,10 @@ set encoding=utf-8
 let $LANG = 'en'
 
 " backup folder setting
-set undodir=c:\\Users\\user\\vimdata\\undo\\
-set backupdir=c:\\Users\\user\\vimdata\\backup\\
-set directory=c:\\Users\\user\\vimdata\\swap\\
+set undodir=~/.vimdata/undo/
+set backupdir=~/.vimdata/backup/
+set directory=~/.vimdata/swap/
+
+
 
 ```

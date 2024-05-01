@@ -616,3 +616,75 @@ set backupdir=~/vimdata/backup//
 set directory=~/vimdata/swap//
 
 ```
+
+
+# Linux간단한 세팅[[🔝]](#link)
+
+```vim
+
+" Move visually selected lines up or down in various modes.
+" nnoremap K :m .-2<CR>==
+" nnoremap J :m .+1<CR>==
+
+let mapleader = " "
+ 
+nnoremap <leader>bt :tabe<CR>
+nnoremap <leader>btt :terminal pwsh.exe<CR>
+
+nnoremap L <C-w>gt
+nnoremap H <C-w>gT
+
+" Line Move Up & Down
+vnoremap K :m '<-2<CR>gv==gv
+vnoremap J :m '>+1<CR>gv==gv
+" ~~~~~~~~~
+
+" Make adjusing split sizes a bit more friendly
+noremap <silent> <C-Right> :vertical resize +3<CR>
+noremap <silent> <C-Left> :vertical resize -3<CR>
+noremap <silent> <C-Down> :resize +3<CR>
+noremap <silent> <C-Up> :resize -3<CR>
+
+" Esc and Clear Hightligh
+nnoremap <Esc> :noh<return><Esc>
+
+" rename
+"
+nnoremap <leader>rnn :%s//gc<Left><Left><Left>
+""~ Set End
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+" esc setting
+inoremap jk <Esc>
+
+" color setting
+" colorscheme jellybeans
+
+" relative number line
+set number relativenumber
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set showmode
+set so=5
+set ignorecase  " Make searches case-insensitive
+set incsearch
+set mousehide
+
+" font&size setting
+set guifont=MesloLGS_NF:h16
+
+set encoding=utf-8
+
+" Editor Language setting
+let $LANG = 'en'
+
+" backup folder setting
+set undodir=c:\\Users\\user\\vimdata\\undo\\
+set backupdir=c:\\Users\\user\\vimdata\\backup\\
+set directory=c:\\Users\\user\\vimdata\\swap\\
+
+```

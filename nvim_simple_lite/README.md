@@ -1,9 +1,11 @@
 # link
 - [완성된NvChad_Version남이_만든거](https://github.com/YoungHaKim7/nvim_gy_NvChad_version)
 - Windows(NeoVim(Vim파일로 설치하는 버젼)
-  - [(초경량_플러그인설치x)neovimplugins설치-x없이-완전-간단-버젼-](#neovimplugins설치-x없이-완전-간단-버젼-)
-  - [#neovimplug-ins-약간-설치-하는-버전](#neovimplug-ins-약간-설치-하는-버전)
-  - [windows-플러그인(full Install)-설치-버젼)](#windows-플러그인-설치-버젼)
+- 초경량 PlugIn없이 초간단
+  - [(WinOS초경량_플러그인설치x)neovimplugins설치-x없이-완전-간단-버젼-](#neovimplugins설치-x없이-완전-간단-버젼-)
+  - [LinuxOS용 초경량 플러그인설치x](#linux간단한-세팅)
+- [#neovimplug-ins-약간-설치-하는-버전](#neovimplug-ins-약간-설치-하는-버전)
+- [windows-플러그인(full Install)-설치-버젼)](#windows-플러그인-설치-버젼)
 
 <hr>
 

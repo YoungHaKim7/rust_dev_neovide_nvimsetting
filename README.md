@@ -174,6 +174,12 @@ https://seulcode.tistory.com/488
   ```bash
   tabby serve --device metal --model TabbyML/StarCoder-3B
   ```
+  - service on/off
+  ```bash
+  brew services start tabbyml/tabby/tabby
+
+  brew services stop tabbyml/tabby/tabby
+  ```
 
 - windows
   ```bash

@@ -173,6 +173,8 @@ https://seulcode.tistory.com/488
 - macOS
   ```bash
   tabby serve --device metal --model TabbyML/StarCoder-3B
+
+  /opt/homebrew/opt/tabby/bin/tabby serve --device metal --model StarCoder-3B
   ```
   - service on/off
   ```bash

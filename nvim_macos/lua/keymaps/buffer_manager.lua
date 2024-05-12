@@ -13,6 +13,6 @@ nnoremap([[bd]], [[:bp <BAR> bd #<CR>]])
 nnoremap([[bq]],[[:w <bar> %bd <bar> e# <bar> bd# <CR>]])
 
 -- TAB in normal mode will move to text buffer
-nnoremap("<TAB>", ":bnext<CR>")
+-- nnoremap("<TAB>", ":bnext<CR>")
 -- SHIFT-TAB will go back
-nnoremap("<S-TAB>", ":bprevious<CR>")
+-- nnoremap("<S-TAB>", ":bprevious<CR>")

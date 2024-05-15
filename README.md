@@ -188,7 +188,38 @@ https://seulcode.tistory.com/488
   .\tabby_x86_64-windows-msvc-cuda117.exe serve --model StarCoder-3B --device cuda
   ```
 - https://tabby.tabbyml.com/docs/installation/windows/
-  
+
+- LinuxOS(Ubuntu24.04)
+- https://stackoverflow.com/questions/75118992/docker-error-response-from-daemon-could-not-select-device-driver-with-capab
+
+- 1. Configure the repository:
+```
+curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey |sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+&& curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list \
+&& sudo apt-get update
+```
+- 2. Install the NVIDIA Container Toolkit packages:
+```
+sudo apt-get install -y nvidia-container-toolkit
+```
+- 3.Configure the container runtime by using the nvidia-ctk command:
+```
+sudo nvidia-ctk runtime configure --runtime=docker
+```
+
+- 4. Restart the Docker daemon:
+```
+sudo systemctl restart docker
+```
+
+- tabby (Docker Install)
+```bash
+sudo docker run -it --gpus all -p 8080:8080 -v $HOME/.tabby:/data \
+        tabbyml/tabby \
+        serve --model TabbyML/StarCoder-3B --device cuda
+
+```
+
 # 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
 - 무지게 색 괄호(Rainbow_Parentheses)
   - https://github.com/HiPhish/rainbow-delimiters.nvim

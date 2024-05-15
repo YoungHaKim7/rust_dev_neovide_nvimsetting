@@ -266,6 +266,8 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
 
 ```
 
+- `http://localhost:8080/` 크롬이나 파이어폭스 브라우져에서 주소창에 치면 DashBoard나온다.
+
 # 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
 - 무지게 색 괄호(Rainbow_Parentheses)
   - https://github.com/HiPhish/rainbow-delimiters.nvim

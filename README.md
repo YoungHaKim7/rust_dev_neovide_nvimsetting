@@ -169,6 +169,8 @@ https://seulcode.tistory.com/488
   - https://github.com/TabbyML/tabby
 
 - https://tabby.tabbyml.com/docs/extensions/installation/vim#-packernvim
+- AI Models
+  - https://tabby.tabbyml.com/docs/models/
 
 - macOS
   ```bash

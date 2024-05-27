@@ -12,7 +12,7 @@ if vim.fn.has('macunix') == 1 and vim.fn.exists('neovide') == 1 or vim.fn.has('g
     nnoremap("<D-u>", ":Telescope lsp_references<CR>", true)
     nnoremap("<D-t>", ":Telescope treesitter<CR>", true)
 else
-    nnoremap([[<leader>f]], [[<cmd>Telescope current_buffer_fuzzy_find<CR>]])
+    nnoremap([[<leader>s]], [[<cmd>Telescope current_buffer_fuzzy_find<CR>]])
     nnoremap([[<leader><leader>]], [[<cmd>lua require('telescope.builtin').buffers()<cr>]])
     nnoremap("<leader>p", [[:lua require("utils/telescope-config").project_files()<CR>]], true)
     nnoremap("<leader>a", ":Telescope lsp_code_actions<CR>", true)

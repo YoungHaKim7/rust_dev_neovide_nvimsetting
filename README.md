@@ -736,6 +736,61 @@ vim.g.rainbow_delimiters = {
 }
 ```
 
+# Undo & Swap file 설정하기[[🔝]](#link)
+- https://toddknutson.bio/posts/how-to-enable-neovim-undo-backup-and-swap-files-when-switching-linux-groups/
+
+- 이걸로 대충 해줌
+```lua
+-- Enable swap, backup, and persistant undo
+vim.opt.directory = SWAPDIR
+vim.opt.backupdir = BACKUPDIR
+vim.opt.undodir = UNDODIR
+vim.opt.swapfile = true
+vim.opt.backup = true
+vim.opt.undofile = true
+
+-- Append backup files with timestamp
+vim.api.nvim_create_autocmd("BufWritePre", {
+	callback = function()
+		local extension = "~" .. vim.fn.strftime("%Y-%m-%d-%H%M%S")
+		vim.o.backupext = extension
+	end,
+})
+```
+
+<hr>
+
+- Lua config for Neovim
+  - Capture the current USER and store in variable.
+  - Capture the current GROUP by running a system command id -ng
+
+```lua
+USER = os.getenv("USER")
+local curr_group = vim.fn.system("id -ng 2> /dev/null | tr -d '\n'")
+```
+
+- Use the variables above to assign some dynamically generated directories, based on your current group
+
+```lua
+SWAPDIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/swap//"
+BACKUPDIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/backup//"
+UNDODIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/undo//"
+
+    If the dirs do not exist, create them
+    Update their permissions to 700
+
+if vim.fn.isdirectory(SWAPDIR) == 0 then
+	vim.fn.mkdir(SWAPDIR, "p", "0o700")
+end
+
+if vim.fn.isdirectory(BACKUPDIR) == 0 then
+	vim.fn.mkdir(BACKUPDIR, "p", "0o700")
+end
+
+if vim.fn.isdirectory(UNDODIR) == 0 then
+	vim.fn.mkdir(UNDODIR, "p", "0o700")
+end
+```
 
 # Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
 

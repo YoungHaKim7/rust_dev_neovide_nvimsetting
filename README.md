@@ -802,6 +802,8 @@ end
 - 단서1
   - vim.lsp.util.parse_snippet is deprecated what should I do?
     - https://www.reddit.com/r/neovim/comments/17je2j1/vimlsputilparse_snippet_is_deprecated_what_should/
+- 단서2
+  - https://github.com/hrsh7th/nvim-cmp/pull/1734
 ```lua
 
 vim.lsp.util.parse_snippet() is deprecated. :help deprecated

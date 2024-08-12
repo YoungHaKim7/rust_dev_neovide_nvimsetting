@@ -1,4 +1,5 @@
-```txt
+# https://neovim.io/doc/user/deprecated.html
+
 *deprecated.txt*       Nvim
 
 
@@ -267,4 +268,3 @@ VARIABLES
 
  vim:noet:tw=78:ts=8:ft=help:norl:
 
-```

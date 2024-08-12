@@ -21,6 +21,8 @@
 - [내 LunarVim_Setting루나빔 Setting](#rust_dev_neovide_lunarvimsettingmy-setting_gy_version)
 - [해결해야할것_정리_해결한거랑-해결-못한거](#해결해야할것정리_해결한거랑-해결-못한거)
   - [undo--swap-file-설정하기](#undo--swap-file-설정하기)
+- Deprecated 버젼업되면 해결해야함
+  - [deprecated-해결해야할것-ㅠㅠnvim0.11버젼에서 해결해야함](#deprecated-해결해야할것-ㅠㅠ)
 - [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)
 - [다른 사람이 만든 멋진 neovim세팅](#다른-외국인의-멋진-neovim세팅)
 

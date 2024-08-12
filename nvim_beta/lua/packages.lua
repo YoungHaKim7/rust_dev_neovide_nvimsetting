@@ -37,7 +37,17 @@ require("packer").startup(function(use)
     use("lewis6991/gitsigns.nvim")
     use("mattn/webapi-vim")
     -- Auto Completion
-    use("hrsh7th/nvim-cmp")
+    use({
+        "hrsh7th/nvim-cmp",
+        -- version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            -- require("nvim-surround").setup({
+            --     -- Configuration here, or leave empty to use defaults
+            -- })
+
+        end
+        -- event = {"InsertCharPre"}
+    })
     -- Language Servers
     use("neovim/nvim-lspconfig")
     use("onsails/lspkind-nvim")

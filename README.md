@@ -820,6 +820,39 @@ stack traceback:
         ...re/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/view.lua:75: in function 'open'
         ...re/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:336: in function <...re/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:309>
 ```
+- 오류가 더 늘어남
+```
+gitsigns: Ignoring invalid configuration field 'yadm'
+'signs.add.hl' is now deprecated, please define highlight 'GitSignsAdd' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsAdd', { link = 'GitSignsAdd' })
+'signs.add.linehl' is now deprecated, please define highlight 'GitSignsAddLn' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsAddLn', { link = 'GitSignsAddLn' })
+'signs.add.numhl' is now deprecated, please define highlight 'GitSignsAddNr' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsAddNr', { link = 'GitSignsAddNr' })
+'signs.change.hl' is now deprecated, please define highlight 'GitSignsChange' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsChange', { link = 'GitSignsChange' })
+'signs.change.linehl' is now deprecated, please define highlight 'GitSignsChangeLn' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsChangeLn', { link = 'GitSignsChangeLn' })
+'signs.change.numhl' is now deprecated, please define highlight 'GitSignsChangeNr' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsChangeNr', { link = 'GitSignsChangeNr' })
+'signs.changedelete.hl' is now deprecated, please define highlight 'GitSignsChangedelete' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsChangedelete', { link = 'GitSignsChange' })
+'signs.changedelete.linehl' is now deprecated, please define highlight 'GitSignsChangedeleteLn' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsChangedeleteLn', { link = 'GitSignsChangeLn' })
+'signs.changedelete.numhl' is now deprecated, please define highlight 'GitSignsChangedeleteNr' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsChangedeleteNr', { link = 'GitSignsChangeNr' })
+'signs.delete.hl' is now deprecated, please define highlight 'GitSignsDelete' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsDelete', { link = 'GitSignsDelete' })
+'signs.delete.linehl' is now deprecated, please define highlight 'GitSignsDeleteLn' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsDeleteLn', { link = 'GitSignsDeleteLn' })
+'signs.delete.numhl' is now deprecated, please define highlight 'GitSignsDeleteNr' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsDeleteNr', { link = 'GitSignsDeleteNr' })
+'signs.topdelete.hl' is now deprecated, please define highlight 'GitSignsTopdelete' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsTopdelete', { link = 'GitSignsDelete' })
+'signs.topdelete.linehl' is now deprecated, please define highlight 'GitSignsTopdeleteLn' e.g:
+  vim.api.nvim_set_hl(0, 'GitSignsTopdeleteLn', { link = 'GitSignsDeleteLn' })
+-- More --
+```
 
 # Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
 

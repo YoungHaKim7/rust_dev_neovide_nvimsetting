@@ -799,6 +799,9 @@ end
 
 # Deprecated 해결해야할것 ㅠㅠ[[🔝]](#link)
 - Nvim 0.11부터 해결해야할것
+- 단서1
+  - vim.lsp.util.parse_snippet is deprecated what should I do?
+    - https://www.reddit.com/r/neovim/comments/17je2j1/vimlsputilparse_snippet_is_deprecated_what_should/
 ```lua
 
 vim.lsp.util.parse_snippet() is deprecated. :help deprecated

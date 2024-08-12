@@ -795,6 +795,25 @@ if vim.fn.isdirectory(UNDODIR) == 0 then
 end
 ```
 
+# Deprecated 해결해야할것 ㅠㅠ[[🔝]](#link)
+- Nvim 0.11부터 해결해야할것
+```lua
+
+vim.lsp.util.parse_snippet() is deprecated. :help deprecated
+Feature will be removed in Nvim 0.11
+stack traceback:
+        ...ies/nvim-linux64/share/nvim/runtime/lua/vim/lsp/util.lua:624: in function 'parse_snippet'
+        /home/gy/.config/nvim/lua/plugins/cmp.lua:25: in function 'before'
+        ...site/pack/packer/start/lspkind-nvim/lua/lspkind/init.lua:190: in function 'format'
+        ...e/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/entry.lua:295: in function 'callback'
+        .../site/pack/packer/start/nvim-cmp/lua/cmp/utils/cache.lua:38: in function 'get_vim_item'
+        ...e/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/entry.lua:411: in function 'callback'
+        .../site/pack/packer/start/nvim-cmp/lua/cmp/utils/cache.lua:38: in function 'match'
+        .../nvim/site/pack/packer/start/nvim-cmp/lua/cmp/source.lua:116: in function 'get_entries'
+        ...re/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/view.lua:75: in function 'open'
+        ...re/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:336: in function <...re/nvim/site/pack/packer/start/nvim-cmp/lua/cmp/core.lua:309>
+```
+
 # Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
 
 - https://github.com/codeitlikemiley/neovide-rust-neovim

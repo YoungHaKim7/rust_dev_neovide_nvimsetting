@@ -49,4 +49,7 @@ require("inlayhints/clangd_extensions")
 require("clangd_extensions.inlay_hints").setup_autocmd()
 require("clangd_extensions.inlay_hints").set_inlay_hints()
 
+-- backup & undo
+require("undo_swap")
+
 -- vim.opt.guifont = "Hack Nerd Font Mono:30"

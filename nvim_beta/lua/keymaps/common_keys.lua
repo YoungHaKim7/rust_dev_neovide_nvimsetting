@@ -17,7 +17,7 @@ nnoremap("<leader>o", ":SymbolsOutline<CR>")
 -- nnoremap("<leader>ov", ":TagbarToggle<CR>")
 
 -- TroubleToggle
-nnoremap("<leader>t", ":TroubleToggle<CR>")
+nnoremap("<leader>t", ":Trouble<CR>")
 nnoremap("<leader>e", ":NvimTreeToggle<CR>")
 
 -- buffer bn bn

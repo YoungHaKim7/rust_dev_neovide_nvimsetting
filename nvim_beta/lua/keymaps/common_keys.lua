@@ -4,7 +4,9 @@ local inoremap = require("utils/inoremap")
 
 vim.g.mapleader = " "
 
--- Disable Ctrl +Z
+-- save
+nnoremap("<C-s>", [[:w!<CR>]])
+-- Disable Ctrl +
 nnoremap("<C-z>", [[<nop>]])
 -- Quick Replace of Word
 -- nnoremap("S", [[:%s//g<Left><Left>]])

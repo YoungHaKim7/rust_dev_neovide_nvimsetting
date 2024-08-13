@@ -1,9 +1,9 @@
 USER = os.getenv("USER")
 local curr_group = vim.fn.system("id -ng 2> /dev/null | tr -d '\n'")
 
-SWAPDIR = "/home/" .. curr_group .. "/" ..  "/nvim_swapfile/swap//"
-BACKUPDIR = "/home/" .. curr_group .. "/" .. "/nvim_swapfile/backup//"
-UNDODIR = "/home/" .. curr_group .. "/" ..  "/nvim_swapfile/undo//"
+SWAPDIR = "/home/" .. curr_group .. "/nvim_swapfile/swap//"
+BACKUPDIR = "/home/" .. curr_group .. "/nvim_swapfile/backup//"
+UNDODIR = "/home/" .. curr_group .. "/nvim_swapfile/undo//"
 
 if vim.fn.isdirectory(SWAPDIR) == 0 then
 	vim.fn.mkdir(SWAPDIR, "p", "0o700")
@@ -21,9 +21,9 @@ end
 vim.opt.directory = SWAPDIR
 vim.opt.backupdir = BACKUPDIR
 vim.opt.undodir = UNDODIR
-vim.opt.swapfile = true
-vim.opt.backup = true
-vim.opt.undofile = true
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undofile = false
 
 -- Append backup files with timestamp
 vim.api.nvim_create_autocmd("BufWritePre", {

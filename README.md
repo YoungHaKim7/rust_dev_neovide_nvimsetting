@@ -449,10 +449,10 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 ```
 
 # HopChar KeyMap[[🔝]](#link)
-
+- `gw` 는 helix키와 똑같음 ㅋ
 ```
 nnoremap("<backspace>f", [[:HopChar1<CR>]])
-nnoremap("<leader>F", [[:HopChar2<CR>]])
+nnoremap("gw", [[:HopChar2<CR>]])
 nnoremap("<leader>W", [[:HopWord<CR>]])
 ```
 

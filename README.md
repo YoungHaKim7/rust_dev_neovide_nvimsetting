@@ -39,7 +39,7 @@
 
 <hr>
 
-# rust_dev_neovide_LunarVimSetting(My Setting)_GY_Version[[🔝]](#link)
+# rust_dev_neovide_LunarVimSetting(My Setting)_GY_Version[|🔝|](#link)
 - https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
   - LunarVim 세팅 강의(완전 처음부터)002개고생하면서 배우는 Rust_Basic(LunarVim, Helix, VSCode Zellij)
     - https://youtube.com/live/_dgi6vOnCO0?feature=share
@@ -47,10 +47,10 @@
 
 <hr>
 
-# Dash는 맥용은 유료앱(1년 정기 구독으로 유료임 ㅠㅠ)[[🔝]](#link)
+# Dash는 맥용은 유료앱(1년 정기 구독으로 유료임 ㅠㅠ)[|🔝|](#link)
 - https://kapeli.com/dash
 
-# 무료는 DevDocs 웹용이 있음[[🔝]](#link)
+# 무료는 DevDocs 웹용이 있음[|🔝|](#link)
 - https://devdocs.io/
   - https://news.hada.io/topic?id=2228
 
@@ -60,7 +60,7 @@
 
 <hr>
 
-# RustSnippet기본 위치[[🔝]](#link)
+# RustSnippet기본 위치[|🔝|](#link)
 
 - https://github.com/hrsh7th/vim-vsnip
 
@@ -70,7 +70,7 @@
 
 
 - global.json위치(~/.vsnip/global.json)
-- rust.json위치(~/.vsnip/rust.json) 
+- rust.json위치(~/.vsnip/rust.json)
 
 ```
 ~/.vsnip                                                                                          at 19:17:08
@@ -83,7 +83,7 @@
 
 ```
 
-# Rust Snippets 정리중[[🔝]](#link)
+# Rust Snippets 정리중[|🔝|](#link)
 
 - ```Rust Snippets.json```여기에 정리 중
   - https://github.com/YoungHaKim7/snippets_Lunar_NeoVim
@@ -96,7 +96,7 @@
     - https://github.com/hhatto/rust-snippets
     - 포크함 Fork https://github.com/YoungHaKim7/rust-snippets
 
-# 요즘 쓰는 LspInlayHint Color Setting[[🔝]](#link)
+# 요즘 쓰는 LspInlayHint Color Setting[|🔝|](#link)
 
 - inlayhint 색깔 hex color (LunarVim Inlayhint Color Settings)
 
@@ -110,7 +110,7 @@
 ```
 
 
-# Clangd_extension 추가 기능&Clangd_InlayHint 활성화[[🔝]](#link)
+# Clangd_extension 추가 기능&Clangd_InlayHint 활성화[|🔝|](#link)
 
 
 - clangd inlayhintsetting로드 하면 글씨 전에 해줘야함. 자동으로 안되네 ㅠㅠ
@@ -123,7 +123,7 @@
 
 - ```:ClangdAST``` to view the ast with the current line as the range
 ```
-:ClangdAST 
+:ClangdAST
 ```
 https://github.com/p00f/clangd_extensions.nvim
 
@@ -144,7 +144,7 @@ https://github.com/p00f/clangd_extensions.nvim
 :ClangdMemoryUsage expand_preamble
 ```
 
-# 라인 fold unfold 접기 / 닫기 / 전체 열기/ 전체 닫기[[🔝]](#link)
+# 라인 fold unfold 접기 / 닫기 / 전체 열기/ 전체 닫기[|🔝|](#link)
 
 - ```zR``` 접힌거 다 열기Open
 - ```zM``` 열린거 다 (접기)닫기Close
@@ -163,11 +163,11 @@ zc    "C-lose fold (닫기)
 
 https://seulcode.tistory.com/488
 
-# Hack Nerd Mono Font 설치[[🔝]](#link)
+# Hack Nerd Mono Font 설치[|🔝|](#link)
 
 - https://github.com/ryanoasis/nerd-fonts
 
-# Tabby AI 설치[[🔝]](#link)
+# Tabby AI 설치[|🔝|](#link)
 
 - https://tabby.tabbyml.com/
   - https://github.com/TabbyML/tabby
@@ -228,7 +228,7 @@ sudo docker run -it --gpus all -p 8080:8080 -v $HOME/.tabby:/data \
 
 - token setting
 ```bash
-$ ~/.tabby-client 
+$ ~/.tabby-client
 ❯ eza --icons -TL2
  .
 └──  agent
@@ -272,7 +272,7 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
 
 - `http://localhost:8080/` 크롬이나 파이어폭스 브라우져에서 주소창에 치면 DashBoard나온다.
 
-# 네오빔 플러그인 정리(NeoVim Plugins[[🔝]](#link)
+# 네오빔 플러그인 정리(NeoVim Plugins[|🔝|](#link)
 - 무지게 색 괄호(Rainbow_Parentheses)
   - https://github.com/HiPhish/rainbow-delimiters.nvim
 
@@ -315,7 +315,7 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
   git clone https://github.com/nvim-neotest/nvim-nio
   ```
 
-# Theme테마 변경하기[[🔝]](#link)
+# Theme테마 변경하기[|🔝|](#link)
 
 - ./lua/theme.lua
 
@@ -331,7 +331,7 @@ vim.cmd("colorscheme tokyonight-night")
 - tokyonight https://github.com/folke/tokyonight.nvim
 - oceanic-next https://github.com/roflolilolmao/oceanic-next.nvim
 
-# Keymap[[🔝]](#link)
+# Keymap[|🔝|](#link)
 
 ```lua
 vim.g.mapleader = " "
@@ -449,7 +449,7 @@ nnoremap([[<leader>cA]], [[:lua require('crates').upgrade_all_crates()<cr>]])
 
 ```
 
-# HopChar KeyMap[[🔝]](#link)
+# HopChar KeyMap[|🔝|](#link)
 - `gw` 는 helix키와 똑같음 ㅋ
 ```
 nnoremap("<backspace>f", [[:HopChar1<CR>]])
@@ -458,7 +458,7 @@ nnoremap("<leader>W", [[:HopWord<CR>]])
 ```
 
 
-# Telescope KeyMap[[🔝]](#link)
+# Telescope KeyMap[|🔝|](#link)
 
 ```lua
 -- lvim
@@ -480,7 +480,7 @@ nnoremap([[<leader>s]], [[:Telescope treesitter<CR>]], true)
 
 ```
 
-# LSP keymap[[🔝]](#link)
+# LSP keymap[|🔝|](#link)
 
 ```lua
 
@@ -510,7 +510,7 @@ nnoremap("K", "<cmd>lua vim.lsp.buf.hover()<CR>", true)
 
 ```
 
-# Symbol-outline Keymap[[🔝]](#link)
+# Symbol-outline Keymap[|🔝|](#link)
 
 ```lua
 keymaps = { -- These keymaps can be a string or a table for multiple keys
@@ -529,14 +529,14 @@ keymaps = { -- These keymaps can be a string or a table for multiple keys
   },
 ```
 
-# Tabby Keybinding Accept[[🔝]](#link)
+# Tabby Keybinding Accept[|🔝|](#link)
 
 ```lua
 vim.g.tabby_keybinding_accept = '<C-b>'
 ```
 
 
-# Spell Check[[🔝]](#link)
+# Spell Check[|🔝|](#link)
 
 - spell check에 추가하기
   - 경로명 (.config/nvim/spell/en.utf-8.add)
@@ -580,18 +580,18 @@ vim.g.tabby_keybinding_accept = '<C-b>'
  7 directories, 15 files
 ```
 
-# packer[[🔝]](#link)
+# packer[|🔝|](#link)
 
 https://github.com/wbthomason/packer.nvim
 
-# LSP Setting[[🔝]](#link)
+# LSP Setting[|🔝|](#link)
 - https://github.com/neovim/nvim-lspconfig
 - [Rust](https://www.rust-lang.org/)
   - rust-analyzer https://rust-analyzer.github.io/
     ```bash
     # rustup
     # rust-analyzer is available in rustup:
-    
+
     $ rustup component add rust-analyzer
      ```
 - WASM support(Rust)
@@ -633,7 +633,7 @@ https://github.com/wbthomason/packer.nvim
   wasmer will be available the next time you open the terminal.
   If you want to have the commands available now please execute:
 
-  source /Users/g/.wasmer/wasmer.sh  
+  source /Users/g/.wasmer/wasmer.sh
   ```
     - FishShell세팅하기
       - https://github.com/YoungHaKim7/rust_vim_setting/tree/main/10_FishShell
@@ -688,12 +688,12 @@ cargo install --git https://github.com/bergercookie/asm-lsp
 
 - Helix&NeoVim Java LSP세팅
 
-# Helix( Java LSP Install ) jdtls설치하기 그냥 github 땡기고 install하면 설치 된다. 최고..[[🔝]](#link)
+# Helix( Java LSP Install ) jdtls설치하기 그냥 github 땡기고 install하면 설치 된다. 최고..[|🔝|](#link)
 
 https://github.com/eruizc-dev/jdtls-launcher
 
 ```
-git clone https://github.com/eruizc-dev/jdtls-launcher.git 
+git clone https://github.com/eruizc-dev/jdtls-launcher.git
 Cloning into 'jdtls-launcher'...
 remote: Enumerating objects: 241, done.
 remote: Counting objects: 100% (85/85), done.
@@ -703,14 +703,14 @@ Receiving objects: 100% (241/241), 48.74 KiB | 9.75 MiB/s, done.
 Resolving deltas: 100% (125/125), done.
 
 
-$ cd jdtls-launcher 
+$ cd jdtls-launcher
 
- 
+
 $ ls
 CONTRIBUTING.md  install.sh  jdtls-launcher.sh  LICENSE  README.md
 
 
-$ ./install.sh 
+$ ./install.sh
 INFO: Downloading JDTLS-LAUNCHER
 -#O=#   #     #
 INFO: Extracting JDTLS-LAUNCHER
@@ -728,7 +728,7 @@ INFO: Ensure /home/gy/.local/bin is in path
 
 <hr>
 
-# 해결해야할것정리_해결한거랑 해결 못한거[[🔝]](#link)
+# 해결해야할것정리_해결한거랑 해결 못한거[|🔝|](#link)
 - [x] (해결)truble.nvim오류 메세지 해결 못함
   - https://github.com/folke/trouble.nvim
 - [ ] font 크기 해결 못함(neovide에서 안됨 버그인가??)neovim에서는 완벽히 잘 돌아감
@@ -780,7 +780,7 @@ vim.g.rainbow_delimiters = {
 }
 ```
 
-# Undo & Swap file 설정하기[[🔝]](#link)
+# Undo & Swap file 설정하기[|🔝|](#link)
 - https://toddknutson.bio/posts/how-to-enable-neovim-undo-backup-and-swap-files-when-switching-linux-groups/
 
 - 이걸로 대충 해줌
@@ -838,7 +838,7 @@ if vim.fn.isdirectory(UNDODIR) == 0 then
 end
 ```
 
-# Deprecated 해결해야할것 ㅠㅠ[[🔝]](#link)
+# Deprecated 해결해야할것 ㅠㅠ[|🔝|](#link)
 - Nvim 0.11부터 해결해야할것
 - 단서1
   - vim.lsp.util.parse_snippet is deprecated what should I do?
@@ -895,12 +895,11 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 -- More --
 ```
 
-# Source 외국분 git에서 대부분 가져옴[[🔝]](#link)
+# Source 외국분 git에서 대부분 가져옴[|🔝|](#link)
 
 - https://github.com/codeitlikemiley/neovide-rust-neovim
   - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)
 
-# 다른 외국인의 멋진 NeoVim세팅[[🔝]](#link)
+# 다른 외국인의 멋진 NeoVim세팅[|🔝|](#link)
   - https://github.com/dreamsofcode-io/DreamNvim
     - 출처: https://youtu.be/ig_HLrssAYE?si=rwgmDQyHhVeGz71U
-

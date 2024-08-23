@@ -2,6 +2,7 @@
 
 - [요즘-쓰는-lspinlayhint-color-setting & clangd inlayhint 활성화하기on](#요즘-쓰는-lspinlayhint-color-setting)
   - [clangd_extension-추가-기능cland_inlayhint-활성화link](#clangd_extension-추가-기능clangd_inlayhint-활성화)
+  - [Inlay-hints세팅(다른언어들까지 모두Java,Kotlin)](#inlay-hints세팅다른언어들까지-모두javakotlin)
 - [라인-fold-unfold-접기--닫기--전체-열기-전체-닫기link](#라인-fold-unfold-접기--닫기--전체-열기-전체-닫기)
 - [rustsnippet기본-위치](#rustsnippet기본-위치)
 - [rust-snippets-정리중](#rust-snippets-정리중)
@@ -146,6 +147,9 @@ https://github.com/p00f/clangd_extensions.nvim
 
 # Inlay-hints세팅(다른언어들까지 모두Java,Kotlin)[|🔝|](#link)
 - https://github.com/MysticalDevil/inlay-hints.nvim
+
+- Reddit글
+  - https://www.reddit.com/r/neovim/comments/14yo0ih/i_need_help_with_the_configuration_of_inlay_hints/
   
 <hr>
 

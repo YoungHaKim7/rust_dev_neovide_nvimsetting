@@ -144,6 +144,11 @@ https://github.com/p00f/clangd_extensions.nvim
 :ClangdMemoryUsage expand_preamble
 ```
 
+# Inlay-hints세팅(다른언어들까지 모두Java,Kotlin)[|🔝|](#link)
+- https://github.com/MysticalDevil/inlay-hints.nvim
+  
+<hr>
+
 # 라인 fold unfold 접기 / 닫기 / 전체 열기/ 전체 닫기[|🔝|](#link)
 
 - ```zR``` 접힌거 다 열기Open

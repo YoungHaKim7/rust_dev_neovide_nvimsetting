@@ -744,6 +744,10 @@ INFO: Installation successful
 INFO: Ensure /home/gy/.local/bin is in path
 ```
 
+- (자바Java LSP세팅)Configure Neovim for Java Development | Andrew Courter
+  - https://youtu.be/C7juSZsM2Fg?si=qxInD8VLDjxSSk7K
+
+
 <hr>
 
 # 해결해야할것정리_해결한거랑 해결 못한거[|🔝|](#link)

@@ -146,6 +146,8 @@ https://github.com/p00f/clangd_extensions.nvim
 ```
 
 # Inlay-hints세팅(다른언어들까지 모두Java,Kotlin)[|🔝|](#link)
+- NeoVim공식 inlayhint세팅
+  - https://github.com/neovim/neovim/pull/23426
 - https://github.com/MysticalDevil/inlay-hints.nvim
 
 - Reddit글

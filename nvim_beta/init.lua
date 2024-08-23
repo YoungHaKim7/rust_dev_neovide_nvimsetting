@@ -7,8 +7,10 @@ require("autocmd")
 require("lspconfig")
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.clangd.setup{}
-require'lspconfig'.zls.setup{}
 require'lspconfig'.asm_lsp.setup{}
+require'lspconfig'.jdtls.setup{ cmd = { 'jdtls' } }
+require'lspconfig'.zls.setup{}
+
 -- Install Plugins
 require("packages")
 -- Init Plugins

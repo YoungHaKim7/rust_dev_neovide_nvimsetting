@@ -123,6 +123,15 @@ require("packer").startup(function(use)
     -- zig lang
     use {"ziglang/zig.vim"}
 
+    -- inlayhint java
+    use {
+        "MysticalDevil/inlay-hints.nvim",
+        require = { "neovim/nvim-lspconfig" },
+        config = function()
+            require("inlay-hints").setup()
+        end
+    }
+
     -- :UnicodeTable    - Print Unicode Table in new window
     use {"chrisbra/unicode.vim"}
 

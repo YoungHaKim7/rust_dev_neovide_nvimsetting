@@ -156,6 +156,9 @@ https://github.com/p00f/clangd_extensions.nvim
   - https://www.reddit.com/r/neovim/comments/14yo0ih/i_need_help_with_the_configuration_of_inlay_hints/
   - 힌트2
     - https://stackoverflow.com/questions/78477233/not-able-to-configure-inlay-hints-for-neovim-v10
+  - 힌트3
+    - [New Native Neovim LSP Inlay Hints (Nightly Build) | Elijah Manor](https://youtu.be/DYaTzkw3zqQ?si=Xoc-FhBsHXLtE68k)
+
   
 <hr>
 

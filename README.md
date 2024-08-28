@@ -337,6 +337,11 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
   - https://clang.llvm.org/docs/ClangFormat.html
     - https://vi.stackexchange.com/questions/43514/automatic-formatting-in-c-c-etc-while-typing-in-neovim
 
+```bash
+sudo apt update
+
+apt search clang-format
+```
 
 # Theme테마 변경하기[|🔝|](#link)
 

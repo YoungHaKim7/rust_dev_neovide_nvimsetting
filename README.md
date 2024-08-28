@@ -333,6 +333,10 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
   git clone https://github.com/nvim-neotest/nvim-nio
   ```
 
+- C언어 자동정렬
+  - https://clang.llvm.org/docs/ClangFormat.html
+
+
 # Theme테마 변경하기[|🔝|](#link)
 
 - ./lua/theme.lua

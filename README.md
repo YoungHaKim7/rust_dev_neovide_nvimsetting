@@ -342,6 +342,11 @@ sudo apt update
 
 apt search clang-format
 ```
+- vim에서 사용법(설치후) command창에 입력하면 됨
+- `:%!clang-format`
+```
+:%!clang-format
+```
 
 # Theme테마 변경하기[|🔝|](#link)
 

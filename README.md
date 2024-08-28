@@ -335,6 +335,7 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
 
 - C언어 자동정렬
   - https://clang.llvm.org/docs/ClangFormat.html
+    - https://vi.stackexchange.com/questions/43514/automatic-formatting-in-c-c-etc-while-typing-in-neovim
 
 
 # Theme테마 변경하기[|🔝|](#link)

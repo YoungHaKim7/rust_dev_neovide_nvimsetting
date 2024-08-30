@@ -28,6 +28,11 @@
 - [source-외국분-git에서-대부분-가져옴](#source-외국분-git에서-대부분-가져옴)
 - [다른 사람이 만든 멋진 neovim세팅](#다른-외국인의-멋진-neovim세팅)
 
+<hr>
+
+- [(NvChad)WindowsOS neovim 설치는-이게-좋다](#windows-neovim-설치는-이게-좋다)
+
+<hr>
 
 <p align="center">
   <img alt="rust1" width=60px src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" />

@@ -61,6 +61,11 @@
 
 <hr>
 
+# Windows NeoVim 설치는 이게 좋다.[|🔝|](#link)
+- https://nvchad.com/
+
+<hr>
+
 # RustSnippet기본 위치[|🔝|](#link)
 
 - https://github.com/hrsh7th/vim-vsnip

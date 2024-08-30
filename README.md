@@ -31,6 +31,7 @@
 <hr>
 
 - [(NvChad)WindowsOS neovim 설치는-이게-좋다](#windows-neovim-설치는-이게-좋다)
+  - [WindowsOS용 내 NvChad_NeoVim Settings](https://github.com/YoungHaKim7/nvim_gy_NvChad_version)
 
 <hr>
 

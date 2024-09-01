@@ -47,6 +47,7 @@
 <hr>
 
 # rust_dev_neovide_LunarVimSetting(My Setting)_GY_Version[|🔝|](#link)
+- 루나빔 세팅 최종(lvim)
 - https://github.com/YoungHaKim7/lvim_Rust_AI_Setting
   - LunarVim 세팅 강의(완전 처음부터)002개고생하면서 배우는 Rust_Basic(LunarVim, Helix, VSCode Zellij)
     - https://youtube.com/live/_dgi6vOnCO0?feature=share

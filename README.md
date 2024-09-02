@@ -39,6 +39,10 @@
 
 <hr>
 
+- [Neovide 이미지를 실행시키기 위한 FUSE]()
+
+<hr>
+
 <p align="center">
   <img alt="rust1" width=60px src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" />
   <img alt="ferris" width=30px src="https://user-images.githubusercontent.com/67513038/213403213-1b1b3efc-ce53-4825-9dfc-e9bf2956a7f4.svg" />
@@ -956,3 +960,10 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 # 다른 외국인의 멋진 NeoVim세팅[|🔝|](#link)
   - https://github.com/dreamsofcode-io/DreamNvim
     - 출처: https://youtu.be/ig_HLrssAYE?si=rwgmDQyHhVeGz71U
+
+<hr>
+
+# Neovide 이미지를 실행시키기 위한 FUSE[|🔝|](#link)
+- https://github.com/AppImage/AppImageKit/wiki/FUSE
+
+<hr>

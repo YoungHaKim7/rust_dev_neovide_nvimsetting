@@ -39,7 +39,7 @@
 
 <hr>
 
-- [Neovide 이미지를 실행시키기 위한 FUSE]()
+- [Neovide 이미지를 실행시키기 위한 FUSE](#neovide-이미지를-실행시키기-위한-fuse)
 
 <hr>
 

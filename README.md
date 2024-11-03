@@ -41,6 +41,14 @@
 
 - [Neovide 이미지를 실행시키기 위한 FUSE](#neovide-이미지를-실행시키기-위한-fuse)
 
+```
+:set guifont=Hack\ Nerd\ Font:h30
+
+# 커서 애니매이션 없애는거 찾아야 함. 꼴도 보기도 싫다.
+```
+
+- https://neovide.dev/configuration.html
+
 <hr>
 
 <p align="center">

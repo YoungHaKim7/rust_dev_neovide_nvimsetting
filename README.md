@@ -587,6 +587,7 @@ nnoremap("K", "<cmd>lua vim.lsp.buf.hover()<CR>", true)
 # Symbol-outline Keymap[|🔝|](#link)
 
 ```lua
+# 모두 접기 W   / 모두 펴기 E
 keymaps = { -- These keymaps can be a string or a table for multiple keys
     close = {"<Esc>", "q"},
     goto_location = "<Cr>",

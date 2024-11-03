@@ -86,6 +86,7 @@ let g:neovide_remember_window_size = v:true
 
 - `nv . --size 2930x1300`
   - 실행할때 창크기 지정됨 출처 : https://github.com/neovide/neovide/issues/1636
+  - 출처2 https://github.com/neovide/neovide/pull/1706
 
 
 - `["/home/gy/.config/neovide"]`

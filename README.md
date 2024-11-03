@@ -69,7 +69,8 @@
 # Neovide Setting(러스트로 만든거 겁나게 빠르다.)[|🔝|](#link)
 
 ```
-:set guifont=Hack\ Nerd\ Font:h30
+# Hack Nerd Font 세팅에 글씨 크기 25
+:set guifont=Hack\ Nerd\ Font:h25
 
 # 커서 애니매이션 없애는거 0 간단하네 ㅋ. 꼴도 보기도 싫다.
 let g:neovide_cursor_animation_length = 0

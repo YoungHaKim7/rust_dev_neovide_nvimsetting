@@ -77,6 +77,11 @@ let g:neovide_cursor_animation_length = 0
 
 // 요즘 쓰는 색 241103(InlayHint색깔 세팅)
 :hi LspInlayHint guifg=#35638f guibg=#420517
+
+
+# Remember Previous Window Size
+# VimScript:
+let g:neovide_remember_window_size = v:true
 ```
 
 - `["/home/gy/.config/neovide"]`

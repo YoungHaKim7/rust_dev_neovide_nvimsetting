@@ -74,6 +74,9 @@
 
 # 커서 애니매이션 없애는거 0 간단하네 ㅋ. 꼴도 보기도 싫다.
 let g:neovide_cursor_animation_length = 0
+
+// 요즘 쓰는 색 241103(InlayHint색깔 세팅)
+:hi LspInlayHint guifg=#35638f guibg=#420517
 ```
 
 - `["/home/gy/.config/neovide"]`

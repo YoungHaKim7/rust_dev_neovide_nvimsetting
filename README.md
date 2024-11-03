@@ -40,9 +40,7 @@
 <hr>
 
 - [Neovide 이미지를 실행시키기 위한 FUSE](#neovide-이미지를-실행시키기-위한-fuse)
-
-
-
+  - [Neovide Setting(러스트로 만든거 겁나게 빠르다.)](#neovide-setting러스트로-만든거-겁나게-빠르다)
 - https://neovide.dev/configuration.html
   - https://neovide.dev/
 

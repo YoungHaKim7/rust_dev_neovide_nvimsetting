@@ -84,6 +84,10 @@ let g:neovide_cursor_animation_length = 0
 let g:neovide_remember_window_size = v:true
 ```
 
+- `nv . --size 2930x1300`
+  - 실행할때 창크기 지정됨 출처 : https://github.com/neovide/neovide/issues/1636
+
+
 - `["/home/gy/.config/neovide"]`
 ```
 ERROR [neovide::settings::config] Could not watch config file, chances are it just doesn't exist: No such file or directory (os error 2) about ["/home/gy/.config/neovide"]

@@ -48,6 +48,7 @@
 ```
 
 - https://neovide.dev/configuration.html
+  - https://neovide.dev/
 
 <hr>
 

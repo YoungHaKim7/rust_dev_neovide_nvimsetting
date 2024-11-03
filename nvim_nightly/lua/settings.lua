@@ -1,3 +1,8 @@
+-- neovide setting
+vim.g.neovide_scroll_animation_length = 0
+vim.g.neovide_cursor_animation_length = 0
+vim.g.neovide_remember_window_size = true
+
 -- filetype plugin indent on
 vim.opt.formatoptions:remove([[cro]])
 vim.opt.wrap = false

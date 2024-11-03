@@ -2,6 +2,7 @@
 vim.g.neovide_scroll_animation_length = 0
 vim.g.neovide_cursor_animation_length = 0
 vim.g.neovide_remember_window_size = true
+vim.o.guifont = "Hack Nerd Font:h30"
 
 -- filetype plugin indent on
 vim.opt.formatoptions:remove([[cro]])

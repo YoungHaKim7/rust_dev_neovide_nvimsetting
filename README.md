@@ -91,6 +91,15 @@ let g:neovide_remember_window_size = v:true
   - 실행할때 창크기 지정됨 출처 : https://github.com/neovide/neovide/issues/1636
   - 출처2 https://github.com/neovide/neovide/pull/1706
 
+- 누르기 귀찮아서 애니매이션 false세팅 settings.lua에 넣어줌
+  - https://github.com/YoungHaKim7/rust_dev_neovide_nvimsetting/blob/main/nvim_nightly/lua/settings.lua#L1-L4
+
+```lua
+-- neovide setting
+vim.g.neovide_scroll_animation_length = 0
+vim.g.neovide_cursor_animation_length = 0
+vim.g.neovide_remember_window_size = true
+```
 
 - `["/home/gy/.config/neovide"]`
 ```

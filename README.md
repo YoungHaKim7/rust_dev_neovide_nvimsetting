@@ -258,6 +258,8 @@ https://seulcode.tistory.com/488
 - AI Models
   - https://tabby.tabbyml.com/docs/models/
 
+- Install(Nvidia Docker설치시 사전 설치 필요) https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+
 - macOS
   ```bash
   tabby serve --device metal --model TabbyML/StarCoder-3B

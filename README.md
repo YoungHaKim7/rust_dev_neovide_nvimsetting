@@ -278,6 +278,24 @@ https://seulcode.tistory.com/488
 - https://tabby.tabbyml.com/docs/installation/windows/
 
 - LinuxOS(Ubuntu24.04)
+  - 1. apt install
+
+```
+sudo apt-get update
+sudo apt-get install libssl-dev
+
+# For Ubuntu / Debian
+apt-get install protobuf-compiler libopenblas-dev
+```
+  - 2. git clone https://github.com/TabbyML/tabby/tree/v0.11.1
+
+```
+git clone --recurse-submodules https://github.com/TabbyML/tabby
+cd tabby
+```
+
+
+- LinuxOS(Ubuntu24.04)
 - https://stackoverflow.com/questions/75118992/docker-error-response-from-daemon-could-not-select-device-driver-with-capab
 
 - 1. Configure the repository:

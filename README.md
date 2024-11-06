@@ -286,6 +286,10 @@ sudo apt-get install libssl-dev
 
 # For Ubuntu / Debian
 apt-get install protobuf-compiler libopenblas-dev
+
+# cuda 업데이트 3d(Nvidia기준)
+sudo apt install nvidia-cuda-toolkit
+
 ```
   - 2. git clone https://github.com/TabbyML/tabby/tree/v0.11.1
 

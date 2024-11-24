@@ -260,6 +260,23 @@ https://seulcode.tistory.com/488
 
 - Install(Nvidia Docker설치시 사전 설치 필요) https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
+- [ ] lua packer 세팅 (test 예정)
+
+```lua
+    --- Tabby AI plugin
+    use {
+        "TabbyML/vim-tabby",
+        -- lazy = false,
+        requires = {
+        "neovim/nvim-lspconfig",
+        },
+        config = function()
+            vim.g.tabby_agent_start_command = {"npx", "tabby-agent", "--stdio"}
+            vim.g.tabby_inline_completion_trigger = "auto"
+        end,
+    },
+```
+
 - macOS
   ```bash
   tabby serve --device metal --model TabbyML/StarCoder-3B

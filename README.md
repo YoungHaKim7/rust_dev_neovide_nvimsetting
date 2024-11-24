@@ -78,6 +78,9 @@ let g:neovide_cursor_animation_length = 0
 # scroll에 왜 애니매이션 넣는거야 느리게 ...
 let g:neovide_scroll_animation_length = 0
 
+# 타이핑 치면 마우스 알아서 숨겨줌 굿..
+vim.g.neovide_hide_mouse_when_typing = true
+
 // 요즘 쓰는 색 241103(InlayHint색깔 세팅)
 :hi LspInlayHint guifg=#35638f guibg=#420517
 

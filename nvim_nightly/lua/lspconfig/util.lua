@@ -1,10 +1,10 @@
-local vim = vim
 local validate = vim.validate
 local api = vim.api
 local lsp = vim.lsp
-local uv = vim.loop
+local uv = vim.uv or vim.loop
+local nvim_eleven = vim.fn.has 'nvim-0.11' == 1
 
-local is_windows = uv.os_uname().version:match 'Windows'
+local iswin = uv.os_uname().version:match 'Windows'
 
 local M = {}
 
@@ -87,10 +87,12 @@ end
 
 function M.create_module_commands(module_name, commands)
   for command_name, def in pairs(commands) do
-    local opts = M._parse_user_command_options(def)
-    api.nvim_create_user_command(command_name, function(info)
-      require('lspconfig')[module_name].commands[command_name][1](unpack(info.fargs))
-    end, opts)
+    if type(def) ~= 'function' then
+      local opts = M._parse_user_command_options(def)
+      api.nvim_create_user_command(command_name, function(info)
+        require('lspconfig')[module_name].commands[command_name][1](unpack(info.fargs))
+      end, opts)
+    end
   end
 end
 
@@ -100,64 +102,28 @@ M.path = (function()
     return path:gsub('([%[%]%?%*])', '\\%1')
   end
 
-  local function sanitize(path)
-    if is_windows then
-      path = path:sub(1, 1):upper() .. path:sub(2)
-      path = path:gsub('\\', '/')
-    end
-    return path
-  end
-
-  local function exists(filename)
-    local stat = uv.fs_stat(filename)
-    return stat and stat.type or false
-  end
-
-  local function is_dir(filename)
-    return exists(filename) == 'directory'
-  end
-
-  local function is_file(filename)
-    return exists(filename) == 'file'
-  end
-
+  --- @param path string
+  --- @return boolean
   local function is_fs_root(path)
-    if is_windows then
+    if iswin then
       return path:match '^%a:$'
     else
       return path == '/'
     end
   end
 
+  --- @param filename string
+  --- @return boolean
   local function is_absolute(filename)
-    if is_windows then
+    if iswin then
       return filename:match '^%a:' or filename:match '^\\\\'
     else
       return filename:match '^/'
     end
   end
 
-  --- @param path string
-  --- @return string?
-  local function dirname(path)
-    local strip_dir_pat = '/([^/]+)$'
-    local strip_sep_pat = '/$'
-    if not path or #path == 0 then
-      return
-    end
-    local result = path:gsub(strip_sep_pat, ''):gsub(strip_dir_pat, '')
-    if #result == 0 then
-      if is_windows then
-        return path:sub(1, 2):upper()
-      else
-        return '/'
-      end
-    end
-    return result
-  end
-
   local function path_join(...)
-    return table.concat(vim.tbl_flatten { ... }, '/')
+    return table.concat(M.tbl_flatten { ... }, '/')
   end
 
   -- Traverse the path calling cb along the way.
@@ -166,7 +132,7 @@ M.path = (function()
     local dir = path
     -- Just in case our algo is buggy, don't infinite loop.
     for _ = 1, 100 do
-      dir = dirname(dir)
+      dir = vim.fs.dirname(dir)
       if not dir then
         return
       end
@@ -184,7 +150,7 @@ M.path = (function()
   local function iterate_parents(path)
     local function it(_, v)
       if v and not is_fs_root(v) then
-        v = dirname(v)
+        v = vim.fs.dirname(v)
       else
         return
       end
@@ -211,17 +177,12 @@ M.path = (function()
     return dir == root
   end
 
-  local path_separator = is_windows and ';' or ':'
+  local path_separator = iswin and ';' or ':'
 
   return {
     escape_wildcards = escape_wildcards,
-    is_dir = is_dir,
-    is_file = is_file,
     is_absolute = is_absolute,
-    exists = exists,
-    dirname = dirname,
     join = path_join,
-    sanitize = sanitize,
     traverse_parents = traverse_parents,
     iterate_parents = iterate_parents,
     is_descendant = is_descendant,
@@ -248,14 +209,22 @@ function M.search_ancestors(startpath, func)
   end
 end
 
+function M.tbl_flatten(t)
+  return nvim_eleven and vim.iter(t):flatten(math.huge):totable() or vim.tbl_flatten(t)
+end
+
+function M.get_lsp_clients(filter)
+  return nvim_eleven and lsp.get_clients(filter) or lsp.get_active_clients(filter)
+end
+
 function M.root_pattern(...)
-  local patterns = vim.tbl_flatten { ... }
+  local patterns = M.tbl_flatten { ... }
   return function(startpath)
     startpath = M.strip_archive_subpath(startpath)
     for _, pattern in ipairs(patterns) do
       local match = M.search_ancestors(startpath, function(path)
         for _, p in ipairs(vim.fn.glob(M.path.join(M.path.escape_wildcards(path), pattern), true, true)) do
-          if M.path.exists(p) then
+          if uv.fs_stat(p) then
             return path
           end
         end
@@ -271,16 +240,8 @@ end
 function M.find_git_ancestor(startpath)
   return M.search_ancestors(startpath, function(path)
     -- Support git directories and git files (worktrees)
-    if M.path.is_dir(M.path.join(path, '.git')) or M.path.is_file(M.path.join(path, '.git')) then
-      return path
-    end
-  end)
-end
-
-function M.find_mercurial_ancestor(startpath)
-  return M.search_ancestors(startpath, function(path)
-    -- Support Mercurial directories
-    if M.path.is_dir(M.path.join(path, '.hg')) then
+    local gitpath = M.path.join(path, '.git')
+    if vim.fn.isdirectory(gitpath) == 1 or (uv.fs_stat(gitpath) or {}).type == 'file' then
       return path
     end
   end)
@@ -288,7 +249,7 @@ end
 
 function M.find_node_modules_ancestor(startpath)
   return M.search_ancestors(startpath, function(path)
-    if M.path.is_dir(M.path.join(path, 'node_modules')) then
+    if vim.fn.isdirectory(M.path.join(path, 'node_modules')) == 1 then
       return path
     end
   end)
@@ -296,7 +257,8 @@ end
 
 function M.find_package_json_ancestor(startpath)
   return M.search_ancestors(startpath, function(path)
-    if M.path.is_file(M.path.join(path, 'package.json')) then
+    local jsonpath = M.path.join(path, 'package.json')
+    if (uv.fs_stat(jsonpath) or {}).type == 'file' then
       return path
     end
   end)
@@ -308,7 +270,7 @@ function M.insert_package_json(config_files, field, fname)
 
   if root_with_package then
     -- only add package.json if it contains field parameter
-    local path_sep = is_windows and '\\' or '/'
+    local path_sep = iswin and '\\' or '/'
     for line in io.lines(root_with_package .. path_sep .. 'package.json') do
       if line:find(field) then
         config_files[#config_files + 1] = 'package.json'
@@ -320,7 +282,7 @@ function M.insert_package_json(config_files, field, fname)
 end
 
 function M.get_active_clients_list_by_ft(filetype)
-  local clients = vim.lsp.get_active_clients()
+  local clients = M.get_lsp_clients()
   local clients_list = {}
   for _, client in pairs(clients) do
     local filetypes = client.config.filetypes or {}
@@ -365,7 +327,8 @@ function M.get_config_by_ft(filetype)
 end
 
 function M.get_active_client_by_name(bufnr, servername)
-  for _, client in pairs(vim.lsp.get_active_clients { bufnr = bufnr }) do
+  --TODO(glepnir): remove this for loop when we want only support 0.10+
+  for _, client in pairs(M.get_lsp_clients { bufnr = bufnr }) do
     if client.name == servername then
       return client
     end
@@ -401,6 +364,41 @@ function M.strip_archive_subpath(path)
   path = vim.fn.substitute(path, 'zipfile://\\(.\\{-}\\)::[^\\\\].*$', '\\1', '')
   path = vim.fn.substitute(path, 'tarfile:\\(.\\{-}\\)::.*$', '\\1', '')
   return path
+end
+
+--- Deprecated functions
+
+--- @deprecated use `vim.fn.isdirectory(path) == 1` instead
+--- @param filename string
+--- @return boolean
+function M.path.is_dir(filename)
+  return vim.fn.isdirectory(filename) == 1
+end
+
+--- @deprecated use `(vim.loop.fs_stat(path) or {}).type == 'file'` instead
+--- @param path string
+--- @return boolean
+function M.path.is_file(path)
+  return (vim.loop.fs_stat(path) or {}).type == 'file'
+end
+
+--- @deprecated use `vim.fs.dirname` instead
+M.path.dirname = vim.fs.dirname
+
+--- @deprecated use `vim.fs.normalize` instead
+M.path.sanitize = vim.fs.normalize
+
+--- @deprecated use `vim.loop.fs_stat` instead
+--- @param filename string
+--- @return string|false
+function M.path.exists(filename)
+  local stat = uv.fs_stat(filename)
+  return stat and stat.type or false
+end
+
+--- @deprecated use `vim.fs.find('.hg', { path = startpath, upward = true })` instead
+function M.find_mercurial_ancestor(startpath)
+  return vim.fs.find('.hg', { path = startpath, upward = true })
 end
 
 return M

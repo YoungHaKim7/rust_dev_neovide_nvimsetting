@@ -10,6 +10,7 @@ require'lspconfig'.clangd.setup{}
 require'lspconfig'.asm_lsp.setup{}
 require'lspconfig'.jdtls.setup{ cmd = { 'jdtls' } }
 require'lspconfig'.zls.setup{}
+require'lspconfig'.tabby_ml.setup{}
 
 -- Install Plugins
 require("packages")

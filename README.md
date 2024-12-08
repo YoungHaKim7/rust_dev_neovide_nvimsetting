@@ -68,25 +68,25 @@
 
 # Neovide Setting(러스트로 만든거 겁나게 빠르다.)[|🔝|](#link)
 
-```
-# Hack Nerd Font 세팅에 글씨 크기 25
+```lua
+-- Hack Nerd Font 세팅에 글씨 크기 25
 :set guifont=Hack\ Nerd\ Font:h25
 
-# 커서 애니매이션 없애는거 0 간단하네 ㅋ. 꼴도 보기도 싫다.
+-- 커서 애니매이션 없애는거 0 간단하네 ㅋ. 꼴도 보기도 싫다.
 let g:neovide_cursor_animation_length = 0
 
-# scroll에 왜 애니매이션 넣는거야 느리게 ...
+-- scroll에 왜 애니매이션 넣는거야 느리게 ...
 let g:neovide_scroll_animation_length = 0
 
-# 타이핑 치면 마우스 알아서 숨겨줌 굿..
+-- 타이핑 치면 마우스 알아서 숨겨줌 굿..
 vim.g.neovide_hide_mouse_when_typing = true
 
-// 요즘 쓰는 색 241103(InlayHint색깔 세팅)
+-- 요즘 쓰는 색 241103(InlayHint색깔 세팅)
 :hi LspInlayHint guifg=#35638f guibg=#420517
 
 
-# Remember Previous Window Size
-# VimScript:
+-- Remember Previous Window Size
+-- VimScript:
 let g:neovide_remember_window_size = v:true
 ```
 

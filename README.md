@@ -872,6 +872,9 @@ INFO: Ensure /home/gy/.local/bin is in path
   - https://youtu.be/C7juSZsM2Fg?si=qxInD8VLDjxSSk7K
 
 
+- (지그로 만들거 좋다.)Language server for GLSL (autocomplete, goto-definition, formatter, and more)
+  - https://github.com/nolanderc/glsl_analyzer
+
 <hr>
 
 # 해결해야할것정리_해결한거랑 해결 못한거[|🔝|](#link)

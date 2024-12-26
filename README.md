@@ -875,7 +875,42 @@ INFO: Ensure /home/gy/.local/bin is in path
 - (지그로 만들거 좋다.)Language server for GLSL (autocomplete, goto-definition, formatter, and more)
   - https://github.com/nolanderc/glsl_analyzer
 
-<hr>
+- Installation
+  - We provide precompiled binaries for Linux, MacOS and Windows on the Releases page. Make sure to copy it somewhere under your PATH environment variable (e.g. ~/.local/bin on Linux).
+  - Building from Source
+
+```
+zig build install -Doptimize=ReleaseSafe --prefix ~/.local/
+```
+
+Tested using zig 0.13.0.
+
+- Usage
+
+- By default glsl_analyzer communicates over stdin/stdout:
+
+```
+glsl_analyzer
+```
+
+- However, you can configure it to use a specific port (TCP) using the following command:
+
+```
+glsl_analyzer --port <PORT>
+```
+
+- Neovim
+
+- nvim-lspconfig comes with support for glsl_analyzer. Simply add the following to your lua config:
+
+```lua
+require'lspconfig'.glsl_analyzer.setup{}
+```
+
+- Visual Studio Code
+  - Install the glsl-analyzer extension from the marketplace. It will automatically download the latest precompiled binary for your platform.
+
+<hr />
 
 # 해결해야할것정리_해결한거랑 해결 못한거[|🔝|](#link)
 - [x] (해결)truble.nvim오류 메세지 해결 못함

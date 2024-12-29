@@ -400,7 +400,17 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
 - `http://localhost:8080/` 크롬이나 파이어폭스 브라우져에서 주소창에 치면 DashBoard나온다.
 
 # copilot (disable)하는법[|🔝|](#link)
+
+- NeoVim Default Key는 `C-i` 어떻게 변경하는지 못찾음 그냥 `C-i` 누르는 걸로..
+  - https://github.com/orgs/community/discussions/11611
+
+```lua
+vim.api.nvim_set_keymap('i', '<C-b>', 'copilot#Accept()', true)
+```
+
+
 - https://github.com/github/copilot.vim
+
 
 ```
 :Copilot disable        Globally disable GitHub Copilot inline suggestions.

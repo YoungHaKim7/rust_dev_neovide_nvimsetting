@@ -46,6 +46,9 @@ require('rainbow-delimiters.setup').setup()
 require("theme/tokyonight")
 require("theme/dracula")
 
+-- Copilot
+require("keymaps/copilot")
+
 -- inlayhints
 require("inlayhints/clangd_extensions")
 require("clangd_extensions.inlay_hints").setup_autocmd()

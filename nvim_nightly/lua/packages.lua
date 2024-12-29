@@ -107,6 +107,8 @@ require("packer").startup(function(use)
     }
     --- Tabby AI plugin
     use { 'TabbyML/vim-tabby' }
+    -- Copilot
+    --
     -- indent
     use {"lukas-reineke/indent-blankline.nvim"}
     -- Terminal(Float)

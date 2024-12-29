@@ -2,7 +2,8 @@
 vim.g.neovide_scroll_animation_length = 0
 vim.g.neovide_cursor_animation_length = 0
 vim.g.neovide_remember_window_size = true
-vim.o.guifont = "Hack Nerd Font:h25"
+vim.o.guifont = "Hack Nerd Font:h30"
+vim.g.neovide_hide_mouse_when_typing = true
 
 -- filetype plugin indent on
 vim.opt.formatoptions:remove([[cro]])

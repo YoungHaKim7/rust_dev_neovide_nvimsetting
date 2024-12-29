@@ -9,6 +9,7 @@
 - [플러그인매니저 packer설치하기PackerInstall설치 _ 삭제는 PackerClean_업데이트는PackerSync](#packer)
 - [hack-nerd-mono-font-설치](#hack-nerd-mono-font-설치)
 - [Tabby AI설치하기_Self-hosted AI coding assistant](#tabby-ai-설치)
+  - [copilot (disable)하는법]()
 - [네오빔-플러그인-정리neovim-plugins](#네오빔-플러그인-정리neovim-plugins)
 - [내가 세팅한 키세팅keymap](#keymap)
   - [lsp-keymapLSP 키세팅](#lsp-keymap)
@@ -397,6 +398,43 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
 ```
 
 - `http://localhost:8080/` 크롬이나 파이어폭스 브라우져에서 주소창에 치면 DashBoard나온다.
+
+# copilot (disable)하는법[|🔝|](#link)
+- https://github.com/github/copilot.vim
+
+```
+:Copilot disable        Globally disable GitHub Copilot inline suggestions.
+
+                                                *:Copilot_enable*
+:Copilot enable         Re-enable GitHub Copilot after :Copilot disable.
+
+                                                *:Copilot_setup*
+:Copilot setup          Authenticate and enable GitHub Copilot.
+
+                                                *:Copilot_signout*
+:Copilot signout        Sign out of GitHub Copilot.
+
+                                                *:Copilot_status*
+:Copilot status         Check if GitHub Copilot is operational for the current
+                        buffer and report on any issues.
+
+                                                *:Copilot_panel*
+:Copilot panel          Open a window with up to 10 completions for the
+                        current buffer.  Use <CR> to accept a completion.
+                        Maps are also provided for [[ and ]] to jump from
+                        completion to completion.  This is the default command
+                        if :Copilot is called without an argument.
+
+                                                *:Copilot_version*
+:Copilot version        Show version information.
+
+                                                *:Copilot_feedback*
+:Copilot feedback       Open the website for providing GitHub Copilot
+                        feedback.  Be sure to include |:Copilot_version|
+                        output when reporting a bug.
+```
+
+<hr />
 
 # 네오빔 플러그인 정리(NeoVim Plugins[|🔝|](#link)
 - 무지게 색 괄호(Rainbow_Parentheses)

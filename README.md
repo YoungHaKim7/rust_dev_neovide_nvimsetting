@@ -9,7 +9,7 @@
 - [플러그인매니저 packer설치하기PackerInstall설치 _ 삭제는 PackerClean_업데이트는PackerSync](#packer)
 - [hack-nerd-mono-font-설치](#hack-nerd-mono-font-설치)
 - [Tabby AI설치하기_Self-hosted AI coding assistant](#tabby-ai-설치)
-  - [copilot (disable)하는법]()
+  - [copilot (disable)하는법](#copilot-disable하는법)
 - [네오빔-플러그인-정리neovim-plugins](#네오빔-플러그인-정리neovim-plugins)
 - [내가 세팅한 키세팅keymap](#keymap)
   - [lsp-keymapLSP 키세팅](#lsp-keymap)

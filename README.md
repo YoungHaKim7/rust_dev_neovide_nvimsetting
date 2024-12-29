@@ -410,6 +410,7 @@ vim.api.nvim_set_keymap('i', '<C-b>', 'copilot#Accept()', true)
 
 
 - https://github.com/github/copilot.vim
+  - https://github.com/orgs/community/discussions/11611
 
 
 ```

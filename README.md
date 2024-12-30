@@ -403,6 +403,13 @@ token = "Input My token" # if token is set, request header Authorization = "Bear
 
 - NeoVim Default Key는 `C-i` 어떻게 변경하는지 못찾음 그냥 `C-i` 누르는 걸로..
   - https://github.com/orgs/community/discussions/11611
+ 
+- **(Install)**Neovim, Linux/macOS:
+
+```bash
+git clone https://github.com/github/copilot.vim.git \
+  ~/.config/nvim/pack/github/start/copilot.vim
+```
 
 ```lua
 vim.api.nvim_set_keymap('i', '<C-b>', 'copilot#Accept()', true)
@@ -410,7 +417,6 @@ vim.api.nvim_set_keymap('i', '<C-b>', 'copilot#Accept()', true)
 
 
 - https://github.com/github/copilot.vim
-  - https://github.com/orgs/community/discussions/11611
 
 
 ```

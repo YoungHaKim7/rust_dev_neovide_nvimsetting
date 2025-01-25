@@ -1149,3 +1149,13 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 - https://github.com/AppImage/AppImageKit/wiki/FUSE
 
 <hr>
+
+# **[GN⁺: Llama.vim – LLM을 이용한 VIM용 코드/텍스트 자동완성 플러그인 ](<https://news.hada.io/topic?id=18885&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**[|🔝|](#link)
+- VIM내에서 로컬 LLM 기반의 텍스트 자동완성 기능을 제공   
+- `Insert` 모드에서 커서 이동 시 자동 제안  
+- `Ctrl+F`로 수동 제안 전환 가능  
+- `Tab`으로 제안 수락  
+- `Shift+Tab`으로 첫 번째 줄 제안 수락  
+- 최대 텍스트 생성 시간 설정 가능  
+- 커서 주변의 컨텍스트 범위 설정 가능  
+- 열린 파일...

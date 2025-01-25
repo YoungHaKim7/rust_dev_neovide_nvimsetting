@@ -1152,6 +1152,7 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 <hr>
 
 # **[GN⁺: Llama.vim – LLM을 이용한 VIM용 코드/텍스트 자동완성 플러그인 ](<https://news.hada.io/topic?id=18885&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**[|🔝|](#link)
+- https://github.com/ggml-org/llama.vim
 - VIM내에서 로컬 LLM 기반의 텍스트 자동완성 기능을 제공   
 - `Insert` 모드에서 커서 이동 시 자동 제안  
 - `Ctrl+F`로 수동 제안 전환 가능  

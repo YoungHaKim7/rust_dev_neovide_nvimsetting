@@ -1,6 +1,6 @@
 # Link
 
-- [NeoVim완전 삭제 하기(잘못 설치했을때 완전히 neovim지우기)]()
+- [NeoVim완전 삭제 하기(잘못 설치했을때 완전히 neovim지우기)](#neovim완전-삭제-하기잘못-설치했을때-완전히-neovim지우기)
 - [요즘-쓰는-lspinlayhint-color-setting & clangd inlayhint 활성화하기on](#요즘-쓰는-lspinlayhint-color-setting)
   - [clangd_extension-추가-기능cland_inlayhint-활성화link](#clangd_extension-추가-기능clangd_inlayhint-활성화)
   - [Inlay-hints세팅(다른언어들까지 모두Java,Kotlin)](#inlay-hints세팅다른언어들까지-모두javakotlin)

@@ -1,5 +1,6 @@
 # Link
 
+- [NeoVim완전 삭제 하기(잘못 설치했을때 완전히 neovim지우기)]()
 - [요즘-쓰는-lspinlayhint-color-setting & clangd inlayhint 활성화하기on](#요즘-쓰는-lspinlayhint-color-setting)
   - [clangd_extension-추가-기능cland_inlayhint-활성화link](#clangd_extension-추가-기능clangd_inlayhint-활성화)
   - [Inlay-hints세팅(다른언어들까지 모두Java,Kotlin)](#inlay-hints세팅다른언어들까지-모두javakotlin)
@@ -112,6 +113,26 @@ vim.o.guifont = "Hack Nerd Font:h30"
 - `["/home/gy/.config/neovide"]`
 ```
 ERROR [neovide::settings::config] Could not watch config file, chances are it just doesn't exist: No such file or directory (os error 2) about ["/home/gy/.config/neovide"]
+```
+
+# NeoVim완전 삭제 하기(잘못 설치했을때 완전히 neovim지우기)[|🔝|](#link)
+
+- https://docs.rockylinux.org/ko/books/nvchad/template_chadrc/
+
+```
+// 처음설치로 만들기 & 세팅하다가 작살나면 캐쉬삭제 해주기
+
+// 백업
+mkdir ~/backup_nvim
+cp -r ~/.config/nvim ~/backup_nvim
+cp -r ~/.local/share/nvim ~/backup_nvim
+cp -r ~/.cache/nvim ~/backup_nvim
+
+// 캐쉬삭제
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.cache/nvim
+
 ```
 
 # Dash는 맥용은 유료앱(1년 정기 구독으로 유료임 ㅠㅠ)[|🔝|](#link)

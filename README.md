@@ -12,6 +12,7 @@
   - [copilot (disable)하는법](#copilot-disable하는법)
 - [네오빔-플러그인-정리neovim-plugins](#네오빔-플러그인-정리neovim-plugins)
   - [GN⁺: Llama.vim – LLM을 이용한 VIM용 코드/텍스트 자동완성 플러그인](#gn-llamavim--llm을-이용한-vim용-코드텍스트-자동완성-플러그인-)
+  - [(외부링크)Neovim v10 setup with InlayHints](https://medium.com/@vishakhpro2002/neovim-v10-setup-with-inlayhints-838a503b17dc)
 - [내가 세팅한 키세팅keymap](#keymap)
   - [lsp-keymapLSP 키세팅](#lsp-keymap)
   - [telescope-keymap키세팅](#telescope-keymap)

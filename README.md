@@ -51,6 +51,10 @@
 
 <hr>
 
+- [ArchLinux에서 잘 안되는거 모음_복사하기 같은거]()
+
+<hr />
+
 <p align="center">
   <img alt="rust1" width=60px src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" />
   <img alt="ferris" width=30px src="https://user-images.githubusercontent.com/67513038/213403213-1b1b3efc-ce53-4825-9dfc-e9bf2956a7f4.svg" />
@@ -1184,3 +1188,8 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 - 최대 텍스트 생성 시간 설정 가능  
 - 커서 주변의 컨텍스트 범위 설정 가능  
 - 열린 파일...
+
+# ArchLinux에서 잘 안되는거 모음[|🔝|](#link)
+
+- 클립보드 복사/붙혀넣기 해결
+  - https://github.com/astrand/xclip

@@ -1194,3 +1194,4 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 
 - 클립보드 복사/붙혀넣기 해결
   - https://github.com/astrand/xclip
+    - https://bbs.archlinux.org/viewtopic.php?id=277961

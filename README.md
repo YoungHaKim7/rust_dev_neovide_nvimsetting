@@ -1195,3 +1195,10 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 - 클립보드 복사/붙혀넣기 해결
   - https://github.com/astrand/xclip
     - https://bbs.archlinux.org/viewtopic.php?id=277961
+
+- https://www.reddit.com/r/neovim/comments/i65pwd/no_python3_provider_found_run_checkhealth_provider/
+  - https://bbs.archlinux.org/viewtopic.php?id=269645
+
+```
+sudo pacman -S python-neovim
+```

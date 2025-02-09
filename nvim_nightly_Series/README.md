@@ -3,6 +3,11 @@
 
 <hr />
 
+# 여기를 집중적으로 체크해야한다.
+- https://github.com/neovim/nvim-lspconfig
+
+<hr />
+
 # nvim v0.10.1 이후로 해결해야함(clangd_extensions)
 
 

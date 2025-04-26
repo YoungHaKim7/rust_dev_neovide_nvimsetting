@@ -1202,3 +1202,10 @@ gitsigns: Ignoring invalid configuration field 'yadm'
 ```
 sudo pacman -S python-neovim
 ```
+
+<hr />
+
+# NeoVim 러스트로 만든거 모음
+
+# 🦀 Supercharge your Rust experience in Neovim! A heavily modified fork of rust-tools.nvim 
+- https://github.com/mrcjkb/rustaceanvim

@@ -17,7 +17,7 @@
   - [네오빔공식문서https://neovim.io/doc/user/lsp.html](https://neovim.io/doc/user/lsp.html)
   - [(외부링크)Neovim v10 setup with InlayHints](https://medium.com/@vishakhpro2002/neovim-v10-setup-with-inlayhints-838a503b17dc)
     - Rust로 만든 네오빔_플러그인 정리
-      - [NeoVim 러스트(Rust)로 만든거 모음(NeoVim PlugIns)]()
+      - [NeoVim 러스트(Rust)로 만든거 모음(NeoVim PlugIns)](#-supercharge-your-rust-experience-in-neovim-a-heavily-modified-fork-of-rust-toolsnvim)
 - [내가 세팅한 키세팅keymap](#keymap)
   - [lsp-keymapLSP 키세팅](#lsp-keymap)
   - [telescope-keymap키세팅](#telescope-keymap)

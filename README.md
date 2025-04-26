@@ -1211,3 +1211,14 @@ sudo pacman -S python-neovim
 
 # 🦀 Supercharge your Rust experience in Neovim! A heavily modified fork of rust-tools.nvim 
 - https://github.com/mrcjkb/rustaceanvim
+
+<hr />
+
+# NeoVim 쓸만한거[|🔝|](#link)
+
+- NerdTree Alternative대체재
+  - https://www.reddit.com/r/neovim/s/dMDw5J9FR4
+
+# echasnovski/mini.nvim[|🔝|](#link)
+- Library of 40+ independent Lua modules improving overall Neovim (version 0.8 and higher) experience with minimal 
+  - https://github.com/echasnovski/mini.nvim

@@ -1171,9 +1171,12 @@ gitsigns: Ignoring invalid configuration field 'yadm'
   - 여기를 참조 많이 해야함(다 흡수 못함 ㅠㅠ)
 
 # 다른 외국인의 멋진 NeoVim세팅[|🔝|](#link)
-  - https://github.com/dreamsofcode-io/DreamNvim
-    - 출처: https://youtu.be/ig_HLrssAYE?si=rwgmDQyHhVeGz71U
-  - https://github.com/tobinjt/dotfiles
+- https://github.com/dreamsofcode-io/DreamNvim
+  - 출처: https://youtu.be/ig_HLrssAYE?si=rwgmDQyHhVeGz71U
+- https://github.com/tobinjt/dotfiles
+
+- 한국 사람
+  - https://github.com/moong00n/neovim-starter
 
 <hr>
 

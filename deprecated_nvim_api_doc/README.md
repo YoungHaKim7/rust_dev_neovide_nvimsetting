@@ -1,3 +1,11 @@
+# 이거 플러그인 해결해야함.. 
+- 버젼업이 안되는중..
+
+- https://github.com/p00f/clangd_extensions.nvim
+
+
+<hr />
+
 # https://neovim.io/doc/user/deprecated.html
 
 ```txt

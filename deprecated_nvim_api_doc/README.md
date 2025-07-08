@@ -692,3 +692,6 @@ vim.deprecated:                       require("vim.deprecated.health").check()
         /Users/gy-gyoung/.local/share/nvim/site/pack/packer/start/vim-tabby/lua/tabby/lsp/nvim_lsp.lua:31
 
 ```
+
+# vim.lsp.buf_get_clients() 해결
+- https://github.com/gmelodie/project.nvim

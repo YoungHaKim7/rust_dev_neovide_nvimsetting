@@ -3,6 +3,8 @@
 
 - https://github.com/p00f/clangd_extensions.nvim
 
+# rust-analyzer(LSP 설명서)
+- https://rust-analyzer.github.io/book/configuration.html
 
 <hr />
 

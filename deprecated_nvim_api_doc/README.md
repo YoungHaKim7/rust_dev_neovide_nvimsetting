@@ -703,3 +703,14 @@ vim.deprecated:                       require("vim.deprecated.health").check()
 
 # vim.lsp.buf_get_clients() 해결
 - https://github.com/gmelodie/project.nvim
+
+
+# 0.12 neovim해결 해야함.
+
+```
+/checkOnSave: invalid type: map, expected a boolean;
+position_encoding param is required in vim.lsp.util.make_position_params. Defaulting to position encoding of the first client.
+warning: multiple different client offset_encodings detected for buffer, vim.lsp.util._get_offset_encoding() uses the offset_encoding from
+ the first client
+/home/g/.config/nvim/lua/plugins/cmp.lua:25: attempt to call field 'parse_snippet' (a nil value)
+```

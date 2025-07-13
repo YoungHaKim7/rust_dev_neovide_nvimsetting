@@ -102,6 +102,23 @@ vim.g.neovide_hide_mouse_when_typing = true
 let g:neovide_remember_window_size = v:true
 ```
 
+- nvim에서 lua세팅 or ./config/neovide/config.toml로 가능함
+  - https://neovide.dev/config-file.html
+
+```lua
+-- neovide GUI config
+vim.g.neovide_opacity = 0.98
+vim.g.neovide_remember_window_size = true
+-- vim.g.neovide_cursor_vfx_mode = "railgun"
+vim.g.neovide_cursor_vfx_mode = ""
+vim.opt.guifont = "Hack Nerd Font Mono:22"
+-- vim.g.neovide_cursor_animation_length = 0.9
+-- vim.g.neovide_cursor_tail_size = 0.1
+-- allow us to use the cmd key in neovide
+vim.g.neovide_input_use_logo= true
+vim.g.popui_border_style = "double"
+```
+
 - `nv . --size 2930x1300`
   - 실행할때 창크기 지정됨 출처 : https://github.com/neovide/neovide/issues/1636
   - 출처2 https://github.com/neovide/neovide/pull/1706

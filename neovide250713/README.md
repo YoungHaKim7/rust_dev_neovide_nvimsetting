@@ -1,0 +1,2 @@
+- https://github.com/neovide/neovide
+- https://neovide.dev/config-file.html

@@ -1,6 +1,15 @@
 # nvim 0.10 부터 세팅 점점 빡쎄진다..
 -  날짜별로 따로 정리.
 
+- 0.12 & neovide 0.15 버젼업으로 세팅바꿈
+
+- ./lua/vim_g.lua
+```lua
+-- neovide GUI config
+vim.g.neovide_opacity = 0.98
+vim.g.neovide_remember_window_size = true
+```
+
 <hr />
 
 # 여기를 집중적으로 체크해야한다.

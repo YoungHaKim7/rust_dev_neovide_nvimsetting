@@ -14,7 +14,7 @@ vim.g.rustfmt_autosave = true
 vim.g.gruvbox_material_sign_column_background = "none"
 
 
--- GUI config
+-- neovide GUI config
 vim.g.neovide_opacity = 0.98
 vim.g.neovide_remember_window_size = true
 -- vim.g.neovide_cursor_vfx_mode = "railgun"

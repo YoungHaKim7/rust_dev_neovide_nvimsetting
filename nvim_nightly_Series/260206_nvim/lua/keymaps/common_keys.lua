@@ -20,6 +20,11 @@ nnoremap("<leader>F", ":Telescope find_files<CR>")
 -- tagbar toggle
 -- nnoremap("<leader>ov", ":TagbarToggle<CR>")
 
+nnoremap([[<leader>fb]], [[<cmd>lua require('telescope.builtin').buffers()<cr>]])
+nnoremap([[<leader>fh]], [[<cmd>lua require('telescope.builtin').help_tags()<cr>]])
+nnoremap([[<leader>fg]], [[<cmd>lua require('telescope.builtin').live_grep()<cr>]])
+
+
 -- TroubleToggle
 nnoremap("<leader>t", ":Trouble<CR>")
 nnoremap("<leader>e", ":NvimTreeToggle<CR>")

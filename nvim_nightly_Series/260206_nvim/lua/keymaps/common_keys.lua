@@ -14,7 +14,9 @@ nnoremap("<leader>rnn", [[:%s//gc<Left><Left><Left>]])
 
 nnoremap(",<leader>", [[:set hlsearch!<CR>]])
 -- SymbolOutline
-nnoremap("<leader>o", ":SymbolsOutline<CR>")
+nnoremap("<leader>o", ":Telescope lsp_document_symbols<CR>")
+-- file search
+nnoremap("<leader>F", ":Telescope find_files<CR>")
 -- tagbar toggle
 -- nnoremap("<leader>ov", ":TagbarToggle<CR>")
 

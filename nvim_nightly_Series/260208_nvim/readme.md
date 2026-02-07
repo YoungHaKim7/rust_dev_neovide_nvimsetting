@@ -208,3 +208,25 @@ Would you like me to help migrate to lazy.nvim for better plugin management?
 2. `v.request(` → `v:request(` (method call syntax)
 
 Restart Neovim to apply the changes.
+
+# ● I can see the two deprecated functions. Let me fix them:
+
+  1. Line 153: vim.lsp.get_active_clients() → vim.lsp.get_clients()
+  2. Line 155: v.request() → v:request() (method call syntax)
+
+● Update(`~/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/lua/rust-tools/inlay_hints.lua`)
+  ⎿  Added 2 lines, removed 2 lines
+
+```lua
+150  function M.cache_render(self, bufnr)
+151    local buffer = bufnr or vim.api.nvim_get_current_buf()
+152
+153 -  for _, v in pairs(vim.lsp.get_active_clients({ bufnr = buffer })) do
+153 +  for _, v in pairs(vim.lsp.get_clients({ bufnr = buffer })) do
+154      if rt.utils.is_ra_server(v) then
+155 -      v.request(
+155 +      v:request(
+156          "textDocument/inlayHint",
+157          get_params(v, buffer),
+158          function(err, result, ctx)
+```

@@ -199,3 +199,12 @@ The following plugins use deprecated `vim.validate` - these need updates from th
 
 Would you like me to help migrate to lazy.nvim for better plugin management?
 
+
+# deprecated fix(260208)
+
+- Fixed both deprecation warnings:
+
+1. `vim.lsp.get_active_clients()` → `vim.lsp.get_clients()`
+2. `v.request(` → `v:request(` (method call syntax)
+
+Restart Neovim to apply the changes.

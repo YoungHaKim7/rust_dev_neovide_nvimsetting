@@ -34,7 +34,6 @@ require("plugins/nvim-autopairs")
 require("plugins/bufferline")
 require("plugins/nvim-colorizer")
 require("plugins/nvim-tree")
-require("plugins/treesitter")
 require("plugins/gitsigns")
 -- Auto Completions and LSP
 require("plugins/cmp")
@@ -43,7 +42,7 @@ require("plugins/rusty-tools")
 require("plugins/dap-ui")
 require("plugins/cargo_crates")
 -- my Plugin
-require("plugins/symbols-outline")
+require("plugins/outline")
 require("plugins/trouble")
 require("plugins/tabbyai")
 require("plugins/indent-blankline")
@@ -57,9 +56,7 @@ require("theme/tokyonight")
 require("theme/dracula")
 
 -- inlayhints
--- require("inlayhints/clangd_extensions")
--- require("clangd_extensions.inlay_hints").setup_autocmd()
--- require("clangd_extensions.inlay_hints").set_inlay_hints()
+require("inlayhints/clangd_extensions")
 
 -- backup & undo
 require("undo_swap")

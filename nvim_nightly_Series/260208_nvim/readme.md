@@ -168,12 +168,34 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 
 
 # fix
+- Plugins are now installed. Here's a summary of what was fixed:
 
-- Fixed! The nvim error is resolved. The issue was that `nvim-treesitter-refactor` is a deprecated plugin that's incompatible with current versions of nvim-treesitter. 
+## Fixed Plugins
 
-**What was done:**
-1. Commented out `nvim-treesitter-refactor` in `/home/gy/.config/nvim/lua/packages.lua`
-2. Removed the unused `refactor` configuration block from `/home/gy/.config/nvim/lua/plugins/treesitter.lua`
-3. Deleted the plugin directory from `~/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor`
+| Old (Deprecated) | New (Maintained) | Status |
+|------------------|------------------|--------|
+| `simrat39/symbols-outline.nvim` | `hedyhli/outline.nvim` | ✅ Fixed |
+| `famiu/feline.nvim` | `nvim-lualine/lualine.nvim` | ✅ Fixed |
+| `norcalli/nvim-colorizer.lua` | `NvChad/nvim-colorizer.lua` | ✅ Fixed |
+| `kyazdani42/nvim-tree.lua` | `nvim-tree/nvim-tree.lua` | ✅ Fixed |
 
-The plugin's functionality (highlight definitions, smart renaming, etc.) was minimal and can be replaced by other maintained plugins if needed in the future.
+## Remaining Deprecations (Need upstream fixes)
+
+The following plugins use deprecated `vim.validate` - these need updates from their maintainers:
+
+- `nvim-transparent` - Update available, should be fixed
+- `nvim-dap-ui` - Needs update
+- `nvim-tree.lua` - Needs update
+
+**To check remaining warnings**, run in Neovim:
+```vim
+:checkhealth vim.deprecated
+```
+
+**If you want to fix remaining issues faster**, you can:
+1. Check for plugin updates regularly
+2. Consider migrating to `lazy.nvim` (modern plugin manager with auto-updates)
+3. Open issues on the plugin repos asking for Neovim 0.11/0.12 compatibility
+
+Would you like me to help migrate to lazy.nvim for better plugin management?
+

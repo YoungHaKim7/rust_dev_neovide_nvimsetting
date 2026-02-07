@@ -1,20 +1,18 @@
-USER = os.getenv("USER")
-local curr_group = vim.fn.system("id -ng 2> /dev/null | tr -d '\n'")
-
-SWAPDIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/swap//"
-BACKUPDIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/backup//"
-UNDODIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/undo//"
+local data_path = vim.fn.stdpath("data")
+SWAPDIR = data_path .. "/swap//"
+BACKUPDIR = data_path .. "/backup//"
+UNDODIR = data_path .. "/undo//"
 
 if vim.fn.isdirectory(SWAPDIR) == 0 then
-	vim.fn.mkdir(SWAPDIR, "p", "0o700")
+	vim.fn.mkdir(SWAPDIR, "p")
 end
 
 if vim.fn.isdirectory(BACKUPDIR) == 0 then
-	vim.fn.mkdir(BACKUPDIR, "p", "0o700")
+	vim.fn.mkdir(BACKUPDIR, "p")
 end
 
 if vim.fn.isdirectory(UNDODIR) == 0 then
-	vim.fn.mkdir(UNDODIR, "p", "0o700")
+	vim.fn.mkdir(UNDODIR, "p")
 end
 
 -- Enable swap, backup, and persistant undo

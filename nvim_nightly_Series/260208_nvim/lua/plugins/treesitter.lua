@@ -1,4 +1,4 @@
-require('nvim-treesitter').setup {
+require('nvim-treesitter.configs').setup {
     -- One of "all", "maintained" (parsers with maintainers), or a list of languages
     ensure_installed = {"jsonc","rust","bash","css","html","yaml","toml","lua","svelte","vue","typescript","dart","comment","regex","tsx","json5","make"},
 
@@ -19,5 +19,12 @@ require('nvim-treesitter').setup {
         -- Using this option may slow down your editor, and you may see some duplicate highlights.
         -- Instead of true it can also be a list of languages
         additional_vim_regex_highlighting = false
+    },
+    refactor = {
+        highlight_definitions = {
+            enable = false,
+            -- Set to false if you have an `updatetime` of ~100.
+            clear_on_cursor_move = true
+        }
     }
 }

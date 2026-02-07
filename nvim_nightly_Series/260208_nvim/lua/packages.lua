@@ -4,7 +4,7 @@ require("packer").startup(function(use)
     use("nvim-lua/plenary.nvim")
     -- Must Have In VIM
     use({"mbbill/undotree"})
-    use("kyazdani42/nvim-tree.lua")
+    use("nvim-tree/nvim-tree.lua")
     use("windwp/nvim-autopairs")
     use("liuchengxu/vim-which-key")
     use("terrortylor/nvim-comment")
@@ -29,10 +29,7 @@ require("packer").startup(function(use)
     -- use({"ellisonleao/gruvbox.nvim"})
     use("Mofiqul/dracula.nvim")
     use("kyazdani42/nvim-web-devicons")
-    use({
-        "nvim-lualine/lualine.nvim",
-        requires = { "kyazdani42/nvim-web-devicons", opt = true }
-    })
+    use({"nvim-lualine/lualine.nvim"})
     use({"xiyaowong/nvim-transparent"})
     -- Tab / Buffer
     use("akinsho/nvim-bufferline.lua")
@@ -74,13 +71,26 @@ require("packer").startup(function(use)
     use("phaazon/hop.nvim")
     use {
         'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
+        run = ':TSUpdate',
+        config = function()
+            require('nvim-treesitter.configs').setup {
+                ensure_installed = {"jsonc","rust","bash","css","html","yaml","toml","lua","svelte","vue","typescript","dart","comment","regex","tsx","json5","make"},
+                sync_install = false,
+                ignore_install = {"javascript"},
+                highlight = {
+                    enable = true,
+                    disable = {"c","rust"},
+                    additional_vim_regex_highlighting = false
+                },
+                refactor = {
+                    highlight_definitions = {
+                        enable = false,
+                        clear_on_cursor_move = true
+                    }
+                }
+            }
+        end
     }
-    -- DISABLED: nvim-treesitter-refactor is deprecated and incompatible with current nvim-treesitter
-    -- use {
-    --     'nvim-treesitter/nvim-treesitter-refactor',
-    --     requires = {{'nvim-treesitter/nvim-treesitter'}}
-    -- }
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/plenary.nvim'}}
@@ -106,7 +116,7 @@ require("packer").startup(function(use)
     -- symbols-outline need
     use {"nvim-neotest/nvim-nio"}
     -- use {"preservim/tagbar"}
-    use {"simrat39/symbols-outline.nvim"}
+    use {"hedyhli/outline.nvim"}
     use {"folke/trouble.nvim",
       require = {{'nvim-tree/nvim-web-devicons' }},
       opts = {},

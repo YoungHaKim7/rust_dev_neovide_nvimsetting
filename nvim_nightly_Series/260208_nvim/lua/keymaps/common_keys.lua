@@ -13,17 +13,18 @@ nnoremap("<C-z>", [[<nop>]])
 nnoremap("<leader>rnn", [[:%s//gc<Left><Left><Left>]])
 
 nnoremap(",<leader>", [[:set hlsearch!<CR>]])
--- SymbolOutline
-nnoremap("<leader>o", ":Telescope lsp_document_symbols<CR>")
--- file search
-nnoremap("<leader>F", ":Telescope find_files<CR>")
 -- tagbar toggle
 -- nnoremap("<leader>ov", ":TagbarToggle<CR>")
+
+-- SymbolOutline
+nnoremap("<leader>o", ":Outline<CR>")
+nnoremap("<leader>S", ":Telescope lsp_document_symbols<CR>")
+-- file search
+nnoremap("<leader>F", ":Telescope find_files<CR>")
 
 nnoremap([[<leader>fb]], [[<cmd>lua require('telescope.builtin').buffers()<cr>]])
 nnoremap([[<leader>fh]], [[<cmd>lua require('telescope.builtin').help_tags()<cr>]])
 nnoremap([[<leader>fg]], [[<cmd>lua require('telescope.builtin').live_grep()<cr>]])
-
 
 -- TroubleToggle
 nnoremap("<leader>t", ":Trouble<CR>")

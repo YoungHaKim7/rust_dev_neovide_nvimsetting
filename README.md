@@ -535,6 +535,9 @@ vim.api.nvim_set_keymap('i', '<C-b>', 'copilot#Accept()', true)
     -- :UnicodeTable    - Print Unicode Table in new window
     "chrisbra/unicode.vim",
   ```
+- symbols-outline 업데이트 안하는것 같아서 교체함(260208)
+  - https://github.com/hedyhli/outline.nvim
+
 - [Symbol-outline](https://github.com/simrat39/symbols-outline.nvim)
   - 혹시 오류 나면 강제로 설치
   ```bash

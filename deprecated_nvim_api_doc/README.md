@@ -40,6 +40,53 @@ Restart Neovim to apply the changes.
 158          function(err, result, ctx)
 ```
 
+
+```lua
+pdate(lua/packages.lua)
+  ⎿  Added 1 line, removed 19 lines
+      71      use("phaazon/hop.nvim")
+      72      use {
+      73          'nvim-treesitter/nvim-treesitter',
+      74 -        run = ':TSUpdate',
+      75 -        config = function()
+      76 -            require('nvim-treesitter.configs').setup {
+      77 -                ensure_installed = {"jsonc","rust","bash","css","html","yaml","toml","lua","svelte","vue","typescript","dart","commen
+         -t","regex","tsx","json5","make"},
+      78 -                sync_install = false,
+      79 -                ignore_install = {"javascript"},
+      80 -                highlight = {
+      81 -                    enable = true,
+      82 -                    disable = {"c","rust"},
+      83 -                    additional_vim_regex_highlighting = false
+      84 -                },
+      85 -                refactor = {
+      86 -                    highlight_definitions = {
+      87 -                        enable = false,
+      88 -                        clear_on_cursor_move = true
+      89 -                    }
+      90 -                }
+      91 -            }
+      92 -        end
+      74 +        run = ':TSUpdate'
+      75      }
+      76      use {
+      77          'nvim-telescope/telescope.nvim',
+```
+
+- Edit file
+ lua/plugins/treesitter.lua
+```lua
+Edit file
+ lua/plugins/treesitter.lua
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ 1 -require('nvim-treesitter.configs').setup {
+ 1 +require('nvim-treesitter.config').setup {
+ 2      -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+ 3      ensure_installed = {"jsonc","rust","bash","css","html","yaml","toml","lua","svelte","vue","typescript","dart","comment","regex","tsx","json5",
+    "make"},
+ 4
+```
+
 # https://neovim.io/doc/user/deprecated.html
 
 ```txt

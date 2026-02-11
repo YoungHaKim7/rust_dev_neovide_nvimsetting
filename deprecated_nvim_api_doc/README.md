@@ -101,6 +101,20 @@ Edit file
  29 +require("plugins/treesitter")
 ```
 
+- The configuration loads without errors. Your nvim is now fixed. Here's what was done:
+
+## Summary of fixes(260212)
+
+1. **Removed duplicate config** from `lua/packages.lua` - The nvim-treesitter configuration was defined both in the packer block and in a separate plugin file. I kept only the plugin declaration in packer.
+
+2. **Fixed module name** in `lua/plugins/treesitter.lua` - Changed `require('nvim-treesitter.configs')` to `require('nvim-treesitter.config')`. The newer version of nvim-treesitter uses `config` instead of `configs`.
+
+3. **Added missing require** in `init.lua` - Added `require("plugins/treesitter")` to ensure the treesitter configuration is loaded.
+
+4. **Cleaned up packer cache** - Removed the old compiled packer file and rebuilt it.
+
+You can now run nvim without the treesitter error. If you still see issues, try running `:PackerSync` in nvim manually.
+
 # https://neovim.io/doc/user/deprecated.html
 
 ```txt

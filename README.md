@@ -212,6 +212,7 @@ rm -rf ~/.cache/nvim
   - Rust고수의 snippets정리
     - https://github.com/hhatto/rust-snippets
     - 포크함 Fork https://github.com/YoungHaKim7/rust-snippets
+  - https://github.com/CharaD7/neovide-config
 
 # 요즘 쓰는 LspInlayHint Color Setting[|🔝|](#link)
 

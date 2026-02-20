@@ -17,18 +17,18 @@ local opts = {
             use_telescope = true
         },
         -- executor = require("rust-tools/executors").termopen,
-        -- inlay_hints = {
-        --     only_current_line = false,
-        --     only_current_line_autocmd = "CursorHold",
-        --     show_parameter_hints = true,
-        --     parameter_hints_prefix = "👈 ",
-        --     show_variable_name = true,
-        --     other_hints_prefix = "👉 ",
-        --     max_len_align_padding = 1,
-        --     right_align = false,
-        --     right_align_padding = 7,
-        --     highlight = "LspInlayHint",
-        -- },
+        inlay_hints = {
+            only_current_line = false,
+            only_current_line_autocmd = "CursorHold",
+            show_parameter_hints = true,
+            parameter_hints_prefix = "<- ",
+            show_variable_name = true,
+            other_hints_prefix = "=> ",
+            max_len_align_padding = 1,
+            right_align = false,
+            right_align_padding = 7,
+            highlight = "LspInlayHint",
+        },
         hover_actions = {
             -- the border that is used for the hover window
             -- see vim.api.nvim_open_win()
@@ -60,7 +60,11 @@ local opts = {
             -- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
             ["rust-analyzer"] = {
                 -- enable clippy on save
-                checkOnSave = true
+                checkOnSave = true,
+                -- enable inlay hints
+                inlayHints = {
+                    enable = true,
+                }
             }
         }
     },

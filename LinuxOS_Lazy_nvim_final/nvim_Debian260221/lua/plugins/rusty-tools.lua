@@ -21,13 +21,13 @@ local opts = {
             only_current_line = false,
             only_current_line_autocmd = "CursorHold",
             show_parameter_hints = true,
-            parameter_hints_prefix = "<- ",
+            parameter_hints_prefix = " 👈 ",
             show_variable_name = true,
-            other_hints_prefix = "=> ",
+            other_hints_prefix = " 👉 ",
             max_len_align_padding = 1,
             right_align = false,
             right_align_padding = 7,
-            highlight = "LspInlayHint",
+            highlight = "Comment",
         },
         hover_actions = {
             -- the border that is used for the hover window

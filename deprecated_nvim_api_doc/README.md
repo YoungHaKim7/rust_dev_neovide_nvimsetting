@@ -1,3 +1,6 @@
+# Lazy.nvim으로 교체함(260221)
+- https://github.com/folke/lazy.nvim
+
 # 이거 플러그인 해결해야함.. 
 - 버젼업이 안되는중..
 

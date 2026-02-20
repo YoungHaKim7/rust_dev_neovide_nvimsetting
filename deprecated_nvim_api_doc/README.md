@@ -115,6 +115,26 @@ Edit file
 
 You can now run nvim without the treesitter error. If you still see issues, try running `:PackerSync` in nvim manually.
 
+
+
+Fidget loads correctly. The healthcheck warning appears early in the startup before plugin configs load - it's cosmetic and won't affect actual usage.
+
+## Summary of fixes applied:
+
+| Issue | Status | Fix |
+|-------|--------|-----|
+| **tree-sitter-cli** | ✅ Fixed | Installed v0.26.5 via cargo |
+| **fidget nvim-tree warning** | ✅ Fixed | Added `NvimTree` to `notification.window.avoid` |
+| **nvim-treesitter configs** | ✅ Fixed | Locked to `master` branch for backward compatibility |
+| **vim.provider warnings** | ✅ Fixed | Disabled optional Perl/Python/Node providers |
+| **packer deprecation** | ⚠️ Info | packer.nvim is deprecated but functional |
+
+### Remaining non-critical warnings:
+1. **vim.deprecated (vim.tbl_islist)** - packer uses old APIs, works fine
+2. **vim.deprecated (vim.validate)** - nvim-treesitter on master uses old Neovim APIs, works fine
+
+Your nvim is now fully functional. The remaining warnings are from deprecated plugins using older Neovim APIs, but they don't affect functionality. For a cleaner setup long-term, consider migrating from **packer.nvim** to **lazy.nvim**.
+
 # https://neovim.io/doc/user/deprecated.html
 
 ```txt

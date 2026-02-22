@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   -- Disable packer
-  { "wbthomason/packer.nvim", enabled = false },
+  --{ "wbthomason/packer.nvim", enabled = false },
 
   -- Lua functions
   { "nvim-lua/plenary.nvim" },

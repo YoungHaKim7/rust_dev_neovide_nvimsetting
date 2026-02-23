@@ -7,7 +7,7 @@
 - [라인-fold-unfold-접기--닫기--전체-열기-전체-닫기link](#라인-fold-unfold-접기--닫기--전체-열기-전체-닫기)
 - [rustsnippet기본-위치](#rustsnippet기본-위치)
 - [rust-snippets-정리중](#rust-snippets-정리중)
-- [플러그인매니저Lazy로 교체(packer삭제함)lazy install설치 _업데이트는lazy sync](#)
+- [플러그인매니저Lazy로 교체(packer삭제함)lazy install설치 _업데이트는lazy sync](#lazy로-교체packer삭제함)
 - [hack-nerd-mono-font-설치](#hack-nerd-mono-font-설치)
 - [Tabby AI설치하기_Self-hosted AI coding assistant](#tabby-ai-설치)
   - [copilot (disable)하는법](#copilot-disable하는법)
@@ -848,7 +848,14 @@ vim.g.tabby_keybinding_accept = '<C-b>'
 
 # Lazy로 교체(packer삭제함)[|🔝|](#link)
 
-https://github.com/wbthomason/packer.nvim
+- 최종 lazy써야함(260223부터 이걸로 적용함)
+  - Lazy 로 교체함 Packer종료
+    - 💤 A modern plugin manager for Neovim
+      - https://github.com/folke/lazy.nvim
+  
+
+- packer삭제(update가 중지되고 관리가 안되서 삭제함260222)
+  - https://github.com/wbthomason/packer.nvim
 
 # LSP Setting[|🔝|](#link)
 - https://github.com/neovim/nvim-lspconfig

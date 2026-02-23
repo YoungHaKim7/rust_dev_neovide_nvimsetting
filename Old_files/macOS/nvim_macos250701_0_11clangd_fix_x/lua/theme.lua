@@ -1,5 +1,0 @@
--- vim.cmd("colorscheme OceanicNext")
--- vim.cmd("colorscheme gruvbox")
--- vim.cmd("colorscheme dracura")
--- vim.cmd("colorscheme habamax")
-vim.cmd("colorscheme tokyonight-night")

@@ -3,6 +3,17 @@
 - 💤 A modern plugin manager for Neovim
   - https://github.com/folke/lazy.nvim
 
+# neovide세팅관련
+
+```lua
+-- neovide setting
+vim.g.neovide_scroll_animation_length = 0
+vim.g.neovide_cursor_animation_length = 0
+vim.g.neovide_remember_window_size = true
+vim.o.guifont = "Hack Nerd Font:h25"
+vim.g.neovide_hide_mouse_when_typing = true
+```
+
 # Lazy.nvim으로 교체함(260221)
 - https://github.com/folke/lazy.nvim
 

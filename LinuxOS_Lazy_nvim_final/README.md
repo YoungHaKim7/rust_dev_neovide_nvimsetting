@@ -3,6 +3,11 @@
 - 💤 A modern plugin manager for Neovim
   - https://github.com/folke/lazy.nvim
 
+tree-sitter-cli는 이걸로 세팅하면된다.
+```
+cargo install tree-sitter-cli
+```
+
 # neovide세팅관련
 
 ```lua

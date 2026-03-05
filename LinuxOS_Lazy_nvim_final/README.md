@@ -8,6 +8,58 @@ tree-sitter-cli는 이걸로 세팅하면된다.
 cargo install tree-sitter-cli
 ```
 
+# NixOS에서 에러나서 해결법
+
+
+● The issue isn't with your Rust code - it's an environment setup problem.
+   bindgen (a dependency of tree-sitter-cli) requires libclang to be
+  installed.
+                                                                          
+  Since you're on NixOS, here are the solutions:
+                                                                          
+## Option 1: Install LLVM/libclang in your nix-shell
+
+
+  Add llvm to your shell.nix or use:
+  ```nix
+  nix-shell -p llvmPackages.clang
+  ```
+## Option 2: Set LIBCLANG_PATH permanently
+
+● Searched for 1 pattern (ctrl+o to expand)  
+                                
+● Found it! Set the environment variable:                                 
+
+  ```bash           
+  export LIBCLANG_PATH=/nix/store/m1cx91w9g9iixqb5hwim9hp6dj834akq-clang-21.1.7-lib/lib                                                           
+  ```
+  
+  Then retry your build.                                                  
+                                                                          
+## Option 3: Create a shell.nix for your project
+
+```nix
+● Write(shell.nix)                                                        
+  ⎿  Wrote 10 lines to shell.nix                                          
+       1 { pkgs ? import <nixpkgs> {} }:                                  
+       2    
+       3 pkgs.mkShell {                                                   
+       4   nativeBuildInputs = with pkgs; [                               
+       5     rustc                                                        
+       6     cargo
+       7     rust-analyzer                                                
+       8     llvmPackages.clang                                           
+       9   ];                                                             
+      10 }                                                                
+```                                                                         
+- ● Created a shell.nix for your project. Now run:                          
+  ```                                                                        
+  nix-shell                                                               
+  ```                                                                     
+  Then try building again. This will give you a proper environment with   
+  libclang available. 
+```
+
 # neovide세팅관련
 
 ```lua

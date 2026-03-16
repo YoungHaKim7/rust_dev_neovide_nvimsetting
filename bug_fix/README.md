@@ -77,5 +77,31 @@ Fixed. I added a `blacklist` to your rainbow-delimiters config. The plugin will 
 - `neo-tree`
 - `qf` (quickfix)
 
-Restart Neovim and the error should be gone.
+Perfect! I've fixed the rainbow-delimiters error. Here's what I changed:
+
+## Changes Made:
+
+### 1. `/home/gy/.config/nvim/lua/plugins/rainbow-delimiters.lua`
+- Removed the redundant `require('rainbow-delimiters.setup').setup()` call that was being executed before the configuration
+- Added an autocommand that only attaches rainbow-delimiters to buffers that have a treesitter parser available
+- This prevents the plugin from trying to attach to special buffers (like fidget notification windows) that don't have parsers
+
+### 2. `/home/gy/.config/nvim/lua/lazy_specs.lua`
+- Changed the rainbow-delimiters configuration to use the proper plugin config file
+- Added `nvim-treesitter` as a dependency so rainbow-delimiters loads after treesitter
+
+### 3. `/home/gy/.config/nvim/lua/plugins/treesitter.lua`
+- Added more common parsers (`vim`, `markdown`, `javascript`, `python`, `go`) to ensure better coverage
+
+## To Apply the Fix:
+
+Simply restart Neovim. The changes will take effect automatically:
+
+```bash
+nvim
+```
+
+- The error should now be resolved. The rainbow-delimiters plugin will only activate for file types that have treesitter parsers installed, preventing the "attempt to index local 'parser' (a nil value)" error.
+
+- Restart Neovim and the error should be gone.
 

@@ -138,3 +138,24 @@ nvim
  42  end
  43  
 ```
+
+
+```lua
+● Update(~/.config/nvim/lua/plugins/rainbow-delimiters.lua)                                                     
+                                                                                                              
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Edit file                                                                                                      
+ ../../../.config/nvim/lua/plugins/rainbow-delimiters.lua                                                       
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ 2  local rainbow_delimiters = require 'rainbow-delimiters'                                                     
+ 3  
+ 4  -- Disable for nvim-tree and other special buffers
+ 5 -local disabled_buftypes = {'NvimTree', 'lazy', 'TelescopePrompt', 'alpha', 'neo-tree', 'qf', 'neo-tree-popup
+   -', 'neo-tree-preview'}                                                                                      
+ 5 +local disabled_buftypes = {'NvimTree', 'nvimtree', 'lazy', 'TelescopePrompt', 'alpha', 'neo-tree', 'qf', 'ne
+   +o-tree-popup', 'neo-tree-preview'}                                                                          
+ 6                                                                    
+ 7  vim.g.rainbow_delimiters = {
+ 8      strategy = {
+
+```

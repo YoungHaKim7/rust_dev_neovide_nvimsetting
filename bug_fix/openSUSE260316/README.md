@@ -118,3 +118,23 @@ The new config properly disables rainbow-delimiters for:
 ```bash
 nvim
 ```
+
+```lua
+ ../../.local/share/nvim/lazy/cmp-buffer/lua/cmp_buffer/source.lua
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ 31  ---@return cmp_buffer.Options
+ 32  source._validate_options = function(_, params)
+ 33    local opts = vim.tbl_deep_extend('keep', params.option, defaults)
+ 34 -  vim.validate(                                                                                                  
+ 34 +  vim.validate({                                                                                                 
+ 35      keyword_length = { opts.keyword_length, 'number' },
+ 36      keyword_pattern = { opts.keyword_pattern, 'string' },
+ 37      get_bufnrs = { opts.get_bufnrs, 'function' },
+ 38      indexing_batch_size = { opts.indexing_batch_size, 'number' },
+ 39      indexing_interval = { opts.indexing_interval, 'number' }
+ 40 -  )                                                                                                              
+ 40 +  })                                                                                                             
+ 41    return opts
+ 42  end
+ 43  
+```

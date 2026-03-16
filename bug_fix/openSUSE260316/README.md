@@ -234,3 +234,24 @@ Update(~/.config/nvim/lua/lazy_specs.lua)
   85  
   86    -- Telescope
 ```
+
+
+```lua
+Edit file                                                                                                    
+ ../../../.config/nvim/lua/lazy_specs.lua                                                                       
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ 29    { "terrortylor/nvim-comment", config = function() require("plugins/commenter") end },
+ 30    { "j-hui/fidget.nvim", config = function() require("plugins/fidget") end },
+ 31    { "tpope/vim-surround" },
+ 32 -  { "HiPhish/rainbow-delimiters.nvim", dependencies = "nvim-treesitter/nvim-treesitter", config = function(
+    -) require("plugins/rainbow-delimiters") end },                                                             
+ 32 +  {                                                                                                        
+ 33 +    "HiPhish/rainbow-delimiters.nvim",                                                                     
+ 34 +    dependencies = "nvim-treesitter/nvim-treesitter",                                                      
+ 35 +    event = { "BufReadPost", "BufNewFile" },                                                               
+ 36 +    config = function() require("plugins/rainbow-delimiters") end                                          
+ 37 +  },                                                                                                       
+ 38  
+ 39    -- Theme
+ 40    { "NvChad/nvim-colorizer.lua", config = function() require("plugins/nvim-colorizer") end },
+```

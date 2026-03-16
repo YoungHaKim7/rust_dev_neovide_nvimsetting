@@ -47,6 +47,24 @@ Successfully migrated from **packer.nvim** to **lazy.nvim**.
 
 <hr />
 
+# 260316
+```lua
+../../.local/share/nvim/lazy/vim-tabby/lua/tabby/lsp/nvim_lsp.lua
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ 55      local client = get_client()                                                                                  
+ 56      if client ~= nil then                                                                                        
+ 57          local request_id
+ 58 -        _, request_id = client.request("textDocument/inlineCompletion", inline_completion_params, function(_, res
+    -ult)                                                                                                             
+ 58 +        _, request_id = client:request("textDocument/inlineCompletion", inline_completion_params, function(_, res
+    +ult)                                                                                                             
+ 59              vim.fn["tabby#lsp#nvim_lsp#CallInlineCompletionCallback"](request_id, result)
+ 60          end)
+ 61          return request_id
+```
+
+<hr />
+
 # 이거 플러그인 해결해야함.. 
 - 버젼업이 안되는중..
 

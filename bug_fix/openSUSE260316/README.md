@@ -119,6 +119,26 @@ The new config properly disables rainbow-delimiters for:
 nvim
 ```
 
+I've fixed the nvim error. Here's a summary of the changes:
+
+## Fixes Applied:
+
+### 1. `/home/gy/.config/nvim/lua/plugins/rainbow-delimiters.lua`
+- Added `'nvimtree'` (lowercase) to the disabled filetypes list - nvim-tree uses this filetype internally
+- Made the `disable` function more robust:
+  - Added explicit check for filetype being nil
+  - Improved the treesitter parser check to return early if no parser exists
+  - Added check for non-standard buftypes (like `nofile`, `acwrite`, etc.)
+
+### 2. `/home/gy/.config/nvim/lua/lazy_specs.lua`
+- Removed duplicate treesitter configuration (was defined both in `plugins/treesitter.lua` and inline)
+- Made rainbow-delimiters load lazily on file events (`BufReadPost`, `BufNewFile`) instead of immediately at startup
+
+## What was causing the error:
+The `rainbow-delimiters` plugin was trying to attach to nvim-tree's buffer, but the treesitter parser for nvim-tree buffers returns `nil` because there's no parser for that filetype. The original `disable` function had `'NvimTree'` (uppercase) but nvim-tree's actual filetype is `'nvimtree'` (lowercase), so the check wasn't catching it.
+
+**Restart nvim and the error should be gone.**
+
 ```lua
  ../../.local/share/nvim/lazy/cmp-buffer/lua/cmp_buffer/source.lua
 ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌

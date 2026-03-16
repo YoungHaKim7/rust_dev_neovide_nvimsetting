@@ -69,4 +69,13 @@ vim.g.rainbow_delimiters = {
       30  }
 ```
 
-Where is your Neovim configuration located? I can help you add the fix directly if you point me to the config file.
+Fixed. I added a `blacklist` to your rainbow-delimiters config. The plugin will now skip:
+- `NvimTree` 
+- `lazy`
+- `TelescopePrompt`
+- `alpha`
+- `neo-tree`
+- `qf` (quickfix)
+
+Restart Neovim and the error should be gone.
+

@@ -159,3 +159,42 @@ nvim
  8      strategy = {
 
 ```
+
+
+```lua
+Edit file                                                                                                      
+ ../../../.config/nvim/lua/plugins/rainbow-delimiters.lua                                                       
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ 27          'RainbowDelimiterCyan',                                                                            
+ 28      },                                                                                                     
+ 29      disable = function(bufnr, filetype)
+ 30 +        -- Get filetype if not provided                                                                    
+ 31 +        if not filetype then                                                                               
+ 32 +            filetype = vim.bo[bufnr].filetype                                                              
+ 33 +        end                                                                                                
+ 34 +                                                                                                           
+ 35          -- Disable for blacklisted filetypes
+ 36          for _, ft in ipairs(disabled_buftypes) do
+ 37              if filetype == ft or vim.bo[bufnr].filetype == ft then
+ 38                  return true
+ 39              end
+ 40          end
+ 41 +                                                                                                           
+ 42          -- Disable if no treesitter parser exists
+ 43          local ok, parser = pcall(vim.treesitter.get_parser, bufnr)
+ 38 -        return not ok or parser == nil                                                                     
+ 44 +        if not ok or parser == nil then                                                                    
+ 45 +            return true                                                                                    
+ 46 +        end                                                                                                
+ 47 +                                                                                                           
+ 48 +        -- Additional check for special buffers                                                            
+ 49 +        local buftype = vim.bo[bufnr].buftype                                                              
+ 50 +        if buftype ~= '' then                                                                              
+ 51 +            return true                                                                                    
+ 52 +        end                                                                                                
+ 53 +                                                                                                           
+ 54 +        return false                                                                                       
+ 55      end,
+ 56  }
+
+```

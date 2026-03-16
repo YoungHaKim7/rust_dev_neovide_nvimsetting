@@ -58,4 +58,15 @@ vim.g.rainbow_delimiters = {
 }
 ```
 
+```lua
+ Update(~/.config/nvim/lua/plugins/rainbow-delimiters.lua)
+  ⎿  Added 2 lines
+      25          'RainbowDelimiterViolet',
+      26          'RainbowDelimiterCyan',
+      27      },
+      28 +    -- Disable for nvim-tree and other special buffers
+      29 +    blacklist = {'NvimTree', 'lazy', 'TelescopePrompt', 'alpha', 'neo-tree', 'qf'},
+      30  }
+```
+
 Where is your Neovim configuration located? I can help you add the fix directly if you point me to the config file.

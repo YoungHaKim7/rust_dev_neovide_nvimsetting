@@ -105,3 +105,16 @@ nvim
 
 - Restart Neovim and the error should be gone.
 
+Fixed. The issue was:
+
+1. **Wrong option**: `blacklist` is not valid - should be `disable` function
+2. **Parser check**: The old autocmd was causing issues by checking parsers too early
+
+The new config properly disables rainbow-delimiters for:
+- Special buffers (NvimTree, Telescope, lazy, etc.)
+- Any filetype without a treesitter parser
+
+**Restart nvim** for changes to take effect:
+```bash
+nvim
+```

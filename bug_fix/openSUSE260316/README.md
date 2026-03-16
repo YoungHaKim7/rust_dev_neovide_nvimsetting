@@ -198,3 +198,39 @@ Edit file
  56  }
 
 ```
+
+
+```lua
+Update(~/.config/nvim/lua/lazy_specs.lua)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Edit file
+ ../../../.config/nvim/lua/lazy_specs.lua
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+  80      "nvim-treesitter/nvim-treesitter",
+  81      build = ":TSUpdate",
+  82      branch = "master",
+  83 -    config = function()                                                                                   
+  84 -      require("nvim-treesitter.configs").setup({                                                          
+  85 -        ensure_installed = {"jsonc","rust","bash","css","html","yaml","toml","lua","svelte","vue","typescr
+     -ipt","dart","comment","regex","tsx","json5","make"},                                                      
+  86 -        sync_install = false,                                                                             
+  87 -        ignore_install = {"javascript"},                                                                  
+  88 -        highlight = {                                                                                     
+  89 -          enable = true,                                                                                  
+  90 -          disable = {"c","rust"},                                                                         
+  91 -          additional_vim_regex_highlighting = false                                                       
+  92 -        },                                                                                                
+  93 -        refactor = {                                                                                      
+  94 -          highlight_definitions = {                                                                       
+  95 -            enable = false,                                                                               
+  96 -            clear_on_cursor_move = true                                                                   
+  97 -          }                                                                                               
+  98 -        }                                                                                                 
+  99 -      })                                                                                                  
+ 100 -    end                                                                                                   
+  83 +    config = function() require("plugins/treesitter") end                                                 
+  84    },
+  85  
+  86    -- Telescope
+```
